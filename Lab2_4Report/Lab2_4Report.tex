@@ -14,6 +14,9 @@
 \usepackage{tabularray}  %绘制表格时可以更加方便添加框线
 \usepackage{xcolor} %添加更多文本颜色
 
+
+
+
 \setlist[enumerate]{label=\textup{(\arabic*)}}
 
 
@@ -292,19 +295,121 @@
 \end{table}
 
 \section{光学像差实验I \quad\heiti 实验记录}
-\subsection{实验内容、步骤、结果及讨论}\textcolor{ForestGreen}{（按照实验顺序依次}\textcolor{red}{简要记录}\textcolor{ForestGreen}{实验内容及步骤，）（空间不够，可自行加页）}\\
-\textcolor{red}{
-（注意： \\
-除了记录实验内容、步骤、参数外，还应记录：\\
-按比例绘制操作中实际摆放的实验光路(各元件间距离可通过直尺测量)\\
-记录光路中物光和参考光的光程差\\
-记录物光和参考光光强比\\
-记录是否可观察到再现图像\\
-）
-}
+\subsection{实验内容、步骤、结果及讨论}\textcolor{ForestGreen}{（按照实验顺序依次}\textcolor{red}{简要记录}\textcolor{ForestGreen}{实验内容及步骤，）（空间不够，可自行加页）}
 
+\subsubsection{色差测量实验}
+	实验光路如图\ref{fig:graph3}所示：	
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width=0.85\textwidth]{graph3.png}
+			\caption{位置色差测量光路图}
+			\label{fig:graph3}
+		\end{figure}
 
+	实验步骤如下：
+	\begin{enumerate}
+		\item 按图示光路，先\textcolor{red}{摆放}溴钨灯、透镜、白屏，\textcolor{red}{调整}透镜3的中心高与光源等高，使光源在透镜3的物方1-2倍焦距处，\textcolor{red}{调整}白屏的位置，找到溴钨灯\textcolor{red}{灯丝}最清晰的像位置，并记录该位置x1=（     ）；
+		\item 按图示光路，放置滤光片1，调整白屏的位置，\textcolor{red}{找到}这时溴钨灯丝最清晰的像位置并\textcolor{red}{记录}白屏位置x2=（     ）;
+		\item \textcolor{red}{更换}为滤光片2，再\textcolor{red}{调整}白屏的位置，\textcolor{red}{找到}这时溴钨灯丝最清晰的像位置并\textcolor{red}{记录}白屏位置x3=（     ）；
+		\item \textcolor{red}{计算}位置色差；
+		\item \textcolor{red}{判断}波长与折射率之间的关系。
 		
+	\end{enumerate}
+
+	
+
+	实验结果如下：
+
+	\begin{table}[htbp]
+		\centering
+		\begin{tblr}{
+		  cells = {c},
+		  vline{2-6} = {-}{},
+		  hline{1-2,4} = {-}{},
+		}
+		溴光灯位置/cm & 透镜位置/cm & 白光位置/cm & 蓝光位置/cm & 红光位置/cm & 色差/cm \\
+		18.9     & 42.0    & 90.7    & 90.5    & 91.6    & -1.1  \\
+				 & 43.5    & 85.2    & 85.5    & 86.5    & -1.0    
+		\end{tblr}
+		\caption{观察色差实验数据记录与处理}
+		\label{tbl:table1}
+	\end{table}
+		
+	实验中不放置任何滤光片时，波长接近$\lambda=589.29nm$，使用红色滤光片时，波长为$\lambda_C=656.27nm$，使用蓝色滤光片时，波长为$\lambda_F=486.13nm$。
+	则根据位置色差计算公式
+	\[
+	\Delta L'_{FC}=L'_F-L'_C	
+	\]
+	得到系统对红光和蓝光的位置色差，如表\ref{tbl:table1}所示。
+
+	则由数据可知，波长越短，成像越近，折射率越大。
+
+
+\subsection{光路调试与慧差测量实验}
+
+	实验光路如图\ref{fig:graph4}所示。
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=0.85\textwidth]{graph4.png}
+		\caption{慧差观测光路图}
+		\label{fig:graph4}
+	\end{figure}
+
+	实验步骤如下：
+	\begin{enumerate}
+		\item 根据图示布局及元器件参数，\textcolor{red}{估计}各器件的摆放位置，并做初步的\textcolor{red}{预调整}；
+		\item 放置好激光器，打开光源，白屏安装在滑块上并在导轨上前后移动，利用激光光源打在白屏上的光点的位置\textcolor{red}{调整}激光器的方位和俯仰，使得光点的位置随白屏的移动基本不变；之后在离激光器约400mm的位置固定白屏，并在白屏上\textcolor{red}{标记}光斑的位置；
+		\item 	把显微物镜和针孔\textcolor{red}{安装}到五维调整机构上，并如图摆放，让激光正入射显微物镜，先\textcolor{red}{调整}针孔的位置，使其位于显微物镜的焦点位置，直到出现环形衍射光斑；\textcolor{red}{后微调}五位调整机构的高低和左右（垂直光轴方向）平移，同时微调针孔的平移，\textcolor{red}{目标}是使得环形衍射光斑的中心位于第2步中所标记的位置；之后\textcolor{red}{固定并保持}显微物镜和针孔的位置不变。\textcolor{red}{记录}此时调试出来的环形衍射光斑；
+		\item 如图\textcolor{red}{拜访}上双凸透镜1，对经过针孔的发散球面波进行准直。\textcolor{red}{调整}透镜的位置，使光斑与镜面通孔同心，并使针孔位于透镜的焦点位置，光斑经过透镜后为近似平行光（前后平移白屏，观察光斑在白屏上的尺寸，如光斑大小基本不变，则可判定出射光为平行光）；
+		\item 如图\textcolor{red}{拜访}上平凸透镜2（也可用平凸透镜3）（平面朝入射光方向），\textcolor{red}{调整}该透镜的位置，使入射光斑与镜面同心，并使旋转调整机构位于调整的中间位置，方便后续的正负角度调整。
+		\item 如图\textcolor{red}{先摆放}上衰减片1，\textcolor{red}{后安装}成像相机，\textcolor{red}{打开}相机控制采集软件，\textcolor{red}{采集}图像，\textcolor{red}{调整}相机位置，使相机靶面位于平凸透镜2的焦点处，并使图像尽可能位于靶面中心。最开始应通过软件把相机的增益和曝光时间调低，防止过度曝光，损坏相机。如果衰减的不够，可以用上衰减片2。在图像没有饱和的情况下，\textcolor{red}{记录}此时得到的焦点图像；在光路调整没有问题的情况下，此时应该得到一个圆心光斑，并可看到暗的同心环。
+		\item \textcolor{red}{调整}旋转调整机构的旋转角度，使平凸透镜2发生偏转，观察并\textcolor{red}{记录}此时得到的\textcolor{red}{焦点图像}，同时\textcolor{red}{记录}偏转角度（这一步应该能够观察到前述慧差所对应的像斑形状）；在旋转调整机构的角度调整范围内选5点（如-10°、-5°、0°、5°、10°），分别\textcolor{red}{记录}对应得到的图像，\textcolor{red}{分析}慧差大小随角度的变化关系；
+	\end{enumerate}
+
+	实验结果如图\ref{fig:graph10}所示，其中的“顺时针”“逆时针”定义为俯视平凸透镜2所观察的结果：
+
+	\begin{figure}[htbp]
+		\centering
+		\subfloat[逆时针旋转20°]
+		{\includegraphics[width=0.31\textwidth]{f20.jpg}\label{fig:subfig1}}
+		\quad
+		\subfloat[逆时针旋转15°]
+		{\includegraphics[width=0.31\textwidth]{f15.jpg}\label{fig:subfig2}}
+		\quad
+		\subfloat[逆时针旋转10°]
+		{\includegraphics[width=0.31\textwidth]{f10.jpg}\label{fig:subfig3}}
+		\quad
+		\subfloat[逆时针旋转5°]
+		{\includegraphics[width=0.31\textwidth]{f5.jpg}\label{fig:subfig4}}
+		\quad
+		\subfloat[正入射]
+		{\includegraphics[width=0.31\textwidth]{0.jpg}\label{fig:subfig5}}
+		\quad
+		\subfloat[顺时针旋转5°]
+		{\includegraphics[width=0.31\textwidth]{5.jpg}\label{fig:subfig6}}
+		\quad
+		\subfloat[顺时针旋转10°]
+		{\includegraphics[width=0.31\textwidth]{10.jpg}\label{fig:subfig7}}
+		\quad
+		\subfloat[顺时针旋转15°]
+		{\includegraphics[width=0.31\textwidth]{15.jpg}\label{fig:subfig8}}
+		\quad
+		\subfloat[顺时针旋转20°]
+		{\includegraphics[width=0.31\textwidth]{20.jpg}\label{fig:subfig9}}
+		\quad
+		\caption{慧差实验结果图}
+		\label{fig:graph10}
+	\end{figure}
+	  
+	观察慧差图像可知：
+	\begin{enumerate}
+		\item 正入射时，光斑最小最清晰。
+		\item 当平凹透镜2旋转一定角度后，图像开始出现彗尾。逆时针旋转时，彗尾向右，图像向左移；顺势针旋转时，彗尾向左，图像向右移。
+		\item 彗尾的大小与透镜旋转角度呈正相关关系。
+	\end{enumerate}
+
+
+
 
 %\subsection{实验数据记录}
 
@@ -313,14 +418,6 @@
 %\subsection{原始数据记录}
 
 \clearpage
-
-\newpage
-
-\null
-
-\newpage
-
-\null
 
 
 
@@ -332,50 +429,56 @@
 \subsection{实验过程中遇到的问题记录}
 
 	\begin{enumerate}
-		\item 
-		\item 
-		\item 
+		\item 在观察色差的实验中，应注意光源应当放置在透镜1-2倍焦距处，以成放大的像，便于观察
+		\item 在观察色差的实验中，像的清晰与否比较主观，实验结果可能存在较大的误差
+		\item 在观察慧差的实验中，需要保证所有的光学器件都应保持等高共轴，这样能保证成像最清晰
 	\end{enumerate}
 \null
 
 
 
 
-% \begin{table}
-% 	\renewcommand\arraystretch{1.7}
-% 	\begin{tabularx}{\textwidth}{|X|X|X|X|}
-% 	\hline
 
-% 	专业：& 物理学 &年级：& 2022级\\
-% 	\hline
-% 	姓名： & 戴鹏辉 & 学号：& 22344016\\
-% 	\hline
-%     日期：& 2024/xx/xx & 评分： &\\
-% 	\hline
-% 	\end{tabularx}
-% \end{table}
 
-% \section{全息照相实验 \quad\heiti 分析与讨论}
-
-% \subsection{实验数据分析}
-
-% 	\subsubsection{实验一 测量光栅常数}
+\begin{question}
+	有没有办法通过图像计算光学系统的像差？ 请给出方法说明。 如果通过相机采集图
+像进行判断的话，相机象元尺寸应如何选择？
+\end{question}
 	
-		
-% 	\subsubsection{实验二 测定未知光波波长及角色散率D}
-			
+计算光学系统的像差通常涉及到复杂的光学理论和实验设备。通过图像来评估像差，可以采用以下基本步骤：
 
-			
-% \subsection{实验后思考题}
+\begin{enumerate}
+	\item 图像采集：使用相机拍摄光学系统产生的图像。这些图像应该包含特定的测试图案，如条纹或点阵，以便分析。
+	\item 图像处理：对采集的图像进行处理，以提取像差信息。这可能包括边缘检测、对比度分析和图像质量评估。
+	\item 像差分析：使用软件工具分析处理后的图像，以确定光学系统的像差类型和程度。常见的像差包括球差、彗差、像散、畸变等。
+	\item 优化与校正：根据分析结果，调整光学系统的参数或使用图像后处理技术来减少像差的影响。
+\end{enumerate}
 
+关于相机象元尺寸的选择，它取决于所需的图像分辨率和光学系统的特性。一般来说，较大的像元尺寸可以提高相机的灵敏度，适合于低光照条件下的成像。而较小的像元尺寸可以提高图像的细节分辨率，适合于对细节有高要求的应用场景。
 
+在选择相机象元尺寸时，还需要考虑以下因素：
 
-% \begin{question}
-% 	检索文献，列举三种测量光波波长的方法，给出参考文献列表。%\lipsum[20]
-% \end{question}
+\begin{enumerate}
+	\item 系统放大倍率：传感器像元尺寸除以光学系统总放大倍率得到的图像像素大小，决定了成像特性。
+	\item 数值孔径（NA）：显微镜物镜的NA决定了光学系统的分辨率极限，应选择与物镜NA匹配的像元尺寸。
+	\item 信噪比与分辨率：需要平衡信噪比和分辨率的要求，选择合适大小的像元尺寸。
+\end{enumerate}
+
+综合考虑以上因素，可以选择适合特定光学系统和应用需求的相机象元尺寸。
 	
 
-	
+
+\begin{figure}[htbp]
+	\centering
+	\subfloat[桌面收拾情况]
+	{\includegraphics[width=0.5\textwidth]{table.jpg}\label{fig:graph11}}
+	\quad
+	\subfloat[实验原始数据]
+	{\includegraphics[width=0.5\textwidth]{OriginalData.jpg}\label{fig:graph12}}
+	\caption{桌面收拾情况}
+	% \label{fig:graph11}
+\end{figure}
+
 
 
 
