@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.8)  2 APR 2024 21:53
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.8)  4 APR 2024 03:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1252,14 +1252,6 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 File: ./images//graph3.png Graphic file (type bmp)
 <./images//graph3.png>
-> Step: init table outer spec.
-> Step: parse table options.
-> Step: split table.
-> Step: init table inner spec.
-> Step: parse table inner spec.
-> Step: execute table commands.
-> Step: calculate cell and line sizes.
-> Step: build the whole table.
 Missing character: There is no Ⅰ (U+2160) in font [lmroman10-regular]:mapping=tex-text;!
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1271,6 +1263,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [7
 
 ]
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
 File: ./images//graph4.png Graphic file (type bmp)
 <./images//graph4.png>
 
@@ -1320,6 +1320,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [10]
+Missing character: There is no Ⅰ (U+2160) in font [lmroman10-regular]:mapping=tex-text;!
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[11
+
+]
 File: ./images//table.jpg Graphic file (type bmp)
 <./images//table.jpg>
 File: ./images//OriginalData.jpg Graphic file (type bmp)
@@ -1333,23 +1344,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[11
+[12
 
-]
-Missing character: There is no Ⅰ (U+2160) in font [lmroman10-regular]:mapping=tex-text;!
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[12] (./Lab2_4Report.aux)
+] (./Lab2_4Report.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `Lab2_4Report.out' has not changed.
-(rerunfilecheck)             Checksum: ED35BFDC4A33D15D5A0F98CB14BA7A11;1235.
+(rerunfilecheck)             Checksum: 49060DA95D4A2C808329D84F2938A42C;1423.
  ) 
 Here is how much of TeX's memory you used:
  39825 strings out of 476683

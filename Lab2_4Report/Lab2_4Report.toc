@@ -6,6 +6,7 @@
 \contentsline {section}{\numberline {2}光学像差实验I \hskip 1em\relax \heiti 实验记录}{7}{section.2}%
 \contentsline {subsection}{\numberline {2.1}实验内容、步骤、结果及讨论}{7}{subsection.2.1}%
 \contentsline {subsubsection}{\numberline {2.1.1}色差测量实验}{7}{subsubsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.2}光路调试与慧差测量实验}{8}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}实验过程中遇到的问题记录}{11}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.1.2}光路调试与慧差测量实验}{8}{subsubsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.2}实验过程中遇到的问题记录}{11}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}桌面收拾情况及实验原始数据记录}{12}{subsection.2.3}%
 \contentsfinish 
