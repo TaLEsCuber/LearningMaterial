@@ -6,18 +6,15 @@
 \contentsline {subsubsection}{\numberline {1.3.2}光拍的获得与检测}{4}{subsubsection.1.3.2}%
 \contentsline {subsubsection}{\numberline {1.3.3}微弱振动位移量的检测}{5}{subsubsection.1.3.3}%
 \contentsline {subsection}{\numberline {1.4}实验前思考题}{5}{subsection.1.4}%
-\contentsline {section}{\numberline {2}XXX \hskip 1em\relax XXXXXXXXXX \hskip 1em\relax \heiti 实验记录}{6}{section.2}%
+\contentsline {section}{\numberline {2}实验CC3 \hskip 1em\relax 双光栅测量微弱振动位移量实验 \hskip 1em\relax \heiti 实验记录}{6}{section.2}%
 \contentsline {subsection}{\numberline {2.1}实验内容和步骤}{6}{subsection.2.1}%
-\contentsline {subsubsection}{\numberline {2.1.1}实验一 测量光栅常数}{6}{subsubsection.2.1.1}%
-\contentsline {subsubsection}{\numberline {2.1.2}实验二 测定未知光波波长及角色散率$D$}{7}{subsubsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.2}实验过程中遇到的问题记录}{8}{subsection.2.2}%
-\contentsline {section}{\numberline {3}XXX \hskip 1em\relax XXXXXXXXXX \hskip 1em\relax \heiti 分析与讨论}{9}{section.3}%
-\contentsline {subsection}{\numberline {3.1}实验数据分析}{9}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}实验一 测量光栅常数}{9}{subsubsection.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}实验二 测定未知光波波长及角色散率D}{10}{subsubsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.2}实验后思考题}{11}{subsection.3.2}%
-\contentsline {section}{参考文献}{13}{section*.13}%
-\contentsline {section}{Appendices}{13}{section*.14}%
-\contentsline {subsection}{\numberline {.1}代码记录}{13}{subsection.Alph0.1}%
-\contentsline {subsection}{\numberline {.2}常用命令展示}{14}{subsection.Alph0.2}%
+\contentsline {subsection}{\numberline {2.2}原始数据记录}{7}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}实验过程中遇到的问题记录}{7}{subsection.2.3}%
+\contentsline {section}{\numberline {3}实验CC3 \hskip 1em\relax 双光栅测量微弱振动位移量实验 \hskip 1em\relax \heiti 分析与讨论}{10}{section.3}%
+\contentsline {subsection}{\numberline {3.1}实验数据分析}{10}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}求出音叉谐振时光拍信号的平均频率}{10}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}求出音叉在谐振点时作微弱振动的位移振幅。}{10}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}画出音叉的频率—振幅曲线；分析讨论其特点。}{10}{subsubsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.4}作出音叉不同有效质量时的谐振曲线，分析讨论其变化趋势。}{11}{subsubsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.2}实验后实验桌整理}{11}{subsection.3.2}%
 \contentsfinish 

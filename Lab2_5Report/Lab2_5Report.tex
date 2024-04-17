@@ -13,7 +13,8 @@
 \usepackage{enumitem}
 \usepackage{tabularray}  %绘制表格时可以更加方便添加框线
 \setlist[enumerate]{label=\textup{(\arabic*)}}
-
+% \usepackage{subcaption}
+% \usepackage{booktabs}
 
 
 %---------------------------------------------------------------------
@@ -154,9 +155,9 @@
 		% iS​=ξ[E10​E20​cos(ωd​t+(ϕ2​−ϕ1​))]
 		拍频 $ F $ 可以通过以下公式计算：
 		\[
-			F=2\pi\omega d=dvAn_\theta
+			F=\frac{ω_d}{2\pi}​​=v_A​n_\theta​​
 		\]
-		% F=2πωd​​=dvA​nθ​​
+		% F=\frac{ω_d}{2\pi}​​=v_A​n_\theta​​
 		其中 $ n_\theta $ 是光栅密度，本实验中 $ n_\theta = \frac{1}{d} $，( d = 100 ) 条/mm。
 		通过测量拍频$  F $，我们可以间接地检测出多普勒频移量。
 
@@ -180,7 +181,7 @@
 			\begin{enumerate}
 				\item 拍频波的个数测量：首先，需要测量在一定时间内（例如音叉振动周期的一半）的拍频波的个数。这可以通过示波器来完成。
 				\item 波形数的计算：波形数由完整波形数、波的首数和波的尾数三部分组成。对于不是完整波形的首数和尾数，可以使用反正弦函数将其转换为波形的分数部分。
-				\item 位移振幅的计算：使用积分公式 $ A = \int_0^{T/2} F_{拍}(t)  dt $，可以计算出位移振幅，其中 $ F_{拍}(t)  $是拍频波的频率，$ A  $是位移振幅。
+				\item 位移振幅的计算：使用积分公式 $ A =\frac{1}{2n_\theta} \int_0^{T/2} F_{拍}(t)  dt $，可以计算出位移振幅，其中 $ F_{拍}(t)  $是拍频波的频率，$\int_0^{T/2} F_{拍}(t)  dt$就表示T/2时间内的拍频波的数量，$ A  $是位移振幅。
 				\item 示波器读数：通过示波器读取波形数，包括整数波形数和分数波形数。
 				\item 波形数的最终计算：将整数波形数和分数波形数相加，得到总波形数。如果波群的首尾幅度与完整波形的振幅之比为 ( a ) 和 ( b )，则波形数可以表示为：
 				波形数=整数波形数+波的首数和尾数中满 1/2 或 1/4 或 3/4 个波形分数部份+$\frac{\sin^{-1}a}{360^\circ}$+$\frac{\sin^{-1}b}{360^\circ}$
@@ -235,111 +236,124 @@
 	\hline
 	姓名：& 戴鹏辉 & 学号：& 22344016 \\
 	\hline
-	室温：& xx℃ & 实验地点： & A508 \\
+	室温：& 26℃ & 实验地点： & A511 \\
 	\hline
 	学生签名：& & 评分： &\\
 	\hline
-	实验时间：& 2024/xx/xx & 教师签名：&\\
+	实验时间：& 2024/4/11 & 教师签名：&\\
 	\hline
 	\end{tabularx}
 \end{table}
 
-\section{XXX \quad XXXXXXXXXX \quad\heiti 实验记录}
+\section{实验CC3 \quad 双光栅测量微弱振动位移量实验 \quad\heiti 实验记录}
 \subsection{实验内容和步骤}
 
-	\subsubsection{实验一 测量光栅常数}
-	
-	该实验使用（已知谱线波长为$\lambda=589.4nm$的）低压钠灯为光源
-	\begin{enumerate}
-		\item 望远镜聚焦于无穷远（既能接受平行光）,然后平行光管产生平行光,使平行光管和望远镜的光轴都垂直仪器的转轴，随后调整光栅平面与平行光管光轴垂直，光栅的刻痕与仪器转轴平行。
-		
-		\item 打开钠灯电源，照亮狭缝，记录主极亮的位置，即望远镜分化板竖直线与零级光谱（即平行光管狭缝像）重合时的位置，这个位置就是上一步中调节好了的位置。记下此时刻度盘两窗口的读数；
-		
-		\item 把望远镜向零级光谱的一边转动（如向右），直到看到一级光谱中的黄线，并使它与分化板垂直线重合。记下刻度盘两窗口读数，计算出衍射角；继续原方向转到望远镜，并在二级光谱中找到该谱线再做同样的测量；
-		
-		\item 把望远镜往零级光谱的另一边转动（刚才向右，现在则向左），做步骤（2）中相同测量；
-		
-		\item 把光栅法线左右两边所测同级光谱中的两个衍射角求平均后代入光栅衍射公式，求光栅常数。要求两个值之差不能超过10’，否则，应重新调节入射光与光栅面垂直。最后求一、二级谱线测得的光栅常数 d 的平均值及其实验不确定度。
-		
-	\begin{table}[htbp]
+	\begin{figure}[htbp]
 		\centering
-		\begin{tabular}{|c|c|c|c|}
-			\hline
-			    & 主极亮位置 & +1级 & +2级 \\
-			\hline
-			左窗口 & 08°15′ & 358°05′ & 347°37′ \\
-			\hline
-			右窗口 & 188°16′ & 178°08′ & 167°39′ \\
-			\hline
-			    &        & -1级 & -2级 \\
-			\hline
-			左窗口 &      & 18°25′ & 29°03′ \\
-			\hline
-			右窗口 &      & 198°27′ & 209°03′ \\
-			\hline
-			
-		\end{tabular}
-		\caption{实验一测量数据}
-		\label{tab:mytable}
-	\end{table}
-	
+		% \subfloat[放置软管前]
+		{\includegraphics[width=0.45\textwidth]{graph2-0.png}\label{fig:graph2-0}}
+		\quad
+
+		\caption{双光栅实验平台}
+		% \label{fig:graph10}
+	\end{figure}
+
+
+
+	\begin{enumerate}
+		\item 熟悉双踪示波器的使用方法。
+		\item 熟悉固纬信号发生器的使用方法。（使用前看仪器说明书）
+		\item 将固纬信号发生器的 CH1 通道连接至光学实验平台音叉驱动器（动光栅）， 输出频率约为 500 Hz、 $V_{pp} $约为 6 V 的正弦波驱动信号。
+		\item 将光学实验平台光电传感器输出信号连接至示波器的 CH1 通道。因为光电传感器输出信号功率较低，示波器 CH1 探头选择放大约 500 倍。
+		\item 将固纬信号发生器同步信号输出（后面板 SYNC）连接至示波器 CH2 作为触发源。
+		\item 检查上述 3、 4、 5 步骤，注意不要接错。
+		\item 几何光路调整。 光学实验平台上的“激光器”接测试仪“半导体激光电源”，将激光器、静光栅、动光栅摆在一条直线上。打开半导体激光电源，让激光穿越静、动光栅后形成一竖排衍射光斑，使中间最亮光斑进入光电传感器里面，调节静光栅和动光栅的相对位置，使两光栅尽可能平行。
+		\item 音叉谐振调节。先调整好实验平台上音叉和激振换能器的间距，一般 0.3mm 为宜，可使用塞尺辅助调节。将固纬信号发生器的 CH1 通道连接至光学实验平台音叉驱动器（动光栅），输出频率约为 500 Hz、 $V_{pp} $ 约为 6 V 的正弦波驱动信号。 在 500Hz 附近连续微调（间隔 0.1Hz或更小） 输出频率， 直到使得音叉谐振（音叉振幅最大，光拍波数最多），调节时可用手轻轻地按音叉顶部感受振动强弱，或听振动声音，找出调节方向。若音叉谐振太强烈，可调小驱动信号幅度，使振动减弱，在示波器上看到的 T/2 内光拍的波数为 15 个左右（拍频波的幅度和质量与激光光斑、静动光栅平行度、光电传感器位置都有关系需耐心调节）。记录此时音叉振动频率、屏上完整波的个数、不足一个完整波形的首数和尾数值以及对应该处完整波形的振幅值。
+		\item 测出外力驱动音叉时的谐振曲线。 在音叉谐振点附近，调节驱动信号频率，测出音叉的振动频率与对应的音叉振幅大小，频率间隔可以取 0.1HZ,选 8 个点,分别测出对应的波的个数,由式(8),计算出各自的振幅 A。
+		\item 保持驱动信号输出幅度不变，将软管放入音叉上的小孔从而改变音叉的有效质量，调节驱动信号频率，研究谐振曲线的变化趋势。
 	\end{enumerate}
 
-	\subsubsection{实验二 测定未知光波波长及角色散率$D$}
+	由公式$ A =\frac{1}{2n_\theta} \int_0^{T/2} F_{拍}(t)  dt $可计算出音叉振动的位移振幅，其中实验用的动光栅有$n_\theta=100条/mm$
 
-		以汞灯为光源，按上面方法测出各级光谱的衍射角，计算出它们的波长。然后计算角色散率及不确定度。（实际实验中测量了蓝、绿、黄三色的谱线）
+
+	\textbf{得到的测量数据如下表所示：}
 		
-	\begin{table}[htbp]
-		\centering
-		\begin{tabular}{|c|c|c|c|c|c|c|c|}
-			\hline
-			& 主极亮位置 & +1级 & +2级 & +1级 & +2级 & +1级 & +2级 \\
-			\hline
-			左窗口 & 08°14′ & 00°45′ & 353°06′ & 358°51′ & 349°12′ & 358°16′ & 348°03′ \\
-			\hline
-			右窗口 & 188°15′ & 180°45′ & 173°08′ & 178°53′ & 169°13′ & 178°16′ & 168°04′ \\
-			\hline
-			& & -1级 & -2级 & -1级 & -2级 & -1级 & -2级 \\
-			\hline
-			左窗口 & & 15°46′ & 23°27′ & 17°44′ & 27°25′ & 18°14′ & 28°37′ \\
-			\hline
-			右窗口 & & 195°47′ & 203°27′ & 197°43′ & 207°25′ & 198°16′ & 208°38′ \\
-			\hline
-			\multicolumn{2}{|c}{} &\multicolumn{2}{|c|}{蓝色} & \multicolumn{2}{c|}{绿色} & \multicolumn{2}{c|}{黄色} \\
-			\hline
-		\end{tabular}
-		\caption{实验数据}
-		\label{tab:data2}
-	\end{table}
-	
-		
-		
-		\begin{figure}[H]
+
+		\begin{table}[htbp]
 			\centering
-			\includegraphics[width=9.41cm]{D:/大学各种资料/2023大二/2023大二上/基础物理实验I/5.光栅常数及光波波长的测量/SYSU-SPA-Labreport-Template-main/images/OriginalData5.jpg}
-			\caption{原始实验数据}
-		\end{figure}
-
+			\begin{minipage}{.5\linewidth}
+			  \centering
+			%   \caption{数据：直流稳压电源的伏安特性}
+			  	\begin{tblr}{
+					cells = {c},
+					vlines,
+					hline{1-2,10} = {-}{},
+					}
+					f/Hz   & T/2内的波数 & 振动幅度/mm \\
+					503.68 & 1.75    & 0.00875 \\
+					503.78 & 3.75    & 0.01875 \\
+					503.88 & 5.75    & 0.02875 \\
+					\textbf{503.98} & \textbf{14 }     &\textbf{ 0.07000} \\
+					504.08 & 6.25    & 0.03125 \\
+					504.18 & 3.5     & 0.01750 \\
+					504.28 & 2.5     & 0.01250 \\
+					504.38 & 2.25    & 0.01125 
+					\end{tblr}
+					\label{tab:tab1}	
+				\end{minipage}%
+			\begin{minipage}{.5\linewidth}
+			  \centering
+			%   \caption{数据：数控恒流源的伏安特性}
+			\begin{tblr}{
+				cells = {c},
+				vlines,
+				hline{1-2,10} = {-}{},
+				}
+				f/Hz   & T/2内的波数 & 振动幅度/mm  \\
+				502.48 & 1.875   & 0.009375 \\
+				502.58 & 2       & 0.010000 \\
+				502.68 & 3.125   & 0.015625 \\
+				502.78 & 5.875   & 0.029375 \\
+				\textbf{502.88} & \textbf{6.5 }    & \textbf{0.032500} \\
+				502.98 & 4       & 0.020000 \\
+				503.08 & 3.125   & 0.015625 \\
+				503.18 & 2.125   & 0.010625 
+			\end{tblr}
+			  \label{tab:tab2}
+			\end{minipage}
+			
+			
+		\end{table}
+		
 %\subsection{实验数据记录}
 
+	\begin{figure}[htbp]
+		\centering
+		\subfloat[加入软管前谐振点图像，$f=503.98Hz$，T/2波数为14]
+		{\includegraphics[width=0.45\textwidth]{graph2-1.jpg}\label{fig:graph2-1}}
+		\quad
+		\subfloat[加入软管后谐振点图像，$f=502.88Hz$，T/2波数为6.5]
+		{\includegraphics[width=0.45\textwidth]{graph2-2.jpg}\label{fig:graph2-2}}
+		\quad
+		% \caption{慧差实验结果图}
+		\label{fig:graph10}
+	\end{figure}
 
+\subsection{原始数据记录}
 
-%\subsection{原始数据记录}
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=9.2cm]{data.jpg}
+		\caption{实验原始数据记录}
+	\end{figure}
 
 
 
 \subsection{实验过程中遇到的问题记录}
 
 \begin{enumerate}
-	\item 	测量过程中，弯游标在转动过程中可能越过0刻度线，应当在计算时注意修正。
-	
-	\item 	在使用钠灯或汞灯观测黄色谱线时，理论上应存在两条，但由于分辨率问题，或二者在实际观测中距离较近，不易区分，则当作一条谱线，实际测量时，目镜中的垂直叉丝对准两谱线平均位置。
-	
-	\item 	在使用汞灯测量谱线时，理论上应存在紫色谱线（波长λ=404.7nm），但其强度较弱，实际观测中很难观测到，则略去，只测量蓝、绿、黄三色（即亮度最亮的三条）谱线。
-	
-	\item 	在目镜中观察时，有些谱线亮度较低，被环境光所影响导致难以观察，可以使用挡板遮挡部分环境光，使得观察更加容易。
-	
-	\item 	注意调节平行光管进光狭缝宽度至合适值，若其宽度过宽，则谱线宽度也会过宽，会降低谱线的分辨率和对比度；若其宽度过窄，会导致入射光强度减弱，使得谱线亮度不足，难以观察和测量。
+	\item 音叉和激振换能器的间距较难调整，间距过大的话会因为未与音叉接触而导致音叉不震动，过小的话会因为直接接触导致激振换能器本身无法振动。
+	\item 在调整光路时，一定要保证激光光路未被遮挡，并且使最亮的光斑进入传感器。
 	
 \end{enumerate}
 	
@@ -353,364 +367,122 @@
 	\hline
 	姓名： & 戴鹏辉 & 学号：& 22344016\\
 	\hline
-    日期：& 2024/xx/xx & 评分： &\\
+    日期：& 2024/4/16 & 评分： &\\
 	\hline
 	\end{tabularx}
 \end{table}
 
-\section{XXX \quad XXXXXXXXXX \quad\heiti 分析与讨论}
+\section{实验CC3 \quad 双光栅测量微弱振动位移量实验 \quad\heiti 分析与讨论}
 
 \subsection{实验数据分析}
 
-	\subsubsection{实验一 测量光栅常数}
-		由表1中的数据，可计算得到各级衍射条纹的衍射角，如下表所示
-		
-		\begin{center}
-			\begin{tabular}{|c|c|c|c|}
-				\hline
-				$\varphi_{+1}$ & $\varphi_{+2}$ & $\varphi_{-1}$ & $\varphi_{-2}$ \\
-				\hline
-				10°09′ & 20°37′ & 10°10′ & 20°47′ \\
-				\hline
-			\end{tabular}
-		\end{center}
+	\subsubsection{求出音叉谐振时光拍信号的平均频率}
 
-		
-		则可由正负级衍射角计算平均值，并根据光栅衍射公式$k\lambda=d\sin{\varphi}$，计算光栅常数，其中钠灯的谱线已知，取$\lambda=589.4nm$，则计算结果如下表所示
-		
-		\begin{center}
-			\begin{tabular}{|c|c|c|}
-				\hline
-				$\varphi_1$ & $\varphi_2$ &  \\
-				\hline
-				10°09′ & 20°42′ &  \\
-				\hline
-				$d_1$ & $d_2$ & $\overline{d}$ \\
-				\hline
-				$3.344\times{10}^{-6}m$ & $3.334\times{10}^{-6}m$ & $3.339\times{10}^{-6}m$ \\
-				\hline
-			\end{tabular}
-		\end{center}
+	音叉谐振时，即T/2时间内拍波数量最多时，为$f=503.98Hz$，T/2波数为14。
 
-		下面计算不确定度：
-		
-		\begin{enumerate}
-			\item  角度的重复测量引起的标准不确定度分量$u_1$,
-					\[ u_1=\sqrt{\sum{(\left|\frac{\partial d}{\partial\varphi_i}\right|\sigma_i)}^2}=4.55\times{10}^{-8}m \]
-					
-			\item  仪器的示值误差引起的标准不确定度分量$u_2$，由分光计游标最小分度值1’，按照均匀分布考虑
-					\[ u_2=\sqrt{\sum{(\left|\frac{\partial d}{\partial\varphi_i}\right|\sigma_i)}^2}=1.99\times{10}^{-7}m \]
-			
-			\item  合成不确定度
-					\[ u_c=\sqrt{\sum{(u_i)}^2}=2.04\times{10}^{-7}m \]
-			
-			\item 展伸不确定度\\
-					考虑正态分布，取置信概率为95\%，查表得包含因子$k=1.96$
-					
-					则最终测量结果表示为 $ d=\bar{d}\pm ku_c=(3.34\pm0.40)\times{10}^{-6}m$
-					
-					
-		\end{enumerate}
-		
-		分析误差来源
-			\begin{enumerate}
-				\item 可能是由于光栅本身的刻线不均匀，或者刻线与仪器转轴不平行，导致不同级次之间的测量数据计算所得结果之间有较大误差；这是仪器本身的系统误差，无法消除，只能通过更换质量更好的光栅来避免。
-				
-				\item 平行光管进光狭缝的宽度可能过宽，使得入射谱线的宽度也变宽，则会降低谱线的分辨率和对比度，使得测量衍射角时不准确，从而影响计算结果。
-			\end{enumerate}
-		
-		
-		\subsubsection{实验二 测定未知光波波长及角色散率D}
-			
-			根据表2数据，重复实验一中的处理操作，计算正负级衍射角，计算平均值，并根据光栅衍射公式$k\lambda=d\sin{\varphi}$，计算不同衍射谱线对应光波波长，式中光栅常数取实验一中的计算结果 $d=3.34\times{10}^{-6}m$ ,则计算结果如下表所示
-			
-			\begin{center}
-				\begin{tabular}{|c|c|c|c|}
-					\hline
-					\textbf{颜色} & \textbf{蓝色(b)} & \textbf{绿色(g)} & \textbf{黄色(y)} \\
-					\hline
-					$\varphi_{+1}$ & 07°29′ & 09°22′ & 09°58′ \\
-					$\varphi_{+2}$ & 15°07′ & 19°02′ & 20°11′ \\
-					$\varphi_{-1}$ & 07°32′ & 09°29′ & 10°00′ \\
-					$\varphi_{-2}$ & 15°12′ & 19°10′ & 20°23′ \\
-					\hline
-					&  &  &  \\
-					\hline
-					$\varphi_1$ & 07°30′ & 09°25′ & 09°59′ \\
-					$\varphi_2$ & 15°10′ & 19°06′ & 20°17′ \\
-					\hline
-					&  &  &  \\
-					\hline
-					$\lambda_1$ & 435.83nm & 546.30nm & 578.86nm \\
-					$\lambda_2$ & 436.79nm & 546.29nm & 578.75nm \\
-					$\overline{\lambda}$ & 436.31nm & 546.30nm & 578.80nm \\
-					\hline
-				\end{tabular}
-			\end{center}
-
-			下面计算不确定度：
-				
-			\begin{enumerate}
-					\item 	角度的重复测量引起的标准不确定度分量$u_1$,
-							\[ u_{b1}=\sqrt{\sum\left(\left|\frac{\partial\lambda}{\partial\varphi_i}\right|\sigma_i\right)^2}=0.402nm \]
-							\[ u_{g1}=\sqrt{\sum\left(\left|\frac{\partial\lambda}{\partial\varphi_i}\right|\sigma_i\right)^2}=1.14nm \]
-							\[ u_{y1}=\sqrt{\sum{(\left|\frac{\partial\lambda}{\partial\varphi_i}\right|\sigma_i)}^2}=1.36nm \]
-					
-					\item 仪器的示值误差引起的标准不确定度分量$u_2$，\\
-							由分光计游标最小分度值1’，按照均匀分布考虑
-							\[ u_{b2}=\sqrt{\sum{(\left|\frac{\partial\lambda}{\partial\varphi_i}\right|\sigma_i)}^2}=0.10nm \]
-							\[ u_{g2}=\sqrt{\sum\left(\left|\frac{\partial\lambda}{\partial\varphi_i}\right|\sigma_i\right)^2}=0.13nm \]
-							\[ u_{y2}=\sqrt{\sum{(\left|\frac{\partial\lambda}{\partial\varphi_i}\right|\sigma_i)}^2}=0.14nm \]
-					
-					\item 合成不确定度
-							\[ u_{cb}=\sqrt{\sum{(u_i)}^2}=0.41nm  \quad u_{cg}=\sqrt{\sum\left(u_i\right)^2}=1.15nm  \quad u_{cy}=\sqrt{\sum{(u_i)}^2}=1.36nm \]
-					
-					\item 展伸不确定度
-							考虑正态分布，取置信概率为95\%，查表得包含因子$k=1.96$ \\
-							则最终测量结果表示为
-							\[ \lambda_b=(436.31\pm0.41)nm  \quad \lambda_g=\left(546.30\pm1.15\right)nm \quad  \lambda_y=(578.80\pm1.36)nm \]
-					
-				\end{enumerate}
-		
-			将各谱线波长计算值与标准值比较（预习报告中所查得的数据），计算各谱线波长的相对误差(计算黄光谱线相对误差时，参考值取两条黄色谱线的平均波长)，得到
-			\[ \eta_b=\left|\frac{435.8-436.31}{435.8}\right|\times100\%=0.117\% \]
-			\[ \eta_g=\left|\frac{546.1-546.30}{546.1}\right|\times100\%=0.037\% \]
-			\[ \eta_y=\left|\frac{578.05-578.80}{578.05}\right|\times100\%=0.130\% \]
-			
-			下面计算角色散率，根据角色散率公式$D=\frac{d\theta}{d\lambda}=\frac{k}{d\cos{\theta}}$，由上表数据计算得
-			
-				\begin{center}
-					\begin{tabular}{|c|c|c|c|}
-						\hline
-						\textbf{颜色} & \textbf{蓝色} & \textbf{绿色} & \textbf{黄色} \\
-						\hline
-						D1 & $2.98\times 10^{5} m^{-1}$ & $2.99\times 10^{5} m^{-1}$ & $3.00\times 10^{5} m^{-1}$ \\
-						D2 & $6.11\times 10^{5} m^{-1}$ & $6.24\times 10^{5} m^{-1}$ & $6.29\times 10^{5} m^{-1}$ \\
-						\hline
-					\end{tabular}
-				\end{center}
-
-
-			
-			下面计算角色散率的不确定度，重复上面的操作，最终包含不确定度结果如下表所示
-			
-			\begin{center}
-				\begin{tabular}{|c|c|c|c|}
-					\hline
-					\textbf{颜色} & \textbf{蓝色} & \textbf{绿色} & \textbf{黄色} \\
-					\hline
-					D1 & $2.98 \pm 0.002 \times 10^{5} m^{-1}$ & $2.99 \pm 0.03 \times 10^{5} m^{-1}$ & $3.00 \pm 0.01 \times 10^{5} m^{-1}$ \\
-					D2 & $6.11 \pm 0.07 \times 10^{5} m^{-1}$ & $6.24 \pm 0.004 \times 10^{5} m^{-1}$ & $6.29 \pm 0.10 \times 10^{5} m^{-1}$ \\
-					\hline
-				\end{tabular}
-			\end{center}
-			
-			分析误差来源：
-			
-			\begin{enumerate}
-				\item 			观察数据可发现，在测量2级谱线时，正负级衍射角的差偏大，个别数据甚至超过了10’（由于超过10’的数据是最后一组测量数据，故没有及时发现），说明光栅并未完全与平行光管光轴垂直，存在一个小角度偏差，引入了一定的系统误差。
-				\item 			平行光管进光狭缝的宽度可能过宽，使得入射谱线的宽度也变宽，则会降低谱线的分辨率和对比度，使得测量衍射角时不准确，从而影响计算结果。
-			\end{enumerate}
-			
-			
-\subsection{实验后思考题}
+	则由此可计算出出光拍信号的平均频率为：
+	\[
+		\bar{F}=2\times14\times f=14111.44Hz
+	\]
 
 
 
-\begin{question}
-	检索文献，列举三种测量光波波长的方法，给出参考文献列表。%\lipsum[20]
-\end{question}
+
+
+	\subsubsection{求出音叉在谐振点时作微弱振动的位移振幅。}
+
+
+	由公式$ A =\frac{1}{2n_\theta} \int_0^{T/2} F_{拍}(t)  dt $可计算出音叉振动的位移振幅，其中实验用的动光栅有$n_\theta=100条/mm$
+
+	则在谐振点时，微振动振幅为：
+	\[
+		A_max=\frac{14}{2\times100}mm=0.07mm	
+	\]
+
+
+
+
+	\subsubsection{画出音叉的频率—振幅曲线；分析讨论其特点。}
+
+
+	% 在该实验的条件下，可认为音叉做受迫振动，运动方程为：
+	% \[
+	% \frac{d^2x}{dt^2}+2\beta\frac{dx}{dt}+\omega_0^2x=\frac{F}{m}\cos(\omega t)	
+	% \]
+
+	% 可解得稳态解的振幅为：
+	% \[
+	% A=\frac{F}{m\sqrt{(\omega_0^2-\omega^2)^2+4\beta^2\omega^2}}	
+	% \]
+
+	% 则以该公式为基础，做出数据点的拟合图像，如\cref{fig:graph3-1a}所示：
+
+
+
+	做出频幅响应曲线如\cref{fig:graph3-2a}所示：
+
+
+	\begin{figure}[htbp]
+		\centering
+		\subfloat[放置软管前]
+		{\includegraphics[width=0.45\textwidth]{graph3-2a.png}\label{fig:graph3-2a}}
+		\quad
+		\subfloat[放置软管后]
+		{\includegraphics[width=0.45\textwidth]{graph3-2b.png}\label{fig:graph3-2b}}
+		\quad
+		% \caption{慧差实验结果图}
+		\label{fig:graph10}
+	\end{figure}
+
+	% 由拟合数据可知，谐振点频率计算值为$\omega_0=503.985Hz$，与实验值$$
+
+
+	由图像可知，幅度相应在谐振点附近最大，稍微偏离谐振点后便迅速降低。
+
+
+
+
+
+	\subsubsection{作出音叉不同有效质量时的谐振曲线，分析讨论其变化趋势。}
+		
+
+	\begin{figure}[htbp]
+		\centering
+		\subfloat[放置软管前]
+		{\includegraphics[width=0.45\textwidth]{graph3-3.png}\label{fig:graph3-3}}
+		\quad
+
+		% \caption{慧差实验结果图}
+		% \label{fig:graph10}
+	\end{figure}
+
+
+	% \begin{figure}[htbp]
+	% 	\centering
+	% 	\includegraphics[width=0.6\textwidth]{graph3-3.png}
+	% 	\caption{不同有效质量时的谐振曲线}
+	% 	\label{fig:graph3-3}
+	% \end{figure}	
+
+	由\cref{fig:graph3-3}可知，在增加软管后，音叉的等效质量增加，导致谐振频率左移，同时谐振点振幅明显减小。
+
+	由公式$A=\frac{F}{m\sqrt{(\omega_0^2-\omega^2)^2+4\beta^2\omega^2}}$可知，有效质量$m$增大，振幅$A$减小，与实验数据相符。			
+			
+			
+			
+% \subsection{实验后思考题}
+
+% \begin{question}
+% 	检索文献，列举三种测量光波波长的方法，给出参考文献列表。%\lipsum[20]
+% \end{question}
 	
-	通过查阅资料，我找到了以下几种可以测量光波波长的方法：
-	
-\begin{enumerate}
-	
-	\item 	双棱镜干涉法，它利用双棱镜将单色光分成两束相干光，然后在屏幕上形成干涉条纹。通过测量条纹间距和双棱镜的夹角，可以计算出光波的波长。[1][2]
-	\item 	傅里叶红外光谱仪法，它利用傅里叶变换将单色光的干涉信号转换为频率域的信号，然后通过测量信号的频率，可以计算出光波的波长。[3][4]
-	\item 	激光多普勒干涉法，该方法利用激光束与一个高速旋转的多面棱镜发生多普勒效应，产生频率变化的干涉信号。通过测量干涉信号的频率差，即可求得激光波长。[5]
-\end{enumerate}
-	
-参考文献列表：
-
-%[1]	薛任翔. 光波波长测定方法研究[J]. 现代商贸工业, 2019, 10: 84-85. \\
-%[2]	尹真, 邹淑娟, 陈娟, 权慧. 双棱镜干涉实验的深入研究[J]. 科技广场, 2014, 1: 29-34. \\
-%[3]	李春明, 刘承师, 张俊峰. 测量激光波长的方法研究[J]. 激光与红外, 2007, 37(12): 1408-1410. \\
-%[4]	任海萍, 王建字, 李佳戈, 等. 一种使用傅里叶红外光谱仪进行波长测量的新方法[J]. 中国药事, 2010, 24(8): 807-809. \\
-%[5]	伍洲, 张文喜, 相里斌, 李杨, 孔新新. 基于多光束混合外差干涉的相位增强技术研究[J]. 物理学报, 2018, 67(2): 020601.
+\subsection{实验后实验桌整理}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=9.41cm]{D:/大学各种资料/2023大二/2023大二上/基础物理实验I/5.光栅常数及光波波长的测量/SYSU-SPA-Labreport-Template-main/images/table.jpg}
-	\caption{原始实验数据}
+	\includegraphics[width=9.41cm]{table.jpg}
+	\caption{整理后实验桌}
 \end{figure}
 	
-\clearpage
-% ---------------------------------------------------------------------
-%   参考文献
-%   注：使用参考文献时应按照xelatex->bibtex->xelatex->xelatex顺序进行编译
-\phantomsection
-\addcontentsline{toc}{section}{参考文献}
-\bibliographystyle{unsrt}
-\bibliography{myref}
 
-\clearpage
-\appendix
-\appendixpage
-\addappheadtotoc
-\subsection{代码记录}
-\begin{lstlisting}[style=pythonstyle,caption=代码记录示例]
-	import matplotlib.pyplot as plt
-	import numpy as np
-	
-	# Data for plotting
-	t = np.arange(0.0, 2.0, 0.01)
-	s = 1 + np.sin(2 * np.pi * t)
-	
-	fig, ax = plt.subplots()
-	ax.plot(t, s)
-	
-	ax.set(xlabel='time (s)', ylabel='voltage (mV)',
-		   title='About as simple as it gets, folks')
-	ax.grid()
-	
-	fig.savefig("test.png")
-	plt.show()
-\end{lstlisting}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width = 0.6\textwidth]{example1.png}
-    \caption{Test Figure}
-\end{figure}
-
-\clearpage
-\subsection{常用命令展示}
-这部分将展示其他常用命令。
-
-\begin{tbox}{颜色设置}
-\begin{itemize}
-	\item  \textcolor{Red}{赤}\textcolor{Orange}{橙}\textcolor{Yellow}{黄}\textcolor{Green}{绿}\textcolor{Emerald}{青}\textcolor{Blue}{蓝}\textcolor{Purple}{紫}
-	\item  谁持彩练当空舞
-\end{itemize}
-\end{tbox}
-
-\begin{tbox}{字号设置}
-\begin{enumerate}
-	\item {\LARGE 江晚正愁余}
-	\item {\Large 江晚正愁余}
-	\item {\large 江晚正愁余}
-	\item {\normalsize 江晚正愁余}
-	\item {\small 江晚正愁余}
-	\item {\footnotesize 江晚正愁余}
-	\item {\scriptsize 江晚正愁余}
-\end{enumerate}
-\end{tbox}
-
-\begin{tbox}{字体设置（中文）}
-\begin{enumerate}
-	\item 宋体：{\songti 山有扶苏，隰有荷华}
-	\item 仿宋：{\fangsong 山有扶苏，隰有荷华}
-	\item 黑体：{\heiti 山有扶苏，隰有荷华}
-	\item 楷书：{\kaishu 山有扶苏，隰有荷华}
-\end{enumerate}
-\end{tbox}
-
-\begin{tbox}{Set font(English)}
-\begin{enumerate}
-	\item roman:\quad{\rmfamily Hello world!}
-	\item sans-serif:\quad{\sffamily Hello world!}
-	\item typewriter:\quad{\ttfamily Hello world!}
-\end{enumerate}
-\end{tbox}
-
-\begin{tbox}{公式}
-	无编号公式
-    \begin{equation*}
-        J(\theta) = \mathbb{E}_{\pi_\theta}[G_t] = \sum_{s\in\mathcal{S}} d^\pi (s)V^\pi(s)=\sum_{s\in\mathcal{S}} d^\pi(s)\sum_{a\in\mathcal{A}}\pi_\theta(a|s)Q^\pi(s,a)
-    \end{equation*}
-$$ J(\theta) = \mathbb{E}_{\pi_\theta}[G_t] = \sum_{s\in\mathcal{S}} d^\pi (s)V^\pi(s)=\sum_{s\in\mathcal{S}} d^\pi(s)\sum_{a\in\mathcal{A}}\pi_\theta(a|s)Q^\pi(s,a) $$
-    有编号公式
-    \begin{equation}
-        J(\theta) = \mathbb{E}_{\pi_\theta}[G_t] = \sum_{s\in\mathcal{S}} d^\pi (s)V^\pi(s)=\sum_{s\in\mathcal{S}} d^\pi(s)\sum_{a\in\mathcal{A}}\pi_\theta(a|s)Q^\pi(s,a)
-    \end{equation}
-    \begin{equation}
-        J(\theta) = \mathbb{E}_{\pi_\theta}[G_t] = \sum_{s\in\mathcal{S}} d^\pi (s)V^\pi(s)=\sum_{s\in\mathcal{S}} d^\pi(s)\sum_{a\in\mathcal{A}}\pi_\theta(a|s)Q^\pi(s,a)
-    \end{equation}
-	波尔文积分
-    \[
-    \begin{cases}
-        \vspace{0.2cm}
-        \displaystyle{\int_{0}^{\infty} \frac{\sin(x)}{x}\,dx = \frac{\pi}{2}}\\
-        \vspace{0.2cm}
-        \displaystyle{\int_{0}^{\infty} \frac{\sin(x)}{x} \frac{\sin(x/3)}{x/3}\,dx = \frac{\pi}{2}} \\
-        \vspace{0.2cm}\cdot\cdot\cdot\\
-        \vspace{0.2cm}
-        \displaystyle{\int_{0}^{\infty} \frac{\sin(x)}{x} \frac{\sin(x/3)}{x/3} \cdot\cdot\cdot \frac{\sin(x/13)}{x/13}\,dx = \frac{\pi}{2}}\\
-        \displaystyle{\int_{0}^{\infty} \frac{\sin(x)}{x} \frac{\sin(x/3)}{x/3} \cdot\cdot\cdot \frac{\sin(x/15)}{x/15}\,dx = \frac{467807924713440738696537864469}{935615849440640907310521750000}\pi}
-    \end{cases}  
-    \]
-	多行对齐公式
-\begin{align*}
-    \frac{\partial}{\partial \theta_k}J(\theta) 
-        &= \frac{\partial}{\partial \theta_k}\Bigg[\frac{1}{m}\sum_{k=1}^m log(1+e^{-y^{(i)}\theta^Tx^{(i)}})\Bigg] \\
-        &= \frac{1}{m}\sum_{k=1}^m \frac{1}{1+e^{-y^{(i)}\theta^Tx^{(i)}}}y^{(i)}x_k^{(i)} \\
-        &= -\frac{1}{m}\sum_{k=1}^m h_\theta(-y^{(i)}x^{(i)})y^{(i)}x_k^{(i)}        
-\end{align*}
-\end{tbox}
-
-\begin{tbox}{引用}
-	对公式的引用，如\cref{equ:test}
-	\begin{equation}
-        J(\theta) = \mathbb{E}_{\pi_\theta}[G_t] = \sum_{s\in\mathcal{S}} d^\pi (s)V^\pi(s)=\sum_{s\in\mathcal{S}} d^\pi(s)\sum_{a\in\mathcal{A}}\pi_\theta(a|s)Q^\pi(s,a)
-		\label{equ:test}
-    \end{equation}
-	对图像的引用，如\cref{fig:test}
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=0.3\textwidth]{example.png}
-		\caption{测试图片}
-		\label{fig:test}
-	\end{figure}
-	对表格的引用，如\cref{tab:test}
-	\begin{table}[H]
-		\renewcommand\arraystretch{1.5}
-		\caption{一个空表格}
-		\begin{tabularx}{\textwidth}{|p{0.15\textwidth}|X|X|X|X|}
-		\hline
-		 &  &  &  &  \\    
-		\hline
-		 &  &  & &  \\    
-		\hline
-		\end{tabularx}
-		\label{tab:test}
-	\end{table}
-\end{tbox}
-
-\begin{tbox}{表格}
-	tabular可以自己更改宽度
-	\begin{table}[H]
-		\renewcommand\arraystretch{1.7}
-		\centering
-		\caption{一个空表格}
-		\begin{tabular}{|p{0.15\textwidth}|p{0.15\textwidth}|p{0.15\textwidth}|p{0.15\textwidth}|}
-		\hline
-		&   &  &  \\
-		\hline
-		 &   &  &  \\
-		\hline    
-		\end{tabular}
-	\end{table}
-	tabularx可以自适应宽度
-	\begin{table}[H]
-		\renewcommand\arraystretch{1.7}
-		\centering
-		\caption{一个空表格}
-		\begin{tabularx}{\textwidth}{|p{0.2\textwidth}|X|X|X|X|X|X|}
-			\hline
-			& &  &  &  &  &  \\
-			\hline
-			 & &  &  &  &  &  \\
-			\hline
-		\end{tabularx}
-	\end{table}
-\end{tbox}
 \end{document}
