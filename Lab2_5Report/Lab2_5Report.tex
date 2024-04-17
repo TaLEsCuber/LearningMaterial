@@ -251,7 +251,7 @@
 	\begin{figure}[htbp]
 		\centering
 		% \subfloat[放置软管前]
-		{\includegraphics[width=0.45\textwidth]{graph2-0.png}\label{fig:graph2-0}}
+		{\includegraphics[width=0.6\textwidth]{graph2-0.png}\label{fig:graph2-0}}
 		\quad
 
 		\caption{双光栅实验平台}
@@ -261,15 +261,15 @@
 
 
 	\begin{enumerate}
-		\item 熟悉双踪示波器的使用方法。
-		\item 熟悉固纬信号发生器的使用方法。（使用前看仪器说明书）
+		% \item 熟悉双踪示波器的使用方法。
+		% \item 熟悉固纬信号发生器的使用方法。（使用前看仪器说明书）
 		\item 将固纬信号发生器的 CH1 通道连接至光学实验平台音叉驱动器（动光栅）， 输出频率约为 500 Hz、 $V_{pp} $约为 6 V 的正弦波驱动信号。
 		\item 将光学实验平台光电传感器输出信号连接至示波器的 CH1 通道。因为光电传感器输出信号功率较低，示波器 CH1 探头选择放大约 500 倍。
 		\item 将固纬信号发生器同步信号输出（后面板 SYNC）连接至示波器 CH2 作为触发源。
-		\item 检查上述 3、 4、 5 步骤，注意不要接错。
+		% \item 检查上述 3、 4、 5 步骤，注意不要接错。
 		\item 几何光路调整。 光学实验平台上的“激光器”接测试仪“半导体激光电源”，将激光器、静光栅、动光栅摆在一条直线上。打开半导体激光电源，让激光穿越静、动光栅后形成一竖排衍射光斑，使中间最亮光斑进入光电传感器里面，调节静光栅和动光栅的相对位置，使两光栅尽可能平行。
-		\item 音叉谐振调节。先调整好实验平台上音叉和激振换能器的间距，一般 0.3mm 为宜，可使用塞尺辅助调节。将固纬信号发生器的 CH1 通道连接至光学实验平台音叉驱动器（动光栅），输出频率约为 500 Hz、 $V_{pp} $ 约为 6 V 的正弦波驱动信号。 在 500Hz 附近连续微调（间隔 0.1Hz或更小） 输出频率， 直到使得音叉谐振（音叉振幅最大，光拍波数最多），调节时可用手轻轻地按音叉顶部感受振动强弱，或听振动声音，找出调节方向。若音叉谐振太强烈，可调小驱动信号幅度，使振动减弱，在示波器上看到的 T/2 内光拍的波数为 15 个左右（拍频波的幅度和质量与激光光斑、静动光栅平行度、光电传感器位置都有关系需耐心调节）。记录此时音叉振动频率、屏上完整波的个数、不足一个完整波形的首数和尾数值以及对应该处完整波形的振幅值。
-		\item 测出外力驱动音叉时的谐振曲线。 在音叉谐振点附近，调节驱动信号频率，测出音叉的振动频率与对应的音叉振幅大小，频率间隔可以取 0.1HZ,选 8 个点,分别测出对应的波的个数,由式(8),计算出各自的振幅 A。
+		\item 音叉谐振调节。先调整好实验平台上音叉和激振换能器的间距，一般 0.3mm 为宜，可使用塞尺辅助调节。将固纬信号发生器的 CH1 通道连接至光学实验平台音叉驱动器（动光栅），输出频率约为 500 Hz、 $V_{pp} $ 约为 6 V 的正弦波驱动信号。 在 500Hz 附近连续微调（间隔 0.1Hz或更小） 输出频率， 直到使得音叉谐振（音叉振幅最大，光拍波数最多），调节时可用手轻轻地按音叉顶部感受振动强弱，或听振动声音，找出调节方向。若音叉谐振太强烈，可调小驱动信号幅度，使振动减弱，在示波器上看到的 T/2 内光拍的波数为 15 个左右。记录此时音叉振动频率、屏上完整波的个数、不足一个完整波形的首数和尾数值以及对应该处完整波形的振幅值。
+		\item 测出外力驱动音叉时的谐振曲线。 在音叉谐振点附近，调节驱动信号频率，测出音叉的振动频率与对应的音叉振幅大小，频率间隔可以取 0.1HZ,选 8 个点,分别测出对应的波的个数,计算出各自的振幅 A。
 		\item 保持驱动信号输出幅度不变，将软管放入音叉上的小孔从而改变音叉的有效质量，调节驱动信号频率，研究谐振曲线的变化趋势。
 	\end{enumerate}
 
@@ -396,7 +396,7 @@
 
 	则在谐振点时，微振动振幅为：
 	\[
-		A_max=\frac{14}{2\times100}mm=0.07mm	
+		A_{max}=\frac{14}{2\times100}mm=0.07mm	
 	\]
 
 
@@ -404,18 +404,6 @@
 
 	\subsubsection{画出音叉的频率—振幅曲线；分析讨论其特点。}
 
-
-	% 在该实验的条件下，可认为音叉做受迫振动，运动方程为：
-	% \[
-	% \frac{d^2x}{dt^2}+2\beta\frac{dx}{dt}+\omega_0^2x=\frac{F}{m}\cos(\omega t)	
-	% \]
-
-	% 可解得稳态解的振幅为：
-	% \[
-	% A=\frac{F}{m\sqrt{(\omega_0^2-\omega^2)^2+4\beta^2\omega^2}}	
-	% \]
-
-	% 则以该公式为基础，做出数据点的拟合图像，如\cref{fig:graph3-1a}所示：
 
 
 
@@ -430,15 +418,54 @@
 		\subfloat[放置软管后]
 		{\includegraphics[width=0.45\textwidth]{graph3-2b.png}\label{fig:graph3-2b}}
 		\quad
-		% \caption{慧差实验结果图}
+		\caption{频幅响应数据连线图}
 		\label{fig:graph10}
 	\end{figure}
 
 	% 由拟合数据可知，谐振点频率计算值为$\omega_0=503.985Hz$，与实验值$$
 
 
-	由图像可知，幅度相应在谐振点附近最大，稍微偏离谐振点后便迅速降低。
+	由图像可知，幅度相应在谐振点附近最大，稍微偏离谐振点后便迅速降低并趋于0。
 
+
+
+	在该实验的条件下，可认为音叉做受迫振动，运动方程为：
+	\[
+	\frac{d^2x}{dt^2}+2\beta\frac{dx}{dt}+\omega_0^2x=\frac{F}{m}\cos(\omega t)	
+	\]
+
+	可解得稳态解的振幅为：
+	\[
+	A=\frac{F}{m\sqrt{(\omega_0^2-\omega^2)^2+4\beta^2\omega^2}}	
+	\]
+
+	则以该公式为基础，做出数据点的拟合图像，如\cref{fig:graph3-3a}所示：
+
+	由拟合数据可知，放置软管前的音叉谐振频率为$f_0=\frac{\omega_0}{2\pi}=503.985Hz$，与实验值$f=503.98Hz$接近，相对误差$\eta=\frac{f_0-f}{f_0}=0.001\%$。
+
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=0.8\textwidth]{graph3-3a.png}\label{fig:graph3-3a}
+		\caption{放置软管前实验拟合图像}
+	\end{figure}
+		
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=0.8\textwidth]{graph3-3b.png}\label{fig:graph3-3b}
+		\caption{放置软管后实验拟合图像}
+	\end{figure}
+
+	% \begin{figure}[htbp]
+	% 	\centering
+	% 	\subfloat[放置软管前]
+	% 	{\includegraphics[width=0.9\textwidth]{graph3-3a.png}\label{fig:graph3-3a}}
+	% 	\quad
+	% 	\subfloat[放置软管后]
+	% 	{\includegraphics[width=0.9\textwidth]{graph3-3b.png}\label{fig:graph3-3b}}
+	% 	\quad
+	% 	% \caption{慧差实验结果图}
+	% 	\label{fig:graph3-3ab}
+	% \end{figure}
 
 
 
@@ -446,15 +473,16 @@
 	\subsubsection{作出音叉不同有效质量时的谐振曲线，分析讨论其变化趋势。}
 		
 
-	\begin{figure}[htbp]
-		\centering
-		\subfloat[放置软管前]
-		{\includegraphics[width=0.45\textwidth]{graph3-3.png}\label{fig:graph3-3}}
-		\quad
+	% \begin{figure}[htbp]
+	% 	\centering
+	% 	% \subfloat[放置软管前]
+	% 	{\includegraphics[width=0.45\textwidth]{graph3-3.png}\label{fig:graph3-3}}
+	% 	\quad
 
-		% \caption{慧差实验结果图}
-		% \label{fig:graph10}
-	\end{figure}
+	% 	\caption{不同有效质量对比图}
+	% 	% \label{fig:graph10}
+	% \end{figure}
+	
 
 
 	% \begin{figure}[htbp]
@@ -464,10 +492,24 @@
 	% 	\label{fig:graph3-3}
 	% \end{figure}	
 
+
+	\begin{wrapfigure}{r}{0.5\textwidth}
+		\centering
+		\includegraphics[width=0.37\textwidth]{graph3-3.png}
+		\label{fig:graph3-3}
+		\caption{不同有效质量对比图}
+	  \end{wrapfigure}
+
 	由\cref{fig:graph3-3}可知，在增加软管后，音叉的等效质量增加，导致谐振频率左移，同时谐振点振幅明显减小。
 
-	由公式$A=\frac{F}{m\sqrt{(\omega_0^2-\omega^2)^2+4\beta^2\omega^2}}$可知，有效质量$m$增大，振幅$A$减小，与实验数据相符。			
+	% 由公式$A=\frac{F}{m\sqrt{(\omega_0^2-\omega^2)^2+4\beta^2\omega^2}}$可知，有效质量$m$增大，振幅$A$减小，与实验数据相符。			
 			
+	同样将得到的数据做拟合，结果如\cref{fig:graph3-3b}所示。
+
+	
+
+
+	对比两组拟合数据可发现，增加软管后，音叉的有效质量增加，导致振幅减小，且阻尼系数$\beta$增大，导致谐振频率增大。
 			
 			
 % \subsection{实验后思考题}
@@ -478,10 +520,14 @@
 	
 \subsection{实验后实验桌整理}
 
-\begin{figure}[H]
+如\cref{fig:table}所示。
+
+\begin{figure}[htbp]
 	\centering
 	\includegraphics[width=9.41cm]{table.jpg}
+	
 	\caption{整理后实验桌}
+	\label{fig:table}
 \end{figure}
 	
 

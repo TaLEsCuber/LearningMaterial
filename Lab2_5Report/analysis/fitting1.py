@@ -30,7 +30,7 @@ x_plot = np.linspace(503.5, 504.5, num=1000)
 # 绘制拟合结果
 plt.figure()
 plt.scatter(x_data, y_data, label='$DataPoint$')
-plt.plot(x_plot, func(x_plot, *popt), 'r-', label='$Fitting$: $\\frac{F}{m}$=%5.3f, $w_0$=%5.3f$Hz$, $\\beta$=%5.3f' % tuple(popt))
+plt.plot(x_plot, func(x_plot, *popt), 'r-', label='$Fitting$: $\\frac{F}{2\\pi m}$=%5.3f, $\\frac{w_0}{2\\pi}$=%5.3f$Hz$, $\\frac{\\beta}{2\\pi}$=%5.3f' % tuple(popt))
 
 plt.xlabel('$f/Hz$', fontsize=16)
 plt.ylabel('$A/mm$', fontsize=16)

@@ -58,7 +58,7 @@ y_data = np.array(df['振动幅度/mm'])
 
 # 定义要拟合的函数模型
 def func(w, F_m, w0, beta):
-    return F_m/(np.sqrt((w0**2-(2*np.pi*w)**2)**2+4*beta**2*(2*np.pi*w)**2))
+    return F_m/(np.sqrt((w0**2-(w)**2)**2+4*beta**2*(w)**2))
 
 # 使用curve_fit进行拟合
 popt, pcov = curve_fit(func, x_data, y_data)
@@ -74,7 +74,7 @@ plt.figure(figsize=(8.27, 11.69), dpi=150)  # A4纸大小，分辨率300dpi
 
 # 绘制拟合结果
 plt.scatter(x_data, y_data, label='$DataPoint$', s=10)  # 设置散点大小为10
-plt.plot(x_plot, func(x_plot, *popt), 'r-', label='$Fitting$: $\\frac{F}{m}$=%5.3f, $w_0$=%5.3f$Hz$, $\\beta$=%5.3f' % tuple(popt), linewidth=2)  # 设置线条粗细为2
+plt.plot(x_plot, func(x_plot, *popt), 'r-', label='$Fitting$: $\\frac{F}{2\\pi m}$=%5.3f, $\\frac{w_0}{2\\pi}$=%5.3f$Hz$, $\\frac{\\beta}{2\\pi}$=%5.3f' % tuple(popt), linewidth=2)  # 设置线条粗细为2
 
 plt.xlabel('$f/Hz$', fontsize=16)
 plt.ylabel('$A/mm$', fontsize=16)

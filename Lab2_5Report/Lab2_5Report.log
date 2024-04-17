@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.8)  17 APR 2024 08:05
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.8)  18 APR 2024 01:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1319,14 +1319,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [8]
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[9]
-
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
 (hyperref)                replaced by space on input line 375.
@@ -1346,8 +1338,6 @@ File: ./images//graph3-2a.png Graphic file (type bmp)
 <./images//graph3-2a.png>
 File: ./images//graph3-2b.png Graphic file (type bmp)
 <./images//graph3-2b.png>
-File: ./images//graph3-3.png Graphic file (type bmp)
-<./images//graph3-3.png>
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1355,12 +1345,30 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[10
+[9
 
 ]
+File: ./images//graph3-3a.png Graphic file (type bmp)
+<./images//graph3-3a.png>
+File: ./images//graph3-3b.png Graphic file (type bmp)
+<./images//graph3-3b.png>
+File: ./images//graph3-3.png Graphic file (type bmp)
+<./images//graph3-3.png>
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[10]
+Overfull \hbox (4.71777pt too wide) in paragraph at lines 507--508
+[]\TU/SimSun(0)/m/n/10.95 同 样 将 得 到 的 数 据 做 拟 合，|  结 果 如 \TU/lmr/m/n/10.95 section [][]3.1.3[][]\TU/SimSun(0)/m/n/10.95 所
+ []
+
 File: ./images//table.jpg Graphic file (type bmp)
 <./images//table.jpg>
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1375,22 +1383,16 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package rerunfilecheck Warning: File `Lab2_5Report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Lab2_5Report.out':
-(rerunfilecheck)             Before: 94603B974B8703E3CF037D99670F5FE8;2980
-(rerunfilecheck)             After:  F25EA58E489762F6ADEF0A974FC1CF73;3102.
+Package rerunfilecheck Info: File `Lab2_5Report.out' has not changed.
+(rerunfilecheck)             Checksum: F25EA58E489762F6ADEF0A974FC1CF73;3102.
  ) 
 Here is how much of TeX's memory you used:
- 39874 strings out of 476683
- 876362 string characters out of 5807576
- 1898012 words of memory out of 5000000
- 59496 multiletter control sequences out of 15000+600000
+ 39890 strings out of 476683
+ 876357 string characters out of 5807576
+ 1895012 words of memory out of 5000000
+ 59510 multiletter control sequences out of 15000+600000
  524113 words of font info for 103 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 105i,12n,107p,453b,964s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 105i,12n,107p,448b,964s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on Lab2_5Report.pdf (11 pages).
