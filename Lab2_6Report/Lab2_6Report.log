@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.8)  24 APR 2024 12:13
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.8)  24 APR 2024 13:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1438,26 +1438,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 553.
+(hyperref)                replaced by space on input line 554.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 553.
+(hyperref)                replaced by space on input line 554.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\heiti' on input line 553.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 557.
+(hyperref)                removing `\heiti' on input line 554.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 575.
+(hyperref)                replaced by space on input line 558.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 10.95pt
+(hyperref)                replaced by space on input line 578.
 
 File: ./images//graph3-2-1.png Graphic file (type bmp)
 <./images//graph3-2-1.png>
@@ -1466,39 +1466,20 @@ File: ./images//graph3-2-2.png Graphic file (type bmp)
 File: ./images//graph3-2-3.png Graphic file (type bmp)
 <./images//graph3-2-3.png>
 
+LaTeX Warning: Float too large for page by 31.04773pt on input line 598.
+
+
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 601.
+(hyperref)                replaced by space on input line 605.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 609--610
+
+ []
 
 File: ./images//graph3-3-1.jpg Graphic file (type bmp)
 <./images//graph3-3-1.jpg>
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 620.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 629.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 629.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\lambda' on input line 629.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 629.
-
-
-Overfull \hbox (22.9325pt too wide) in paragraph at lines 632--634
-\TU/SimSun(0)/m/n/10.95 在 $\OML/cmm/m/it/10.95 P[]; P[]$ \TU/SimSun(0)/m/n/10.95 之 间 插 入 $\OML/cmm/m/it/10.95 ^^U\OT1/cmr/m/n/10.95 /2$ \TU/SimSun(0)/m/n/10.95 波 片，|  保 持 两 个 偏 振 片 角 度 不 变，|  旋 转 $\OML/cmm/m/it/10.95 ^^U\OT1/cmr/m/n/10.95 /2$ \TU/SimSun(0)/m/n/10.95 波 片，|  可 以 在 $\OML/cmm/m/it/10.95 ^^R[] \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 ang[]; \OT1/cmr/m/n/10.95 174[]\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 263[]\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 354[]$
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1520,6 +1501,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
+(hyperref)                replaced by space on input line 631.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 10.95pt
 (hyperref)                replaced by space on input line 644.
 
 
@@ -1535,44 +1521,59 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 644.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 647--648
-
- []
-
-
-Overfull \hbox (22.9325pt too wide) in paragraph at lines 649--650
-[]\TU/SimSun(0)/m/n/10.95 在 $\OML/cmm/m/it/10.95 P[]; P[]$ \TU/SimSun(0)/m/n/10.95 之 间 插 入 $\OML/cmm/m/it/10.95 ^^U\OT1/cmr/m/n/10.95 /4$ \TU/SimSun(0)/m/n/10.95 波 片，|  保 持 两 个 偏 振 片 角 度 不 变，|  旋 转 $\OML/cmm/m/it/10.95 ^^U\OT1/cmr/m/n/10.95 /4$ \TU/SimSun(0)/m/n/10.95 波 片，|  可 以 在 $\OML/cmm/m/it/10.95 ^^R[] \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 ang[]; \OT1/cmr/m/n/10.95 270[]\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 180[]\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 90[]$
+Overfull \hbox (9.70627pt too wide) in paragraph at lines 647--649
+\TU/SimSun(0)/m/n/10.95 在 $\OML/cmm/m/it/10.95 P[]; P[]$ \TU/SimSun(0)/m/n/10.95 之 间 插 入 $\OML/cmm/m/it/10.95 ^^U\OT1/cmr/m/n/10.95 /2$ \TU/SimSun(0)/m/n/10.95 波 片，|  保 持 两 个 偏 振 片 角 度 不 变，|  旋 转 $\OML/cmm/m/it/10.95 ^^U\OT1/cmr/m/n/10.95 /2$ \TU/SimSun(0)/m/n/10.95 波 片，|  可 以 在 $\OML/cmm/m/it/10.95 ^^R[] \OT1/cmr/m/n/10.95 = 83[]\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 174[]\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 263[]\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 354[]$
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 660.
+(hyperref)                replaced by space on input line 659.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 660.
+(hyperref)                removing `math shift' on input line 659.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\lambda' on input line 660.
+(hyperref)                removing `\lambda' on input line 659.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 660.
+(hyperref)                removing `math shift' on input line 659.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 662--663
+
+ []
+
+
+Overfull \hbox (9.70627pt too wide) in paragraph at lines 664--665
+[]\TU/SimSun(0)/m/n/10.95 在 $\OML/cmm/m/it/10.95 P[]; P[]$ \TU/SimSun(0)/m/n/10.95 之 间 插 入 $\OML/cmm/m/it/10.95 ^^U\OT1/cmr/m/n/10.95 /4$ \TU/SimSun(0)/m/n/10.95 波 片，|  保 持 两 个 偏 振 片 角 度 不 变，|  旋 转 $\OML/cmm/m/it/10.95 ^^U\OT1/cmr/m/n/10.95 /4$ \TU/SimSun(0)/m/n/10.95 波 片，|  可 以 在 $\OML/cmm/m/it/10.95 ^^R[] \OT1/cmr/m/n/10.95 = 359[]\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 270[]\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 180[]\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 90[]$
+ []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 671.
+(hyperref)                replaced by space on input line 675.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 674--675
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 675.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\lambda' on input line 675.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 675.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 678--679
 
  []
 
-File: ./images//table.jpg Graphic file (type bmp)
-<./images//table.jpg>
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1582,13 +1583,34 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [13]
 
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 10.95pt
+(hyperref)                replaced by space on input line 693.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 696--697
+
+ []
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.59999pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[14] (./Lab2_6Report.aux)
+[14]
+File: ./images//table.jpg Graphic file (type bmp)
+<./images//table.jpg>
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[15] (./Lab2_6Report.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1596,12 +1618,12 @@ Package rerunfilecheck Info: File `Lab2_6Report.out' has not changed.
 (rerunfilecheck)             Checksum: E7D08BDCE6D5FCDB8C1193147D54CC66;4550.
  ) 
 Here is how much of TeX's memory you used:
- 43339 strings out of 476683
- 984184 string characters out of 5807576
+ 43354 strings out of 476683
+ 984905 string characters out of 5807576
  1888012 words of memory out of 5000000
- 62958 multiletter control sequences out of 15000+600000
+ 62973 multiletter control sequences out of 15000+600000
  520823 words of font info for 90 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  105i,12n,107p,448b,1048s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Lab2_6Report.pdf (14 pages).
+Output written on Lab2_6Report.pdf (15 pages).

@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="13ee920d-1e34-4027-ba69-48c9606197ee" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/../Lab2_6Report.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2_6Report.aux" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab2_6Report.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2_6Report.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab2_6Report.out" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2_6Report.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab2_6Report.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2_6Report.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab2_6Report.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2_6Report.synctex.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab2_6Report.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2_6Report.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab2_6Report.toc" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2_6Report.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataAnalysis.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fitting1.py" beforeDir="false" afterPath="$PROJECT_DIR$/fitting1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
