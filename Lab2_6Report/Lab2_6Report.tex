@@ -12,6 +12,9 @@
 \usepackage{lipsum}
 \usepackage{enumitem}
 \usepackage{tabularray}  %绘制表格时可以更加方便添加框线
+\usepackage{siunitx}
+
+
 \setlist[enumerate]{label=\textup{(\arabic*)}}
 
 
@@ -223,111 +226,312 @@
 	\hline
 	姓名：& 戴鹏辉 & 学号：& 22344016 \\
 	\hline
-	室温：& xx℃ & 实验地点： & A508 \\
+	室温：& 26℃ & 实验地点： & A510 \\
 	\hline
 	学生签名：& & 评分： &\\
 	\hline
-	实验时间：& 2024/xx/xx & 教师签名：&\\
+	实验时间：& 2024/4/18 & 教师签名：&\\
 	\hline
 	\end{tabularx}
 \end{table}
 
-\section{XXX \quad XXXXXXXXXX \quad\heiti 实验记录}
+\section{CB2 \quad 偏振光实验 \quad\heiti 实验记录}
 \subsection{实验内容和步骤}
 
-	\subsubsection{实验一 测量光栅常数}
+	\subsubsection{实验一 \quad 研究交叉线性偏振片}
 	
-	该实验使用（已知谱线波长为$\lambda=589.4nm$的）低压钠灯为光源
+	实验器材：白光光源， 凸透镜， 可变光阑，两个线性偏振片，光学导轨， 屏幕。
+
+	实验步骤如下：
 	\begin{enumerate}
-		\item 望远镜聚焦于无穷远（既能接受平行光）,然后平行光管产生平行光,使平行光管和望远镜的光轴都垂直仪器的转轴，随后调整光栅平面与平行光管光轴垂直，光栅的刻痕与仪器转轴平行。
-		
-		\item 打开钠灯电源，照亮狭缝，记录主极亮的位置，即望远镜分化板竖直线与零级光谱（即平行光管狭缝像）重合时的位置，这个位置就是上一步中调节好了的位置。记下此时刻度盘两窗口的读数；
-		
-		\item 把望远镜向零级光谱的一边转动（如向右），直到看到一级光谱中的黄线，并使它与分化板垂直线重合。记下刻度盘两窗口读数，计算出衍射角；继续原方向转到望远镜，并在二级光谱中找到该谱线再做同样的测量；
-		
-		\item 把望远镜往零级光谱的另一边转动（刚才向右，现在则向左），做步骤（2）中相同测量；
-		
-		\item 把光栅法线左右两边所测同级光谱中的两个衍射角求平均后代入光栅衍射公式，求光栅常数。要求两个值之差不能超过10’，否则，应重新调节入射光与光栅面垂直。最后求一、二级谱线测得的光栅常数 d 的平均值及其实验不确定度。
-		
-	\begin{table}[htbp]
-		\centering
-		\begin{tabular}{|c|c|c|c|}
-			\hline
-			    & 主极亮位置 & +1级 & +2级 \\
-			\hline
-			左窗口 & 08°15′ & 358°05′ & 347°37′ \\
-			\hline
-			右窗口 & 188°16′ & 178°08′ & 167°39′ \\
-			\hline
-			    &        & -1级 & -2级 \\
-			\hline
-			左窗口 &      & 18°25′ & 29°03′ \\
-			\hline
-			右窗口 &      & 198°27′ & 209°03′ \\
-			\hline
-			
-		\end{tabular}
-		\caption{实验一测量数据}
-		\label{tab:mytable}
-	\end{table}
-	
+		\item 用自准直等快速方法产生准直光束。（实验中使用$f=150mm$的凸透镜获得平行光）
+		\item 放置第一个偏振片（称为$P_1$）并改变透振方向。观察屏幕上的光线强度。 总结白光发出的自然光的性质。
+
+		\item 放置第二个偏振片（称为$P_2$），旋转$P_2$， 改变透振方向，观察屏幕上光强的变化，发现光两次出现消失的现象，确定消光的位置。 这时两个偏振片透振方向相垂直。同样的，旋转偏振片$P_1$，能得到同样的结果。
+		\item 在消光的位置，将$P_1$轴旋转20°，证明$P_2$轴旋转同样的角度时，消光现象再次出现。
+		\item 在偏振片$P_1$和$P_2$之间放置第3个偏振片$P_3$。先确定$P_3$的透振方向，再转45°的角度，观察并说明现象。
+		\item 拿走偏振片$P_3$，在$P_1$和$P_2$之间插入塑料板或三角尺等透明物体， 观察现象；转动其中任何一个元件，观察现象；给塑料板加力，观察并说明这三个现象的变化。
+
 	\end{enumerate}
 
-	\subsubsection{实验二 测定未知光波波长及角色散率$D$}
 
-		以汞灯为光源，按上面方法测出各级光谱的衍射角，计算出它们的波长。然后计算角色散率及不确定度。（实际实验中测量了蓝、绿、黄三色的谱线）
-		
+	\subsubsection{实验二 \quad 验证马吕斯定律}
+
+	实验器材： 白光光源， 2个滤光片（绿色和红色） ，两个会聚透镜（其中一个小焦距的起聚光作用，f值很小） ， 可变光阑，两个偏振片，光功率计。
+
+	具体实验步骤如下：
+	\begin{enumerate}
+		\item 在准直平行光路上摆放偏振片$P_1$和$P_2$。其中$\theta$为两个透振方向的夹角， $I$为光功率计测量的光强值。其中$I_0$为两个偏振器片透振方向平行时测得的光强度，即$I_0=I(\theta=0)$
+		\item 改变不同的角度（测量大约10个值），并记录对应的光强值。通过绘制合理的曲线图， 验证马吕斯定律。
+		\item 重新开始上述实验。放置红色的滤光片在可变光阑前， 如果需要的话， 可用一个小焦距的聚集透镜，将光束聚焦在光功率计上（如果信号过弱）。
+		\item 放置绿色的滤光片在可变光阑前，重复上述实验内容， 比较并解释结果。
+	\end{enumerate}
+
+	得到实验数据如\cref{tbl:table2-1}所示：
+
+	% % \usepackage{tabularray}
+	% \begin{table}[htbp]
+	% 	\centering
+	% 	\begin{tblr}{
+	% 	cells = {c},
+	% 	vline{1,3,5} = {-}{},
+	% 	hline{1-2,12} = {-}{},
+	% 	}
+	% 	$\theta$  & I/mW  & $\theta$   & I/mW  \\
+	% 	0  & 0.584 & 100 & 0.768 \\
+	% 	10 & 0.590 & 110 & 0.748 \\
+	% 	20 & 0.606 & 120 & 0.724 \\
+	% 	30 & 0.632 & 130 & 0.693 \\
+	% 	40 & 0.666 & 140 & 0.660 \\
+	% 	50 & 0.698 & 150 & 0.628 \\
+	% 	60 & 0.729 & 160 & 0.603 \\
+	% 	70 & 0.751 & 170 & 0.587 \\
+	% 	80 & 0.767 & 180 & 0.581 \\
+	% 	90 & 0.775 &     &       
+	% 	\end{tblr}
+	% \end{table}
+
+	% \begin{table}[htbp]
+	% 	\centering
+	% 	\begin{tabular}{|cc|} 
+	% 	\hline
+	% 	$\theta$   & $I/\mu W$  \\ 
+	% 	\hline
+	% 	0   & 15.34  \\
+	% 	10  & 15.38  \\
+	% 	20  & 15.58  \\
+	% 	30  & 15.78  \\
+	% 	40  & 16.08  \\
+	% 	50  & 16.42  \\
+	% 	60  & 16.74  \\
+	% 	70  & 16.98  \\
+	% 	80  & 17.06  \\
+	% 	90  & 17.11  \\
+	% 	100 & 16.96  \\
+	% 	\hline
+	% 	\end{tabular}
+	% \end{table}
+
+
+	% \begin{table}
+	% 	\centering
+	% 	\begin{tabular}{|cc|} 
+	% 	\hline
+	% 	$\theta$   & $I/\mu W$  \\
+	% 	\hline
+	% 	0   & 15.92  \\
+	% 	10  & 16.1   \\
+	% 	20  & 16.45  \\
+	% 	30  & 17.08  \\
+	% 	40  & 17.68  \\
+	% 	50  & 18.36  \\
+	% 	60  & 19.06  \\
+	% 	70  & 19.64  \\
+	% 	80  & 20.01  \\
+	% 	90  & 20.08  \\
+	% 	100 & 19.92  \\
+	% 	\hline
+	% 	\end{tabular}
+	% \end{table}
+
+
 	\begin{table}[htbp]
 		\centering
-		\begin{tabular}{|c|c|c|c|c|c|c|c|}
-			\hline
-			& 主极亮位置 & +1级 & +2级 & +1级 & +2级 & +1级 & +2级 \\
-			\hline
-			左窗口 & 08°14′ & 00°45′ & 353°06′ & 358°51′ & 349°12′ & 358°16′ & 348°03′ \\
-			\hline
-			右窗口 & 188°15′ & 180°45′ & 173°08′ & 178°53′ & 169°13′ & 178°16′ & 168°04′ \\
-			\hline
-			& & -1级 & -2级 & -1级 & -2级 & -1级 & -2级 \\
-			\hline
-			左窗口 & & 15°46′ & 23°27′ & 17°44′ & 27°25′ & 18°14′ & 28°37′ \\
-			\hline
-			右窗口 & & 195°47′ & 203°27′ & 197°43′ & 207°25′ & 198°16′ & 208°38′ \\
-			\hline
-			\multicolumn{2}{|c}{} &\multicolumn{2}{|c|}{蓝色} & \multicolumn{2}{c|}{绿色} & \multicolumn{2}{c|}{黄色} \\
-			\hline
-		\end{tabular}
-		\caption{实验数据}
-		\label{tab:data2}
-	\end{table}
-	
-		
-		
-		\begin{figure}[H]
+		\begin{minipage}[t]{0.3\linewidth}
 			\centering
-			\includegraphics[width=9.41cm]{D:/大学各种资料/2023大二/2023大二上/基础物理实验I/5.光栅常数及光波波长的测量/SYSU-SPA-Labreport-Template-main/images/OriginalData5.jpg}
-			\caption{原始实验数据}
-		\end{figure}
+			\begin{tblr}{
+				cells = {c},
+				vline{1,3,5} = {-}{},
+				hline{1-2,12} = {-}{},
+			}
+			$\theta$  & $I/mW$  & $\theta$   & $I/mW$  \\
+			0  & 0.584 & 100 & 0.768 \\
+			10 & 0.590 & 110 & 0.748 \\
+			20 & 0.606 & 120 & 0.724 \\
+			30 & 0.632 & 130 & 0.693 \\
+			40 & 0.666 & 140 & 0.660 \\
+			50 & 0.698 & 150 & 0.628 \\
+			60 & 0.729 & 160 & 0.603 \\
+			70 & 0.751 & 170 & 0.587 \\
+			80 & 0.767 & 180 & 0.581 \\
+			90 & 0.775 &     &       
+			\end{tblr}
+			\caption{白光光源实验数据}
+		\end{minipage}%
+		\hfill
+		\begin{minipage}[t]{0.3\linewidth}
+			\centering
+			\begin{tabular}{|cc|} 
+			\hline
+			$\theta$   & $I/\mu W$  \\ 
+			\hline
+			0   & 15.34  \\
+			10  & 15.38  \\
+			20  & 15.58  \\
+			30  & 15.78  \\
+			40  & 16.08  \\
+			50  & 16.42  \\
+			60  & 16.74  \\
+			70  & 16.98  \\
+			80  & 17.06  \\
+			90  & 17.11  \\
+			100 & 16.96  \\
+			\hline
+			\end{tabular}
+			\caption{绿光光源实验数据}
+		\end{minipage}%
+		\hfill
+		\begin{minipage}[t]{0.3\linewidth}
+			\centering
+			\begin{tabular}{|cc|} 
+			\hline
+			$\theta$   & $I/\mu W$  \\
+			\hline
+			0   & 15.92  \\
+			10  & 16.1   \\
+			20  & 16.45  \\
+			30  & 17.08  \\
+			40  & 17.68  \\
+			50  & 18.36  \\
+			60  & 19.06  \\
+			70  & 19.64  \\
+			80  & 20.01  \\
+			90  & 20.08  \\
+			100 & 19.92  \\
+			\hline
+			\end{tabular}
+			\caption{红光光源实验数据}
+		\end{minipage}
+		\label{tbl:table2-1}
+	\end{table}
+
+	\subsubsection{实验三 \quad 玻璃反射起偏和布儒斯特角的测量}
+
+
+	具体实验步骤如下：
+	\begin{enumerate}
+		\item 通过旋转偏振片，观察教室的天花板的日光灯管光强的变化，说明日光灯是没有偏振的。
+		\item 通过旋转偏振片，观察日光灯管在桌子上玻璃的反射像， 或者在地面瓷砖上的反射像，说明随着偏振片的旋转， 反射光的强度变化。
+		\item 改变观察者的位置，也就是改变天花板上日光灯管的入射角度，使光通过偏振片的某方向光强为零时，计算出日光灯管的入射角。 验证玻璃的折射率n= 1.5时， 布儒斯特角值大约为56°。
+		证实光的反射规律为：
+		\begin{enumerate}[label=\roman*.]
+			\item 产生部分偏振光。
+			\item 必然产生线性偏振光，因为通过偏振片能消光。
+			\item 线偏振光垂直于入射面(xOz)。
+		\end{enumerate}
+	\end{enumerate}
+
+
+
+
+	\subsubsection{实验四 \quad 光的散射}
+
+	实验材料：白光光源， 凸透镜，可变光阑，偏振片P，水槽，奶粉。
+
+	具体实验步骤如下：
+	\begin{enumerate}
+		\item 在准直光束产生的平行光中放置水槽，水槽的面相平行。
+		\item 倒入少许奶粉（不溢出） 。
+		\item 用偏振片观察在(Ox)横向方向的散射光。通过水中倒入的少许粉末的作用，可观察到，在光传播垂直方向上，光（部分地） 在垂直方向(Oy)是线性偏振光。
+	\end{enumerate}
+
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=0.4\textwidth]{graph2-4-1.png}
+		\caption{光的散射示意图}
+		\label{fig:graph2-4-1}
+	\end{figure}
+
+
+
+	\subsubsection{实验五 \quad 分析$\lambda/2$波片特性}
+
+	实验器材： 氦氖激光器，短焦距透镜，偏振片$P_1$，偏振片$P_2$， $\lambda/2$波片，小屏幕。
+
+	具体实验步骤如下：
+	\begin{enumerate}
+		\item 将偏振片$P_1$和$P_2$放置约20厘米的距离，旋转偏振片找到消光位置。然后将$\lambda/2$波片放在两个偏振片之间：观看屏幕，旋转半波片，直到消光重新出现。证明这时有两个相互垂直方向出现消光现象。 这时，$\lambda/2$波片的o轴或e轴方向与偏振片$P_1$的偏振方向平行， 确定对应的位置。
+		\item 旋转偏振片$P_1$ 20度。通过旋转偏振片$P_2$，重新出现消光现象。记录偏振片$P_2$的位置。证实通过$\lambda/2$半波片的作用，线性偏振光可产生对称o轴或e轴方向的线偏振光。
+	\end{enumerate}
+
+
+
+	\subsubsection{实验六 \quad 分析$\lambda/4$波片特性}
+
+	实验材料： 氦氖激光器，短焦镜头，偏光片$P_1$，偏振片$P_2$，四分之一波片$\lambda/4$，小屏幕。
+
+	具体实验步骤如下：
+	\begin{enumerate}
+		\item 确定两个偏振片的消光位置。
+		\item 将$\lambda/4$波片放置在两个偏振片之间，观察屏幕。旋转$\lambda/4$波片，直到消光重新出现， 确定$\lambda/4$波片对应的位置。 说明这时有两个相互垂直方向出现消光现象。 证明此时$\lambda/4$波片的o轴或e轴方向与偏振片P1的偏振方向平行。
+	\end{enumerate}
+
+
+
+
+
+	\subsubsection{实验七 \quad 分析两个$\lambda/4$波片特性}
+
+	实验材料 :氦氖激光器，短焦距透镜，光阑，两个偏振片，两个$\lambda/4$波片。
+
+	具体实验步骤如下：
+	\begin{enumerate}
+		\item 确定两个偏振片的消光位置
+		\item 放置第一个$\lambda/4$波片，重现消光现象。 记录消光位置。
+		\item 再放入第二个$\lambda/4$波片， 出现消光时，记录消光的位置。说明这时两个$\lambda/4$波片的o轴或e轴相平行。
+		\item 旋转$P_1$偏振片20°，标识旋转的方向。 然后旋转偏振片$P_2$重新达到消光，记录偏振片$P_2$的位置。说明此时两个$\lambda/4$波片的关系（即是两个波片的快慢轴一致？还是一个波片的快轴与另一个波片的慢轴重合？）。
+		\item 旋转其中一个$\lambda/4$波片90度，再旋转偏振$P_2$重新达到消光，记录偏振片$P_2$的位置。说明此时两个$\lambda/4$波片的关系。
+	\end{enumerate}
+
+
+
+	\subsubsection{实验八 \quad 研究椭圆偏振光和圆偏振光}
+
+	实验材料： 氦氖激光器，短焦距透镜，可变光阑，两个偏振片，四分之一波片$\lambda/4$。
+
+	具体实验步骤如下：
+	\begin{enumerate}
+		\item 确定两个偏振片的消光位置
+		\item 放置1个$\lambda/4$波片，重现消光现象。旋转$P_1$偏振器片45度，标识旋转方向。旋转偏光片$P_2$，观察屏幕上的光强变化,加以说明。
+		\item 再旋转$P_1$偏振片的角度10度， 旋转$P_2$偏光片，观察屏幕上光强的变化。加以说明。
+
+	\end{enumerate}
+	
 
 %\subsection{实验数据记录}
 
 
 
-%\subsection{原始数据记录}
+\subsection{原始数据记录}
+
+	见\cref{fig:data}
+
+	\begin{figure}[htbp]
+		\centering
+		\subfloat[原始数据1]
+		{\includegraphics[width=0.35\textwidth]{OriginalData1.jpg}\label{fig:data1}}
+		\quad
+		\subfloat[原始数据2]
+		{\includegraphics[width=0.35\textwidth]{OriginalData2.jpg}\label{fig:data2}}
+		\quad
+		\subfloat[原始数据3]
+		{\includegraphics[width=0.35\textwidth]{OriginalData3.jpg}\label{fig:data3}}
+		\quad
+		\subfloat[原始数据4]
+		{\includegraphics[width=0.35\textwidth]{OriginalData4.jpg}\label{fig:data4}}
+		\quad
+
+		\caption{原始数据}
+		\label{fig:data}
+	\end{figure}
 
 
 
 \subsection{实验过程中遇到的问题记录}
 
 \begin{enumerate}
-	\item 	测量过程中，弯游标在转动过程中可能越过0刻度线，应当在计算时注意修正。
-	
-	\item 	在使用钠灯或汞灯观测黄色谱线时，理论上应存在两条，但由于分辨率问题，或二者在实际观测中距离较近，不易区分，则当作一条谱线，实际测量时，目镜中的垂直叉丝对准两谱线平均位置。
-	
-	\item 	在使用汞灯测量谱线时，理论上应存在紫色谱线（波长λ=404.7nm），但其强度较弱，实际观测中很难观测到，则略去，只测量蓝、绿、黄三色（即亮度最亮的三条）谱线。
-	
-	\item 	在目镜中观察时，有些谱线亮度较低，被环境光所影响导致难以观察，可以使用挡板遮挡部分环境光，使得观察更加容易。
-	
-	\item 	注意调节平行光管进光狭缝宽度至合适值，若其宽度过宽，则谱线宽度也会过宽，会降低谱线的分辨率和对比度；若其宽度过窄，会导致入射光强度减弱，使得谱线亮度不足，难以观察和测量。
+	\item 由于实验室仪器设备等原因，某些实验无法观察到消光现象。这时，可使用光功率计，将光强最小的位置定为消光位置。
+	\item 由于光路简单，在没有要求元件之间距离的情况下，可以尽可能的将各元件靠近，以达到更好的观察效果。
 	
 \end{enumerate}
 	
@@ -341,164 +545,146 @@
 	\hline
 	姓名： & 戴鹏辉 & 学号：& 22344016\\
 	\hline
-    日期：& 2024/xx/xx & 评分： &\\
+    日期：& 2024/4/22 & 评分： &\\
 	\hline
 	\end{tabularx}
 \end{table}
 
-\section{XXX \quad XXXXXXXXXX \quad\heiti 分析与讨论}
+\section{CB2 \quad 偏振光实验 \quad\heiti 分析与讨论}
 
 \subsection{实验数据分析}
 
-	\subsubsection{实验一 测量光栅常数}
-		由表1中的数据，可计算得到各级衍射条纹的衍射角，如下表所示
-		
-		\begin{center}
-			\begin{tabular}{|c|c|c|c|}
-				\hline
-				$\varphi_{+1}$ & $\varphi_{+2}$ & $\varphi_{-1}$ & $\varphi_{-2}$ \\
-				\hline
-				10°09′ & 20°37′ & 10°10′ & 20°47′ \\
-				\hline
-			\end{tabular}
-		\end{center}
+	\subsubsection{实验一 \quad 研究交叉线性偏振片}
 
+	\begin{enumerate}
+		\item 只放置偏振片$P_1$在光路上时，旋转$P_1$方向，观察屏幕上光强的变化，\textbf{发现无明显变化}，说明白光光源是\textbf{随机偏振}的。
+		\item 偏振片$P_1$、$P_2$均放置在光路上时，首先将$\theta_{P1}=\ang{0}$，旋转$P_2$，观察屏幕上光强的变化，发现光强由亮到暗呈现周期性变化，且在$\theta_{P2}=\ang{22},\ang{201}$时出现消光现象，两个位置之间相差$\ang{180}$左右。
 		
-		则可由正负级衍射角计算平均值，并根据光栅衍射公式$k\lambda=d\sin{\varphi}$，计算光栅常数，其中钠灯的谱线已知，取$\lambda=589.4nm$，则计算结果如下表所示
-		
-		\begin{center}
-			\begin{tabular}{|c|c|c|}
-				\hline
-				$\varphi_1$ & $\varphi_2$ &  \\
-				\hline
-				10°09′ & 20°42′ &  \\
-				\hline
-				$d_1$ & $d_2$ & $\overline{d}$ \\
-				\hline
-				$3.344\times{10}^{-6}m$ & $3.334\times{10}^{-6}m$ & $3.339\times{10}^{-6}m$ \\
-				\hline
-			\end{tabular}
-		\end{center}
+		同样的，若固定$\theta_{p2}=\ang{0}$，旋转$P_1$，观察屏幕上光强的变化，同样能观察到光强由亮到暗呈现周期性变化，且在$\theta_{P1}=\ang{156},\ang{344}$时出现消光现象，两个位置之间相差$\ang{180}$左右。
 
-		下面计算不确定度：
-		
-		\begin{enumerate}
-			\item  角度的重复测量引起的标准不确定度分量$u_1$,
-					\[ u_1=\sqrt{\sum{(\left|\frac{\partial d}{\partial\varphi_i}\right|\sigma_i)}^2}=4.55\times{10}^{-8}m \]
-					
-			\item  仪器的示值误差引起的标准不确定度分量$u_2$，由分光计游标最小分度值1’，按照均匀分布考虑
-					\[ u_2=\sqrt{\sum{(\left|\frac{\partial d}{\partial\varphi_i}\right|\sigma_i)}^2}=1.99\times{10}^{-7}m \]
-			
-			\item  合成不确定度
-					\[ u_c=\sqrt{\sum{(u_i)}^2}=2.04\times{10}^{-7}m \]
-			
-			\item 展伸不确定度\\
-					考虑正态分布，取置信概率为95\%，查表得包含因子$k=1.96$
-					
-					则最终测量结果表示为 $ d=\bar{d}\pm ku_c=(3.34\pm0.40)\times{10}^{-6}m$
-					
-					
-		\end{enumerate}
-		
-		分析误差来源
-			\begin{enumerate}
-				\item 可能是由于光栅本身的刻线不均匀，或者刻线与仪器转轴不平行，导致不同级次之间的测量数据计算所得结果之间有较大误差；这是仪器本身的系统误差，无法消除，只能通过更换质量更好的光栅来避免。
-				
-				\item 平行光管进光狭缝的宽度可能过宽，使得入射谱线的宽度也变宽，则会降低谱线的分辨率和对比度，使得测量衍射角时不准确，从而影响计算结果。
-			\end{enumerate}
-		
-		
-		\subsubsection{实验二 测定未知光波波长及角色散率D}
-			
-			根据表2数据，重复实验一中的处理操作，计算正负级衍射角，计算平均值，并根据光栅衍射公式$k\lambda=d\sin{\varphi}$，计算不同衍射谱线对应光波波长，式中光栅常数取实验一中的计算结果 $d=3.34\times{10}^{-6}m$ ,则计算结果如下表所示
-			
-			\begin{center}
-				\begin{tabular}{|c|c|c|c|}
-					\hline
-					\textbf{颜色} & \textbf{蓝色(b)} & \textbf{绿色(g)} & \textbf{黄色(y)} \\
-					\hline
-					$\varphi_{+1}$ & 07°29′ & 09°22′ & 09°58′ \\
-					$\varphi_{+2}$ & 15°07′ & 19°02′ & 20°11′ \\
-					$\varphi_{-1}$ & 07°32′ & 09°29′ & 10°00′ \\
-					$\varphi_{-2}$ & 15°12′ & 19°10′ & 20°23′ \\
-					\hline
-					&  &  &  \\
-					\hline
-					$\varphi_1$ & 07°30′ & 09°25′ & 09°59′ \\
-					$\varphi_2$ & 15°10′ & 19°06′ & 20°17′ \\
-					\hline
-					&  &  &  \\
-					\hline
-					$\lambda_1$ & 435.83nm & 546.30nm & 578.86nm \\
-					$\lambda_2$ & 436.79nm & 546.29nm & 578.75nm \\
-					$\overline{\lambda}$ & 436.31nm & 546.30nm & 578.80nm \\
-					\hline
-				\end{tabular}
-			\end{center}
+		\item 首先设置$\theta_{P1}=\ang{344}$，$\theta_{p2}=\ang{0}$，此时出现消光现象。\\
+			  然后旋转$P_1$$\ang{20}$至$\theta_{P1}=\ang{4}$，此时可观察到屏幕上有亮斑。\\
+			  再旋转$P_2$$\ang{20}$至$\theta_{P2}=\ang{20}$，可观察到消光现象。
 
-			下面计算不确定度：
-				
-			\begin{enumerate}
-					\item 	角度的重复测量引起的标准不确定度分量$u_1$,
-							\[ u_{b1}=\sqrt{\sum\left(\left|\frac{\partial\lambda}{\partial\varphi_i}\right|\sigma_i\right)^2}=0.402nm \]
-							\[ u_{g1}=\sqrt{\sum\left(\left|\frac{\partial\lambda}{\partial\varphi_i}\right|\sigma_i\right)^2}=1.14nm \]
-							\[ u_{y1}=\sqrt{\sum{(\left|\frac{\partial\lambda}{\partial\varphi_i}\right|\sigma_i)}^2}=1.36nm \]
-					
-					\item 仪器的示值误差引起的标准不确定度分量$u_2$，\\
-							由分光计游标最小分度值1’，按照均匀分布考虑
-							\[ u_{b2}=\sqrt{\sum{(\left|\frac{\partial\lambda}{\partial\varphi_i}\right|\sigma_i)}^2}=0.10nm \]
-							\[ u_{g2}=\sqrt{\sum\left(\left|\frac{\partial\lambda}{\partial\varphi_i}\right|\sigma_i\right)^2}=0.13nm \]
-							\[ u_{y2}=\sqrt{\sum{(\left|\frac{\partial\lambda}{\partial\varphi_i}\right|\sigma_i)}^2}=0.14nm \]
-					
-					\item 合成不确定度
-							\[ u_{cb}=\sqrt{\sum{(u_i)}^2}=0.41nm  \quad u_{cg}=\sqrt{\sum\left(u_i\right)^2}=1.15nm  \quad u_{cy}=\sqrt{\sum{(u_i)}^2}=1.36nm \]
-					
-					\item 展伸不确定度
-							考虑正态分布，取置信概率为95\%，查表得包含因子$k=1.96$ \\
-							则最终测量结果表示为
-							\[ \lambda_b=(436.31\pm0.41)nm  \quad \lambda_g=\left(546.30\pm1.15\right)nm \quad  \lambda_y=(578.80\pm1.36)nm \]
-					
-				\end{enumerate}
-		
-			将各谱线波长计算值与标准值比较（预习报告中所查得的数据），计算各谱线波长的相对误差(计算黄光谱线相对误差时，参考值取两条黄色谱线的平均波长)，得到
-			\[ \eta_b=\left|\frac{435.8-436.31}{435.8}\right|\times100\%=0.117\% \]
-			\[ \eta_g=\left|\frac{546.1-546.30}{546.1}\right|\times100\%=0.037\% \]
-			\[ \eta_y=\left|\frac{578.05-578.80}{578.05}\right|\times100\%=0.130\% \]
-			
-			下面计算角色散率，根据角色散率公式$D=\frac{d\theta}{d\lambda}=\frac{k}{d\cos{\theta}}$，由上表数据计算得
-			
-				\begin{center}
-					\begin{tabular}{|c|c|c|c|}
-						\hline
-						\textbf{颜色} & \textbf{蓝色} & \textbf{绿色} & \textbf{黄色} \\
-						\hline
-						D1 & $2.98\times 10^{5} m^{-1}$ & $2.99\times 10^{5} m^{-1}$ & $3.00\times 10^{5} m^{-1}$ \\
-						D2 & $6.11\times 10^{5} m^{-1}$ & $6.24\times 10^{5} m^{-1}$ & $6.29\times 10^{5} m^{-1}$ \\
-						\hline
-					\end{tabular}
-				\end{center}
+		\item 
+	\end{enumerate}
 
 
+
+
+	\subsubsection{实验二 \quad 验证马吕斯定律}
+
+	由马吕斯定律出发，使用公式$I(\theta)=I_0\cos^2(\theta+\phi_0)+C$，对实验所测数据进行拟合，结果如下图所示：
+
+	\begin{figure}[htbp]
+		\centering
+		\subfloat[白光光源图像]
+		{\includegraphics[width=0.5\textwidth]{graph3-2-1.png}\label{fig:graph3-2-1}}
+		\quad
+		\subfloat[绿光光源图像]
+		{\includegraphics[width=0.5\textwidth]{graph3-2-2.png}\label{fig:graph3-2-2}}
+		\quad
+		\subfloat[红光光源图像]
+		{\includegraphics[width=0.5\textwidth]{graph3-2-3.png}\label{fig:graph3-2-3}}
+		\quad
+
+
+		% \caption{原始数据}
+		\label{fig:grap3-2}
+	\end{figure}
+
+	由拟合数据可知，
 			
-			下面计算角色散率的不确定度，重复上面的操作，最终包含不确定度结果如下表所示
-			
-			\begin{center}
-				\begin{tabular}{|c|c|c|c|}
-					\hline
-					\textbf{颜色} & \textbf{蓝色} & \textbf{绿色} & \textbf{黄色} \\
-					\hline
-					D1 & $2.98 \pm 0.002 \times 10^{5} m^{-1}$ & $2.99 \pm 0.03 \times 10^{5} m^{-1}$ & $3.00 \pm 0.01 \times 10^{5} m^{-1}$ \\
-					D2 & $6.11 \pm 0.07 \times 10^{5} m^{-1}$ & $6.24 \pm 0.004 \times 10^{5} m^{-1}$ & $6.29 \pm 0.10 \times 10^{5} m^{-1}$ \\
-					\hline
-				\end{tabular}
-			\end{center}
-			
-			分析误差来源：
-			
-			\begin{enumerate}
-				\item 			观察数据可发现，在测量2级谱线时，正负级衍射角的差偏大，个别数据甚至超过了10’（由于超过10’的数据是最后一组测量数据，故没有及时发现），说明光栅并未完全与平行光管光轴垂直，存在一个小角度偏差，引入了一定的系统误差。
-				\item 			平行光管进光狭缝的宽度可能过宽，使得入射谱线的宽度也变宽，则会降低谱线的分辨率和对比度，使得测量衍射角时不准确，从而影响计算结果。
-			\end{enumerate}
+
+
+
+	\subsubsection{实验三 \quad 玻璃反射起偏和布儒斯特角的测量}
+
+
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=0.4\textwidth]{graph3-3-1.jpg}
+		\caption{布儒斯特角测量光路图}
+		\label{fig:graph3-3-1}
+	\end{figure}
+
+	由\cref{fig:graph3-3-1}，只需测量$L$和$h$即可计算出地面瓷砖对应的布儒斯特角。
+	\[
+	\theta_b=\arccos(\frac{h}{L})=\frac{1.608m}{2.813m}=\ang{55.14}	
+	\]
+	
+	接近理论值$\ang{56}$，相对误差为$\eta=\frac{56-55.14}{56}=1.536\%$。
+
+
+
+	\subsubsection{实验四 \quad 光的散射}
+
+	当光通过偏振片时，只有与偏振片的方向相匹配的光才能透过，其他方向的光则会被吸收或散射。
+	通过旋转偏振片会导致观察到的光强发生变化。这种变化表明此散射光具有偏振性质，因为只有在偏振片的某些方向上才会有较高的光强
+
+
+
+
+
+	\subsubsection{实验五 \quad 分析$\lambda/2$波片特性}
+
+	\begin{enumerate}
+		\item 不放置$\lambda/2$波片，只放置两个偏振片时，可以在$\theta_{P1}=\ang{0},\theta_{P2}=\ang{17},\ang{197}$观察到消光现象。	\\
+			在$P_1,P_2$之间插入$\lambda/2$波片，保持两个偏振片角度不变，旋转$\lambda/2$波片，可以在$\theta_{\lambda/2}=ang{83},\ang{174},\ang{263},\ang{354}$观察到消光现象，四个角度间隔$\ang{90}$。
+		\item 旋转$P_1\ang{20}$度后，保持$\lambda/2$波片角度不变，旋转$P_2$，在$\theta_{\lambda/2}=ang{8},\ang{198}$观察到消光现象。即$P_1,P_2$二者反向转动，说明线偏振光经过$\lambda/2$波片后，相对0轴或e轴对称了。
+	\end{enumerate}
+	
+
+
+
+
+
+
+
+	\subsubsection{实验六 \quad 分析$\lambda/4$波片特性}
+
+	\begin{enumerate}
+		\item 不放置$\lambda/4$波片，只放置两个偏振片时，可以在$\theta_{P1}=\ang{0},\theta_{P2}=\ang{17},\ang{197}$观察到消光现象。	\\
+		
+		在$P_1,P_2$之间插入$\lambda/4$波片，保持两个偏振片角度不变，旋转$\lambda/4$波片，可以在$\theta_{\lambda/2}=ang{359},\ang{270},\ang{180},\ang{90}$观察到消光现象，四个角度间隔$\ang{90}$。说明$\lambda/4$波片存在两个互相垂直的方向出现消光现象，且在消光现象时$\lambda/4$波片的o轴或e轴方向与偏振片$P_1$的偏振方向平行。
+
+		\item 
+	\end{enumerate}
+
+
+
+
+
+
+
+	\subsubsection{实验七 \quad 分析两个$\lambda/4$波片特性}
+
+
+
+
+
+
+
+
+
+
+	\subsubsection{实验八 \quad 研究椭圆偏振光和圆偏振光}
+
+	\begin{enumerate}
+		\item 单独放置两个偏振片时，可以在$\theta_{P1}=\ang{0},\theta_{P2}=\ang{197}$观察到消光现象。此时在两个偏振片中间加入一个$\lambda/4$波片，在$\theta_{\lambda/4}=\ang{280}$是可观察到消光现象。	\\
+		\item 此时旋转$\lambda/4$波片$\ang{45}$，再次观察屏幕上的光强，发现无明显变化。因为线偏振光以$\ang{45}$
+	\end{enumerate}
+
+	
+
+
+
+
+
+
+
+
+
 			
 			
 \subsection{实验后思考题}
@@ -506,199 +692,23 @@
 
 
 \begin{question}
-	检索文献，列举三种测量光波波长的方法，给出参考文献列表。%\lipsum[20]
+	说明用偏振片观察透过水中倒入的少许粉末后的现象产生的原因。
 \end{question}
 	
-	通过查阅资料，我找到了以下几种可以测量光波波长的方法：
-	
-\begin{enumerate}
-	
-	\item 	双棱镜干涉法，它利用双棱镜将单色光分成两束相干光，然后在屏幕上形成干涉条纹。通过测量条纹间距和双棱镜的夹角，可以计算出光波的波长。[1][2]
-	\item 	傅里叶红外光谱仪法，它利用傅里叶变换将单色光的干涉信号转换为频率域的信号，然后通过测量信号的频率，可以计算出光波的波长。[3][4]
-	\item 	激光多普勒干涉法，该方法利用激光束与一个高速旋转的多面棱镜发生多普勒效应，产生频率变化的干涉信号。通过测量干涉信号的频率差，即可求得激光波长。[5]
-\end{enumerate}
-	
-参考文献列表：
 
-%[1]	薛任翔. 光波波长测定方法研究[J]. 现代商贸工业, 2019, 10: 84-85. \\
-%[2]	尹真, 邹淑娟, 陈娟, 权慧. 双棱镜干涉实验的深入研究[J]. 科技广场, 2014, 1: 29-34. \\
-%[3]	李春明, 刘承师, 张俊峰. 测量激光波长的方法研究[J]. 激光与红外, 2007, 37(12): 1408-1410. \\
-%[4]	任海萍, 王建字, 李佳戈, 等. 一种使用傅里叶红外光谱仪进行波长测量的新方法[J]. 中国药事, 2010, 24(8): 807-809. \\
-%[5]	伍洲, 张文喜, 相里斌, 李杨, 孔新新. 基于多光束混合外差干涉的相位增强技术研究[J]. 物理学报, 2018, 67(2): 020601.
+
+\begin{question}
+	请说明 3D 眼镜和 3D 电影的原理。
+\end{question}
+
+
+
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=9.41cm]{D:/大学各种资料/2023大二/2023大二上/基础物理实验I/5.光栅常数及光波波长的测量/SYSU-SPA-Labreport-Template-main/images/table.jpg}
-	\caption{原始实验数据}
+	\includegraphics[width=9.41cm]{table.jpg}
+	\caption{实验桌整理后照片}
 \end{figure}
 	
-\clearpage
-% ---------------------------------------------------------------------
-%   参考文献
-%   注：使用参考文献时应按照xelatex->bibtex->xelatex->xelatex顺序进行编译
-\phantomsection
-\addcontentsline{toc}{section}{参考文献}
-\bibliographystyle{unsrt}
-\bibliography{myref}
 
-\clearpage
-\appendix
-\appendixpage
-\addappheadtotoc
-\subsection{代码记录}
-\begin{lstlisting}[style=pythonstyle,caption=代码记录示例]
-	import matplotlib.pyplot as plt
-	import numpy as np
-	
-	# Data for plotting
-	t = np.arange(0.0, 2.0, 0.01)
-	s = 1 + np.sin(2 * np.pi * t)
-	
-	fig, ax = plt.subplots()
-	ax.plot(t, s)
-	
-	ax.set(xlabel='time (s)', ylabel='voltage (mV)',
-		   title='About as simple as it gets, folks')
-	ax.grid()
-	
-	fig.savefig("test.png")
-	plt.show()
-\end{lstlisting}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width = 0.6\textwidth]{example1.png}
-    \caption{Test Figure}
-\end{figure}
-
-\clearpage
-\subsection{常用命令展示}
-这部分将展示其他常用命令。
-
-\begin{tbox}{颜色设置}
-\begin{itemize}
-	\item  \textcolor{Red}{赤}\textcolor{Orange}{橙}\textcolor{Yellow}{黄}\textcolor{Green}{绿}\textcolor{Emerald}{青}\textcolor{Blue}{蓝}\textcolor{Purple}{紫}
-	\item  谁持彩练当空舞
-\end{itemize}
-\end{tbox}
-
-\begin{tbox}{字号设置}
-\begin{enumerate}
-	\item {\LARGE 江晚正愁余}
-	\item {\Large 江晚正愁余}
-	\item {\large 江晚正愁余}
-	\item {\normalsize 江晚正愁余}
-	\item {\small 江晚正愁余}
-	\item {\footnotesize 江晚正愁余}
-	\item {\scriptsize 江晚正愁余}
-\end{enumerate}
-\end{tbox}
-
-\begin{tbox}{字体设置（中文）}
-\begin{enumerate}
-	\item 宋体：{\songti 山有扶苏，隰有荷华}
-	\item 仿宋：{\fangsong 山有扶苏，隰有荷华}
-	\item 黑体：{\heiti 山有扶苏，隰有荷华}
-	\item 楷书：{\kaishu 山有扶苏，隰有荷华}
-\end{enumerate}
-\end{tbox}
-
-\begin{tbox}{Set font(English)}
-\begin{enumerate}
-	\item roman:\quad{\rmfamily Hello world!}
-	\item sans-serif:\quad{\sffamily Hello world!}
-	\item typewriter:\quad{\ttfamily Hello world!}
-\end{enumerate}
-\end{tbox}
-
-\begin{tbox}{公式}
-	无编号公式
-    \begin{equation*}
-        J(\theta) = \mathbb{E}_{\pi_\theta}[G_t] = \sum_{s\in\mathcal{S}} d^\pi (s)V^\pi(s)=\sum_{s\in\mathcal{S}} d^\pi(s)\sum_{a\in\mathcal{A}}\pi_\theta(a|s)Q^\pi(s,a)
-    \end{equation*}
-$$ J(\theta) = \mathbb{E}_{\pi_\theta}[G_t] = \sum_{s\in\mathcal{S}} d^\pi (s)V^\pi(s)=\sum_{s\in\mathcal{S}} d^\pi(s)\sum_{a\in\mathcal{A}}\pi_\theta(a|s)Q^\pi(s,a) $$
-    有编号公式
-    \begin{equation}
-        J(\theta) = \mathbb{E}_{\pi_\theta}[G_t] = \sum_{s\in\mathcal{S}} d^\pi (s)V^\pi(s)=\sum_{s\in\mathcal{S}} d^\pi(s)\sum_{a\in\mathcal{A}}\pi_\theta(a|s)Q^\pi(s,a)
-    \end{equation}
-    \begin{equation}
-        J(\theta) = \mathbb{E}_{\pi_\theta}[G_t] = \sum_{s\in\mathcal{S}} d^\pi (s)V^\pi(s)=\sum_{s\in\mathcal{S}} d^\pi(s)\sum_{a\in\mathcal{A}}\pi_\theta(a|s)Q^\pi(s,a)
-    \end{equation}
-	波尔文积分
-    \[
-    \begin{cases}
-        \vspace{0.2cm}
-        \displaystyle{\int_{0}^{\infty} \frac{\sin(x)}{x}\,dx = \frac{\pi}{2}}\\
-        \vspace{0.2cm}
-        \displaystyle{\int_{0}^{\infty} \frac{\sin(x)}{x} \frac{\sin(x/3)}{x/3}\,dx = \frac{\pi}{2}} \\
-        \vspace{0.2cm}\cdot\cdot\cdot\\
-        \vspace{0.2cm}
-        \displaystyle{\int_{0}^{\infty} \frac{\sin(x)}{x} \frac{\sin(x/3)}{x/3} \cdot\cdot\cdot \frac{\sin(x/13)}{x/13}\,dx = \frac{\pi}{2}}\\
-        \displaystyle{\int_{0}^{\infty} \frac{\sin(x)}{x} \frac{\sin(x/3)}{x/3} \cdot\cdot\cdot \frac{\sin(x/15)}{x/15}\,dx = \frac{467807924713440738696537864469}{935615849440640907310521750000}\pi}
-    \end{cases}  
-    \]
-	多行对齐公式
-\begin{align*}
-    \frac{\partial}{\partial \theta_k}J(\theta) 
-        &= \frac{\partial}{\partial \theta_k}\Bigg[\frac{1}{m}\sum_{k=1}^m log(1+e^{-y^{(i)}\theta^Tx^{(i)}})\Bigg] \\
-        &= \frac{1}{m}\sum_{k=1}^m \frac{1}{1+e^{-y^{(i)}\theta^Tx^{(i)}}}y^{(i)}x_k^{(i)} \\
-        &= -\frac{1}{m}\sum_{k=1}^m h_\theta(-y^{(i)}x^{(i)})y^{(i)}x_k^{(i)}        
-\end{align*}
-\end{tbox}
-
-\begin{tbox}{引用}
-	对公式的引用，如\cref{equ:test}
-	\begin{equation}
-        J(\theta) = \mathbb{E}_{\pi_\theta}[G_t] = \sum_{s\in\mathcal{S}} d^\pi (s)V^\pi(s)=\sum_{s\in\mathcal{S}} d^\pi(s)\sum_{a\in\mathcal{A}}\pi_\theta(a|s)Q^\pi(s,a)
-		\label{equ:test}
-    \end{equation}
-	对图像的引用，如\cref{fig:test}
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=0.3\textwidth]{example.png}
-		\caption{测试图片}
-		\label{fig:test}
-	\end{figure}
-	对表格的引用，如\cref{tab:test}
-	\begin{table}[H]
-		\renewcommand\arraystretch{1.5}
-		\caption{一个空表格}
-		\begin{tabularx}{\textwidth}{|p{0.15\textwidth}|X|X|X|X|}
-		\hline
-		 &  &  &  &  \\    
-		\hline
-		 &  &  & &  \\    
-		\hline
-		\end{tabularx}
-		\label{tab:test}
-	\end{table}
-\end{tbox}
-
-\begin{tbox}{表格}
-	tabular可以自己更改宽度
-	\begin{table}[H]
-		\renewcommand\arraystretch{1.7}
-		\centering
-		\caption{一个空表格}
-		\begin{tabular}{|p{0.15\textwidth}|p{0.15\textwidth}|p{0.15\textwidth}|p{0.15\textwidth}|}
-		\hline
-		&   &  &  \\
-		\hline
-		 &   &  &  \\
-		\hline    
-		\end{tabular}
-	\end{table}
-	tabularx可以自适应宽度
-	\begin{table}[H]
-		\renewcommand\arraystretch{1.7}
-		\centering
-		\caption{一个空表格}
-		\begin{tabularx}{\textwidth}{|p{0.2\textwidth}|X|X|X|X|X|X|}
-			\hline
-			& &  &  &  &  &  \\
-			\hline
-			 & &  &  &  &  &  \\
-			\hline
-		\end{tabularx}
-	\end{table}
-\end{tbox}
 \end{document}

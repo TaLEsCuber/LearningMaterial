@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.8)  15 APR 2024 22:46
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.8)  24 APR 2024 12:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -957,85 +957,118 @@ Package: tabularray 2023-03-01 v2023A Typeset tabulars and arrays with LaTeX3
 \l__tblr_cell_wd_dim=\dimen387
 \l__tblr_cell_ht_dim=\dimen388
 \l__tblr_diag_box=\box118
-) (./Lab2_6Report.aux)
+) (d:/texlive/2023/texmf-dist/tex/latex/siunitx/siunitx.sty
+Package: siunitx 2023-03-04 v3.2.2 A comprehensive (SI) units package
+\l__siunitx_angle_tmp_dim=\dimen389
+\l__siunitx_angle_marker_box=\box119
+\l__siunitx_angle_unit_box=\box120
+\l__siunitx_compound_count_int=\count404
+ (d:/texlive/2023/texmf-dist/tex/latex/translations/translations.sty
+Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
+)
+\l__siunitx_number_exponent_fixed_int=\count405
+\l__siunitx_number_min_decimal_int=\count406
+\l__siunitx_number_min_integer_int=\count407
+\l__siunitx_number_round_precision_int=\count408
+\l__siunitx_number_lower_threshold_int=\count409
+\l__siunitx_number_upper_threshold_int=\count410
+\l__siunitx_number_group_first_int=\count411
+\l__siunitx_number_group_size_int=\count412
+\l__siunitx_number_group_minimum_int=\count413
+\l__siunitx_table_tmp_box=\box121
+\l__siunitx_table_tmp_dim=\dimen390
+\l__siunitx_table_column_width_dim=\dimen391
+\l__siunitx_table_integer_box=\box122
+\l__siunitx_table_decimal_box=\box123
+\l__siunitx_table_uncert_box=\box124
+\l__siunitx_table_before_box=\box125
+\l__siunitx_table_after_box=\box126
+\l__siunitx_table_before_dim=\dimen392
+\l__siunitx_table_carry_dim=\dimen393
+\l__siunitx_unit_tmp_int=\count414
+\l__siunitx_unit_position_int=\count415
+\l__siunitx_unit_total_int=\count416
+)
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 26.
+ (./Lab2_6Report.aux)
 \openout1 = `Lab2_6Report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
 \symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 23.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 23.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 23.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 23.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 23.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 23.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 23.
-LaTeX Font Info:    Redeclaring math accent \check on input line 23.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 23.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 23.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 23.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 23.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 23.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 23.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 23.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 23.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 23.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 23.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 23.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 23.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 23.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 23.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 23.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 23.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 26.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 26.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 26.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 26.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 26.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 26.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 26.
+LaTeX Font Info:    Redeclaring math accent \check on input line 26.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 26.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 26.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 26.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 26.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 26.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 26.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 26.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 26.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 26.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 26.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 26.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 26.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 26.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 26.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 26.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 26.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 23.
+(Font)              `operators' in the math version `normal' on input line 26.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 23.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 26.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 23.
+(Font)              `operators' in the math version `bold' on input line 26.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 23.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 26.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 23.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 23.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 23.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 23.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 23.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 26.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 23.
+(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 23.
+(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 23.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 26.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 23.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 26.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1071,7 +1104,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 23.
+Package hyperref Info: Link coloring ON on input line 26.
 (./Lab2_6Report.out) (./Lab2_6Report.out)
 \@outlinefile=\write4
 \openout4 = `Lab2_6Report.out'.
@@ -1081,10 +1114,26 @@ Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count404
+\c@lstlisting=\count417
  (d:/texlive/2023/texmf-dist/tex/latex/ninecolors/ninecolors.sty
 Package: ninecolors 2022-02-13 vv2022D Select colors with proper color contrast
-) (d:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd) (d:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd)
+)
+
+Package siunitx Warning: Detected the "physics" package:
+(siunitx)                omitting definition of \qty.
+(siunitx)                
+(siunitx)                If you want to use \qty with the siunitx definition,
+(siunitx)                add 
+(siunitx)                
+(siunitx)                    \AtBeginDocument{\RenewCommandCopy\qty\SI}
+(siunitx)                
+(siunitx)                to your preamble.
+
+(d:/texlive/2023/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 26.
+ (d:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd) (d:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd)
 
 Package fontspec Info: Could not resolve font "KaiTi/BI" (it probably doesn't
 (fontspec)             exist).
@@ -1189,16 +1238,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 82.
+(hyperref)                replaced by space on input line 85.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 82.
+(hyperref)                replaced by space on input line 85.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\heiti' on input line 82.
+(hyperref)                removing `\heiti' on input line 85.
 
 Missing character: There is no ​ (U+200B) in font [lmroman10-regular]:mapping=tex-text;!
 File: ./images//graph1-2.jpg Graphic file (type bmp)
@@ -1237,61 +1286,27 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 235.
+(hyperref)                replaced by space on input line 238.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 235.
+(hyperref)                replaced by space on input line 238.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\heiti' on input line 235.
-
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 276.
+(hyperref)                removing `\heiti' on input line 238.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 276.
+(hyperref)                \hskip 10.95pt
+(hyperref)                replaced by space on input line 241.
 
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 10.95pt
+(hyperref)                replaced by space on input line 258.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1302,8 +1317,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [6
 
 ]
-File: D:/大学各种资料/2023大二/2023大二上/基础物理实验I/5.光栅常数及光波波长的测量/SYSU-SPA-Labreport-Template-main/images/OriginalData5.jpg Graphic file (type bmp)
-<D:/大学各种资料/2023大二/2023大二上/基础物理实验I/5.光栅常数及光波波长的测量/SYSU-SPA-Labreport-Template-main/images/OriginalData5.jpg>
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 10.95pt
+(hyperref)                replaced by space on input line 408.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 10.95pt
+(hyperref)                replaced by space on input line 427.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1313,7 +1344,60 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [7]
-Missing character: There is no λ (U+03BB) in font [lmroman10-regular]:mapping=tex-text;!
+File: ./images//graph2-4-1.png Graphic file (type bmp)
+<./images//graph2-4-1.png>
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 10.95pt
+(hyperref)                replaced by space on input line 447.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 447.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\lambda' on input line 447.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 447.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 10.95pt
+(hyperref)                replaced by space on input line 459.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 459.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\lambda' on input line 459.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 459.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 10.95pt
+(hyperref)                replaced by space on input line 473.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 473.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\lambda' on input line 473.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 473.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1325,23 +1409,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 349.
+(hyperref)                replaced by space on input line 488.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 349.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\heiti' on input line 349.
-
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
+File: ./images//OriginalData1.jpg Graphic file (type bmp)
+<./images//OriginalData1.jpg>
+File: ./images//OriginalData2.jpg Graphic file (type bmp)
+<./images//OriginalData2.jpg>
+File: ./images//OriginalData3.jpg Graphic file (type bmp)
+<./images//OriginalData3.jpg>
+File: ./images//OriginalData4.jpg Graphic file (type bmp)
+<./images//OriginalData4.jpg>
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1349,27 +1426,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[9
-
-]
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ′ (U+2032) in font [lmroman10-regular]:mapping=tex-text;!
+[9]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1379,18 +1436,79 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [10]
 
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 10.95pt
+(hyperref)                replaced by space on input line 553.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 10.95pt
+(hyperref)                replaced by space on input line 553.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\heiti' on input line 553.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 10.95pt
+(hyperref)                replaced by space on input line 557.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 10.95pt
+(hyperref)                replaced by space on input line 575.
+
+File: ./images//graph3-2-1.png Graphic file (type bmp)
+<./images//graph3-2-1.png>
+File: ./images//graph3-2-2.png Graphic file (type bmp)
+<./images//graph3-2-2.png>
+File: ./images//graph3-2-3.png Graphic file (type bmp)
+<./images//graph3-2-3.png>
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 10.95pt
+(hyperref)                replaced by space on input line 601.
+
+File: ./images//graph3-3-1.jpg Graphic file (type bmp)
+<./images//graph3-3-1.jpg>
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 10.95pt
+(hyperref)                replaced by space on input line 620.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 10.95pt
+(hyperref)                replaced by space on input line 629.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 629.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\lambda' on input line 629.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 629.
+
+
+Overfull \hbox (22.9325pt too wide) in paragraph at lines 632--634
+\TU/SimSun(0)/m/n/10.95 在 $\OML/cmm/m/it/10.95 P[]; P[]$ \TU/SimSun(0)/m/n/10.95 之 间 插 入 $\OML/cmm/m/it/10.95 ^^U\OT1/cmr/m/n/10.95 /2$ \TU/SimSun(0)/m/n/10.95 波 片，|  保 持 两 个 偏 振 片 角 度 不 变，|  旋 转 $\OML/cmm/m/it/10.95 ^^U\OT1/cmr/m/n/10.95 /2$ \TU/SimSun(0)/m/n/10.95 波 片，|  可 以 在 $\OML/cmm/m/it/10.95 ^^R[] \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 ang[]; \OT1/cmr/m/n/10.95 174[]\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 263[]\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 354[]$
+ []
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.59999pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[11]
+[11
 
-Package tcolorbox Warning: Using nobreak failed. Try to enlarge `lines before break' or set page breaks manually on input line 510.
-
-File: D:/大学各种资料/2023大二/2023大二上/基础物理实验I/5.光栅常数及光波波长的测量/SYSU-SPA-Labreport-Template-main/images/table.jpg Graphic file (type bmp)
-<D:/大学各种资料/2023大二/2023大二上/基础物理实验I/5.光栅常数及光波波长的测量/SYSU-SPA-Labreport-Template-main/images/table.jpg>
+]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1399,76 +1517,62 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [12]
-No file Lab2_6Report.bbl.
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 549.
 
-Package fontspec Info: Could not resolve font "FangSong/BI" (it probably
-(fontspec)             doesn't exist).
-
-
-Package fontspec Info: Could not resolve font "FangSong/B" (it probably
-(fontspec)             doesn't exist).
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 10.95pt
+(hyperref)                replaced by space on input line 644.
 
 
-Package fontspec Info: Could not resolve font "FangSong/I" (it probably
-(fontspec)             doesn't exist).
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 644.
 
 
-Package fontspec Info: Font family 'FangSong(0)' created for font 'FangSong'
-(fontspec)             with options [Script={CJK}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"FangSong/OT:script=hani;language=dflt;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-
-LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 550.
-File: ./images//example1.png Graphic file (type bmp)
-<./images//example1.png>
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[13
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\lambda' on input line 644.
 
 
-]
-
-LaTeX Font Warning: Font shape `TU/KaiTi(0)/b/n' undefined
-(Font)              using `TU/KaiTi(0)/m/n' instead on input line 577.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 644.
 
 
-Package fontspec Info: Could not resolve font "Microsoft YaHei Bold/I" (it
-(fontspec)             probably doesn't exist).
+Underfull \hbox (badness 10000) in paragraph at lines 647--648
+
+ []
 
 
-Package fontspec Info: Could not resolve font "Microsoft YaHei/I" (it probably
-(fontspec)             doesn't exist).
+Overfull \hbox (22.9325pt too wide) in paragraph at lines 649--650
+[]\TU/SimSun(0)/m/n/10.95 在 $\OML/cmm/m/it/10.95 P[]; P[]$ \TU/SimSun(0)/m/n/10.95 之 间 插 入 $\OML/cmm/m/it/10.95 ^^U\OT1/cmr/m/n/10.95 /4$ \TU/SimSun(0)/m/n/10.95 波 片，|  保 持 两 个 偏 振 片 角 度 不 变，|  旋 转 $\OML/cmm/m/it/10.95 ^^U\OT1/cmr/m/n/10.95 /4$ \TU/SimSun(0)/m/n/10.95 波 片，|  可 以 在 $\OML/cmm/m/it/10.95 ^^R[] \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 ang[]; \OT1/cmr/m/n/10.95 270[]\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 180[]\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 90[]$
+ []
 
 
-Package fontspec Info: Font family 'MicrosoftYaHei(0)' created for font
-(fontspec)             'Microsoft YaHei' with options
-(fontspec)             [Script={CJK},BoldFont={* Bold}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Microsoft
-(fontspec)             YaHei/OT:script=hani;language=dflt;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Microsoft YaHei
-(fontspec)             Bold/OT:script=hani;language=dflt;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Microsoft
-(fontspec)             YaHei/BI/OT:script=hani;language=dflt;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 10.95pt
+(hyperref)                replaced by space on input line 660.
 
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 660.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\lambda' on input line 660.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 660.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 10.95pt
+(hyperref)                replaced by space on input line 671.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 674--675
+
+ []
+
+File: ./images//table.jpg Graphic file (type bmp)
+<./images//table.jpg>
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1476,12 +1580,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[14
-
-]
-File: ./images//example.png Graphic file (type bmp)
-<./images//example.png>
-
+[13]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1489,28 +1588,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[15]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[16] (./Lab2_6Report.aux)
+[14] (./Lab2_6Report.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `Lab2_6Report.out' has not changed.
-(rerunfilecheck)             Checksum: 3AF9AA37A210A84DF79141315AE4DBAD;2700.
+(rerunfilecheck)             Checksum: E7D08BDCE6D5FCDB8C1193147D54CC66;4550.
  ) 
 Here is how much of TeX's memory you used:
- 39977 strings out of 476683
- 878360 string characters out of 5807576
- 1946012 words of memory out of 5000000
- 59569 multiletter control sequences out of 15000+600000
- 519417 words of font info for 113 fonts, out of 8000000 for 9000
+ 43339 strings out of 476683
+ 984184 string characters out of 5807576
+ 1888012 words of memory out of 5000000
+ 62958 multiletter control sequences out of 15000+600000
+ 520823 words of font info for 90 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 105i,13n,107p,448b,1409s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 105i,12n,107p,448b,1048s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Lab2_6Report.pdf (16 pages).
+Output written on Lab2_6Report.pdf (14 pages).
