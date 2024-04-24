@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.8)  24 APR 2024 21:36
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.8)  25 APR 2024 01:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1516,76 +1516,76 @@ File: ./images//graph3-3-1.jpg Graphic file (type bmp)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 670.
+(hyperref)                replaced by space on input line 673.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 683.
+(hyperref)                replaced by space on input line 686.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 683.
+(hyperref)                removing `math shift' on input line 686.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\lambda' on input line 683.
+(hyperref)                removing `\lambda' on input line 686.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 683.
+(hyperref)                removing `math shift' on input line 686.
 
 
-Overfull \hbox (9.70627pt too wide) in paragraph at lines 686--688
+Overfull \hbox (9.70627pt too wide) in paragraph at lines 689--691
 \TU/SimSun(0)/m/n/10.95 在 $\OML/cmm/m/it/10.95 P[]; P[]$ \TU/SimSun(0)/m/n/10.95 之 间 插 入 $\OML/cmm/m/it/10.95 ^^U\OT1/cmr/m/n/10.95 /2$ \TU/SimSun(0)/m/n/10.95 波 片，|  保 持 两 个 偏 振 片 角 度 不 变，|  旋 转 $\OML/cmm/m/it/10.95 ^^U\OT1/cmr/m/n/10.95 /2$ \TU/SimSun(0)/m/n/10.95 波 片，|  可 以 在 $\OML/cmm/m/it/10.95 ^^R[] \OT1/cmr/m/n/10.95 = 83[]\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 174[]\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 263[]\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 354[]$
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 698.
+(hyperref)                replaced by space on input line 701.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 698.
+(hyperref)                removing `math shift' on input line 701.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\lambda' on input line 698.
+(hyperref)                removing `\lambda' on input line 701.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 698.
+(hyperref)                removing `math shift' on input line 701.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 701--702
+Underfull \hbox (badness 10000) in paragraph at lines 704--705
 
  []
 
 
-Overfull \hbox (9.70627pt too wide) in paragraph at lines 703--704
+Overfull \hbox (9.70627pt too wide) in paragraph at lines 706--707
 []\TU/SimSun(0)/m/n/10.95 在 $\OML/cmm/m/it/10.95 P[]; P[]$ \TU/SimSun(0)/m/n/10.95 之 间 插 入 $\OML/cmm/m/it/10.95 ^^U\OT1/cmr/m/n/10.95 /4$ \TU/SimSun(0)/m/n/10.95 波 片，|  保 持 两 个 偏 振 片 角 度 不 变，|  旋 转 $\OML/cmm/m/it/10.95 ^^U\OT1/cmr/m/n/10.95 /4$ \TU/SimSun(0)/m/n/10.95 波 片，|  可 以 在 $\OML/cmm/m/it/10.95 ^^R[] \OT1/cmr/m/n/10.95 = 359[]\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 270[]\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 180[]\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 90[]$
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 714.
+(hyperref)                replaced by space on input line 717.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 714.
+(hyperref)                removing `math shift' on input line 717.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\lambda' on input line 714.
+(hyperref)                removing `\lambda' on input line 717.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 714.
+(hyperref)                removing `math shift' on input line 717.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 717--718
+Underfull \hbox (badness 10000) in paragraph at lines 720--721
 
  []
 
@@ -1600,7 +1600,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 732.
+(hyperref)                replaced by space on input line 735.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1620,15 +1620,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[16]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[17] (./Lab2_6Report.aux)
+[16] (./Lab2_6Report.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1636,12 +1628,12 @@ Package rerunfilecheck Info: File `Lab2_6Report.out' has not changed.
 (rerunfilecheck)             Checksum: E7D08BDCE6D5FCDB8C1193147D54CC66;4550.
  ) 
 Here is how much of TeX's memory you used:
- 43408 strings out of 476683
- 986204 string characters out of 5807576
+ 43406 strings out of 476683
+ 986161 string characters out of 5807576
  1884012 words of memory out of 5000000
- 63023 multiletter control sequences out of 15000+600000
+ 63021 multiletter control sequences out of 15000+600000
  520823 words of font info for 90 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  105i,12n,107p,448b,1048s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Lab2_6Report.pdf (17 pages).
+Output written on Lab2_6Report.pdf (16 pages).
