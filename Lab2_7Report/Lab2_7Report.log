@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.8)  24 APR 2024 21:36
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.8)  25 APR 2024 00:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**Lab2_6Report
-(./Lab2_6Report.tex
+**Lab2_7Report
+(./Lab2_7Report.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (d:/texlive/2023/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -990,8 +990,8 @@ Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages 
 \l__siunitx_unit_total_int=\count416
 )
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 28.
- (./Lab2_6Report.aux)
-\openout1 = `Lab2_6Report.aux'.
+ (./Lab2_7Report.aux)
+\openout1 = `Lab2_7Report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
@@ -1105,9 +1105,9 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring ON on input line 28.
-(./Lab2_6Report.out) (./Lab2_6Report.out)
+(./Lab2_7Report.out) (./Lab2_7Report.out)
 \@outlinefile=\write4
-\openout4 = `Lab2_6Report.out'.
+\openout4 = `Lab2_7Report.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
@@ -1169,6 +1169,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[2]
+
 Package fontspec Info: Could not resolve font "SimSun/BI" (it probably doesn't
 (fontspec)             exist).
 
@@ -1191,7 +1199,7 @@ Package fontspec Info: Font family 'SimSun(1)' created for font 'SimSun' with
 (fontspec)             <->"SimSun/OT:script=hani;language=dflt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
- (./Lab2_6Report.toc
+ (./Lab2_7Report.toc
 
 Package fontspec Info: Could not resolve font "SimHei/BI" (it probably doesn't
 (fontspec)             exist).
@@ -1222,36 +1230,9 @@ LaTeX Font Warning: Font shape `TU/SimHei(0)/b/n' undefined
 
 )
 \tf@toc=\write5
-\openout5 = `Lab2_6Report.toc'.
+\openout5 = `Lab2_7Report.toc'.
 
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[2
-
-]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 87.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 87.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\heiti' on input line 87.
-
-Missing character: There is no ​ (U+200B) in font [lmroman10-regular]:mapping=tex-text;!
-File: ./images//graph1-2.jpg Graphic file (type bmp)
-<./images//graph1-2.jpg>
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1262,9 +1243,25 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [3
 
 ]
-File: ./images//graph1-1.png Graphic file (type bmp)
-<./images//graph1-1.png>
 
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 10.95pt
+(hyperref)                replaced by space on input line 88.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 10.95pt
+(hyperref)                replaced by space on input line 88.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\heiti' on input line 88.
+
+Missing character: There is no 𝜆 (U+1D706) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 𝑇 (U+1D447) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no ℎ (U+210E) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 𝑐 (U+1D450) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 𝑘 (U+1D458) in font [lmroman10-regular]:mapping=tex-text;!
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1272,9 +1269,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[4]
-Missing character: There is no  (U+F06C) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no  (U+F06C) in font [lmroman10-regular]:mapping=tex-text;!
+[4
+
+]
+Missing character: There is no 𝑇 ("1D447) in font cmmi10!
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1284,151 +1282,42 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [5]
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 240.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 240.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\heiti' on input line 240.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 243.
-
-File: ./images//graph2-1-3.jpg Graphic file (type bmp)
-<./images//graph2-1-3.jpg>
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 267.
-
-
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.59999pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[6
+[6]
 
-]
-> Step: init table outer spec.
-> Step: parse table options.
-> Step: split table.
-> Step: init table inner spec.
-> Step: parse table inner spec.
-> Step: execute table commands.
-> Step: calculate cell and line sizes.
-> Step: build the whole table.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 10.95pt
+(hyperref)                replaced by space on input line 213.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 418.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[7]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 437.
-
-File: ./images//graph2-4-1.png Graphic file (type bmp)
-<./images//graph2-4-1.png>
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 457.
+(hyperref)                replaced by space on input line 213.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 457.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\lambda' on input line 457.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 457.
-
-File: ./images//graph2-5-1.jpg Graphic file (type bmp)
-<./images//graph2-5-1.jpg>
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 476.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 476.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\lambda' on input line 476.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 476.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[8]
-File: ./images//graph2-6-1.jpg Graphic file (type bmp)
-<./images//graph2-6-1.jpg>
+(hyperref)                removing `\heiti' on input line 213.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 495.
+(hyperref)                replaced by space on input line 216.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 495.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\lambda' on input line 495.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 495.
-
-File: ./images//graph2-7-1.jpg Graphic file (type bmp)
-<./images//graph2-7-1.jpg>
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 517.
+(hyperref)                replaced by space on input line 222.
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 10.95pt
+(hyperref)                replaced by space on input line 228.
 
-[9]
-File: ./images//graph2-6-1.jpg Graphic file (type bmp)
-<./images//graph2-6-1.jpg>
 File: ./images//OriginalData1.jpg Graphic file (type bmp)
 <./images//OriginalData1.jpg>
 File: ./images//OriginalData2.jpg Graphic file (type bmp)
@@ -1438,68 +1327,13 @@ File: ./images//OriginalData3.jpg Graphic file (type bmp)
 File: ./images//OriginalData4.jpg Graphic file (type bmp)
 <./images//OriginalData4.jpg>
 
-
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.59999pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[10]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[11]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 590.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 590.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\heiti' on input line 590.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 594.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 615.
-
-File: ./images//graph3-2-1.png Graphic file (type bmp)
-<./images//graph3-2-1.png>
-File: ./images//graph3-2-2.png Graphic file (type bmp)
-<./images//graph3-2-2.png>
-File: ./images//graph3-2-3.png Graphic file (type bmp)
-<./images//graph3-2-3.png>
-
-LaTeX Warning: Float too large for page by 31.04773pt on input line 635.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 644.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[12
+[7
 
 ]
 
@@ -1509,139 +1343,61 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[13]
-File: ./images//graph3-3-1.jpg Graphic file (type bmp)
-<./images//graph3-3-1.jpg>
+[8]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 10.95pt
+(hyperref)                replaced by space on input line 287.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 670.
+(hyperref)                replaced by space on input line 287.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\heiti' on input line 287.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 683.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 683.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\lambda' on input line 683.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 683.
-
-
-Overfull \hbox (9.70627pt too wide) in paragraph at lines 686--688
-\TU/SimSun(0)/m/n/10.95 在 $\OML/cmm/m/it/10.95 P[]; P[]$ \TU/SimSun(0)/m/n/10.95 之 间 插 入 $\OML/cmm/m/it/10.95 ^^U\OT1/cmr/m/n/10.95 /2$ \TU/SimSun(0)/m/n/10.95 波 片，|  保 持 两 个 偏 振 片 角 度 不 变，|  旋 转 $\OML/cmm/m/it/10.95 ^^U\OT1/cmr/m/n/10.95 /2$ \TU/SimSun(0)/m/n/10.95 波 片，|  可 以 在 $\OML/cmm/m/it/10.95 ^^R[] \OT1/cmr/m/n/10.95 = 83[]\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 174[]\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 263[]\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 354[]$
- []
+(hyperref)                replaced by space on input line 291.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 698.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 698.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\lambda' on input line 698.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 698.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 701--702
-
- []
-
-
-Overfull \hbox (9.70627pt too wide) in paragraph at lines 703--704
-[]\TU/SimSun(0)/m/n/10.95 在 $\OML/cmm/m/it/10.95 P[]; P[]$ \TU/SimSun(0)/m/n/10.95 之 间 插 入 $\OML/cmm/m/it/10.95 ^^U\OT1/cmr/m/n/10.95 /4$ \TU/SimSun(0)/m/n/10.95 波 片，|  保 持 两 个 偏 振 片 角 度 不 变，|  旋 转 $\OML/cmm/m/it/10.95 ^^U\OT1/cmr/m/n/10.95 /4$ \TU/SimSun(0)/m/n/10.95 波 片，|  可 以 在 $\OML/cmm/m/it/10.95 ^^R[] \OT1/cmr/m/n/10.95 = 359[]\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 270[]\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 180[]\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 90[]$
- []
+(hyperref)                replaced by space on input line 297.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 714.
+(hyperref)                replaced by space on input line 304.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 714.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\lambda' on input line 714.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 714.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 717--718
-
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[14]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 732.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[15]
 File: ./images//table.jpg Graphic file (type bmp)
 <./images//table.jpg>
 
-
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.59999pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[16]
+[9
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[17] (./Lab2_6Report.aux)
+] (./Lab2_7Report.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package rerunfilecheck Info: File `Lab2_6Report.out' has not changed.
-(rerunfilecheck)             Checksum: E7D08BDCE6D5FCDB8C1193147D54CC66;4550.
+Package rerunfilecheck Info: File `Lab2_7Report.out' has not changed.
+(rerunfilecheck)             Checksum: E33B520E6D6E0C2AF487FBB55143ABA1;2553.
  ) 
 Here is how much of TeX's memory you used:
- 43408 strings out of 476683
- 986204 string characters out of 5807576
- 1884012 words of memory out of 5000000
- 63023 multiletter control sequences out of 15000+600000
- 520823 words of font info for 90 fonts, out of 8000000 for 9000
+ 43033 strings out of 476683
+ 973643 string characters out of 5807576
+ 1885012 words of memory out of 5000000
+ 62660 multiletter control sequences out of 15000+600000
+ 519209 words of font info for 87 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 105i,12n,107p,448b,1048s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 105i,12n,107p,448b,1107s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Lab2_6Report.pdf (17 pages).
+Output written on Lab2_7Report.pdf (9 pages).
