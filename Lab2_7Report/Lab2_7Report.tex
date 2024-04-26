@@ -270,20 +270,128 @@
 \section{CC1 \quad 热辐射实验 \quad\heiti 实验记录}
 \subsection{实验内容和步骤}
 
-	\subsubsection{实验一 \quad XXXXXXXXXXXXX}
+\subsubsection{实验一 \quad 实验系统搭建}
+
 	
+	\begin{enumerate}
+		\item 辐射体中的加热模块中有两个$10\Omega$电阻，他们两个可能是独立的，也可能是共地的，我们需要用万用表欧姆档判断哪两条线之间对应一个电阻；判断完后，将两个电阻并联接入电源，使用并联的目的是增大功率，加快加热速度。
+		\item 辐射体中的温度传感器模块同样有两个$PT1000$电阻，同样使用万用表欧姆档判别，随后只需将一个$PT1000$电阻接入一个万用表。
+		\item 辐射传感器部分有一个热电堆和一个$NI1000$电阻，在本次实验中使用热电堆最为辐射传感器，将其接入一个万用表。
+		\item 所有的接线完成后，将辐射体和辐射传感器安装在实验架上。
+		\item 检查数据线是否与电脑程序正常连接。
+		\item 所有工作完成后，开始下面的实验步骤。
+	\end{enumerate}
+
+
+
+\subsubsection{实验二 \quad 测量物体的辐射面温度对辐射强度大小的影响}
+
+
+	保持辐射传感器的位置不动（实验中将辐射传感器固定在124.5mm的位置），按照一定的温度间隔升高辐射体温度，记录对应温度下的\textbf{辐射传感器电压输出值}和\textbf{电源的稳定输出功率值}。实验数据如\cref{tbl:table2-1-1}：
+
+
+	\begin{table}[htbp]
+		\centering
+		\begin{tblr}{
+		  cells = {c},
+		  vlines,
+		  hline{1-2,8} = {-}{},
+		}
+		表面温度/℃ & 辐射传感器电压/mV & 电源功率/W \\
+		50     & 0.48       & 1.047  \\
+		60     & 0.68       & 1.700  \\
+		70     & 0.89       & 2.050  \\
+		80     & 1.12       & 2.510  \\
+		90     & 1.37       & 3.078  \\
+		100    & 1.64       & 3.650  
+		\end{tblr}
+		\caption{测量物体的辐射面温度对辐射强度大小的影响实验数据}
+		\label{tbl:table2-1-1}
+	\end{table}
+
+
+	升温过程中，可在软件控制界面看到\cref{fig:graph2-2}：
+
+
+	\begin{figure}[htbp]
+		\centering
+		\subfloat[辐射体温度]
+		{\includegraphics[width=0.8\textwidth]{grap2-2-2.png}\label{fig:grap2-2-2}}
+		\quad
+		\subfloat[电源输出功率]
+		{\includegraphics[width=0.8\textwidth]{grap2-2-3.png}\label{fig:grap2-2-3}}
+		\quad
+		\subfloat[辐射传感器电压]
+		{\includegraphics[width=0.8\textwidth]{grap2-2-4.png}\label{fig:grap2-2-4}}
+		\quad
+		\caption{测量物体的辐射面温度对辐射强度大小的影响实验结果图像}
+		\label{fig:graph2-2}
+	\end{figure}
+
+
+
+\subsubsection{实验三 \quad 测量在不同辐射距离在d的辐射传感器输出P， 拟合给出P~d之间的关系}
+
+	在上个试验结束后，辐射体温度已经上升到100℃，此时保持温度不变，从近到远改变辐射传感器和辐射体之间的距离，记录对应距离下\textbf{辐射传感器的输出电压值}。实验数据如\cref{tbl:table3-1-1}：
+
+	\begin{table}[htbp]
+		\centering
+		\begin{tabular}{|cc|} 
+		\hline
+		距离/mm & 辐射传感器电压/mV  \\ 
+		\hline
+		124.5 & 1.64        \\
+		136   & 1.27        \\
+		146   & 1.05        \\
+		155.5 & 0.87        \\
+		166   & 0.74        \\
+		176   & 0.64        \\
+		186   & 0.56        \\
+		196   & 0.49        \\
+		206   & 0.43        \\
+		216   & 0.40        \\
+		226   & 0.359       \\
+		236   & 0.336       \\
+		246   & 0.308       \\
+		256   & 0.285       \\
+		266   & 0.267       \\
+		276   & 0.248       \\
+		286   & 0.235       \\
+		296   & 0.215       \\
+		306   & 0.203       \\
+		316   & 0.194       \\
+		\hline
+		\end{tabular}
+		\caption{测量在不同辐射距离的辐射传感器输出实验数据}
+		\label{tbl:table3-1-1}
+	\end{table}
 
 
 
 
-	\subsubsection{实验二 \quad XXXXXXXXXXXx}
 
 
 
 
 
-	\subsubsection{实验三 \quad XXXXXXXXXXXXXXXXXXX}
 
+\subsubsection{实验四 \quad 测量不同物体表面的发射系数（选）}
+
+	我们将不同的辐射体升高至相同的温度（保持不同的辐射体均在60℃），将辐射传感器放置在相同的位置上（实验中将辐射传感器固定在124.5mm的位置），通过比较辐射传感器的输出电压值的不同，判断不同辐射体的表面发射系数。实验数据如\cref{tbl:table4-1-1}:
+
+	\begin{table}[htbp]
+		\centering
+		\begin{tblr}{
+		cells = {c},
+		vline{1-2,5} = {-}{},
+		hline{1,3} = {-}{},
+		}
+		辐射体        & 黑面   & 光面   & 粗糙面   \\
+		辐射传感器电压/mV & 0.68 & 0.24 & 0.302 
+		\end{tblr}
+		\caption{测量不同物体表面的发射系数实验数据}
+		\label{tbl:table4-1-1}
+	\end{table}
 
 
 
@@ -303,15 +411,7 @@
 		\subfloat[原始数据1]
 		{\includegraphics[width=0.35\textwidth]{OriginalData1.jpg}\label{fig:data1}}
 		\quad
-		\subfloat[原始数据2]
-		{\includegraphics[width=0.35\textwidth]{OriginalData2.jpg}\label{fig:data2}}
-		\quad
-		\subfloat[原始数据3]
-		{\includegraphics[width=0.35\textwidth]{OriginalData3.jpg}\label{fig:data3}}
-		\quad
-		\subfloat[原始数据4]
-		{\includegraphics[width=0.35\textwidth]{OriginalData4.jpg}\label{fig:data4}}
-		\quad
+
 
 		\caption{原始数据}
 		\label{fig:data}
@@ -322,6 +422,7 @@
 \subsection{实验过程中遇到的问题记录}
 
 \begin{enumerate}
+	\item 一定要确保三台实验仪器与电脑之间正常连接。
 	\item 
 	
 \end{enumerate}
@@ -336,7 +437,7 @@
 	\hline
 	姓名： & 戴鹏辉 & 学号：& 22344016\\
 	\hline
-    日期：& 2024/4/22 & 评分： &\\
+    日期：& 2024/4/25 & 评分： &\\
 	\hline
 	\end{tabularx}
 \end{table}
@@ -345,52 +446,101 @@
 
 \subsection{实验数据分析}
 
-	\subsubsection{实验一 \quad XXXXXXXXXXXXXXX}
+	\subsubsection{实验一 \quad 实验系统搭建}
 
 	
 
 
 
-	\subsubsection{实验二 \quad XXXXXXXXXXXXXXX}
-
-	
+	\subsubsection{实验二 \quad 测量物体的辐射面温度对辐射强度大小的影响}
 
 
 
+	使用公式$U=k*(T+bias_1)^4+bias_2$拟合，结果如\cref{fig:graph3-2-2}
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=0.8\textwidth]{graph3-2-2.png}
+		\caption{温度四次方}
+		\label{fig:graph3-2-2}
+	\end{figure}
 
-	\subsubsection{实验三 \quad XXXXXXXXXXXXXXXXX}
 
+
+
+	\subsubsection{实验三 \quad 测量在不同辐射距离在d的辐射传感器输出P， 拟合给出P~d之间的关系}
+
+
+
+	使用公式$U=k*(d+bias_1)^{-2}+bias_2$拟合，结果如\cref{fig:graph3-3-1}
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=0.8\textwidth]{graph3-3-1.png}
+		\caption{距离平方反比}
+		\label{fig:graph3-3-1}
+	\end{figure}
+
+
+
+
+
+
+	\subsubsection{实验四 \quad 测量不同物体表面的发射系数（选）}
 	
 
 
 			
+
+
+
+
 \subsection{实验后思考题}
 
 \begin{question}
-	XXXXXXXXXXXXXXXX
-
+	为何当热辐射传感器太靠近辐射表面时，所测出的辐照度偏离距离平方反比规律？
 \end{question}
 
 
 
 
 \begin{question}
-	XXXXXXXXXXXXXXXXXXXX
+	（选） SMTIR9902与SMTIR9902SIL各有什么特点？各适合于什么场景的非接触温度测量？为什么？
 \end{question}
 
 
 
 \begin{question}
-	XXXXXXXXXXXXXXXXXXXX
+	辐射传感器输出信号与辐射表面绝对温度4次方成线性关系，为何直线不过原点？斯特藩-玻尔兹曼定律是否成立？为什么？
 \end{question}
 
 
 
 
 
-\begin{figure}[H]
+\begin{question}
+	（设计性实验） 如何评价材料（如透光隔热膜） 的防热辐射能力及其在窗户应用中的节能效果？
+\end{question}
+
+
+
+
+
+
+
+
+
+\begin{question}
+	（设计性实验） 如何在（变化的）大气环境温度下测量各热辐射源的温度？
+\end{question}
+
+
+
+
+
+
+
+\begin{figure}[htbp]
 	\centering
-	\includegraphics[width=9.41cm]{table.jpg}
+	\includegraphics[width=0.4\textwidth]{table.jpg}
 	\caption{实验桌整理后照片}
 \end{figure}
 	
