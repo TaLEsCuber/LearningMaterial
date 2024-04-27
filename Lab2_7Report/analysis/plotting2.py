@@ -2,6 +2,17 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from datetime import datetime
 
+# 设置全局字号大小和图像尺寸
+plt.rcParams.update({
+    'font.size': 12,
+    'axes.titlesize': 20,
+    'axes.labelsize': 24,
+    'xtick.labelsize': 20,
+    'ytick.labelsize': 20,
+    'legend.fontsize': 20,
+    'figure.figsize': (8.27, 11.69)
+})
+
 # 读取Excel文件
 df = pd.read_excel('黑面1.xlsx')
 
@@ -21,7 +32,7 @@ end_index = num_points  # 结束位置为数据末尾
 
 # 绘制折线图
 plt.plot(seconds[start_index:end_index], df['Untitled 1'][start_index:end_index], linewidth=2)  # 将 'Column2' 替换为实际的第二列数据名称
-plt.xlabel('Time (seconds)', fontsize=20)
-plt.ylabel('Power(W)', fontsize=20)
+plt.xlabel('Time (seconds)')
+plt.ylabel('Power(W)')
 # plt.title('Line Plot of Data (Last 2/3)')
 plt.show()

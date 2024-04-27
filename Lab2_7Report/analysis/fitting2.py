@@ -5,6 +5,20 @@ import numpy as np
 from scipy.optimize import curve_fit
 import matplotlib.pyplot as plt
 
+
+# 设置全局字号大小和图像尺寸
+plt.rcParams.update({
+    'font.size': 12,
+    'axes.titlesize': 20,
+    'axes.labelsize': 24,
+    'xtick.labelsize': 20,
+    'ytick.labelsize': 20,
+    'legend.fontsize': 20,
+    'figure.figsize': (8.27, 11.69)
+})
+
+
+
 # 读取Excel文件中的数据
 df = pd.read_excel('data1.xlsx', sheet_name='D')
 # df = pd.read_excel('DataAnalysis.xlsx')
@@ -27,20 +41,27 @@ initial_guess = [1000, 40.0, 0.06]
 # 使用curve_fit进行拟合
 popt, pcov = curve_fit(func, x_data, y_data, p0=initial_guess)
 
+# 计算相关系数
+residuals = y_data - func(x_data, *popt)
+ss_res = np.sum(residuals**2)
+ss_tot = np.sum((y_data - np.mean(y_data))**2)
+r_squared = 1 - (ss_res / ss_tot)
+
 # 输出拟合参数
 print("拟合参数:", popt)
+print("相关系数:", r_squared)
 
-x_plot = np.linspace(100, 400, num=1000)
+x_plot = np.linspace(100, 350, num=1000)
 
 # 绘制拟合结果
 plt.figure()
 plt.scatter(x_data, y_data, label='$DataPoint$')
 # plt.plot(x_plot, func(x_plot, *popt), 'r-', label='$Fitting$: $\\sigma$=%5.3f , bias_1=%5.3f , bias_2=%5.3f ' % tuple(popt))
 
-plt.plot(x_plot, func(x_plot, *popt), 'r-', label='$Fitting$: k=%5.3e ,  bias_1=%5.3f mm, bias_2=%5.3f mV' % tuple(popt))
+plt.plot(x_plot, func(x_plot, *popt), 'r-', label='$Fitting$: k=%5.3e ,  bias_1=%5.3f mm,\n bias_2=%5.3f mV, $R^2$=%.6f' % (*popt, r_squared))
 
-plt.xlabel('d/mm', fontsize=20)
-plt.ylabel('U/mV', fontsize=20)
+plt.xlabel('d/mm')
+plt.ylabel('U/mV')
 
-plt.legend(fontsize='large')
+plt.legend()
 plt.show()

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.8)  27 APR 2024 02:02
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.8)  27 APR 2024 21:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1358,12 +1358,12 @@ LaTeX Warning: Float too large for page by 31.04773pt on input line 329.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 333.
+(hyperref)                replaced by space on input line 335.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 378.
+(hyperref)                replaced by space on input line 380.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1413,40 +1413,35 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 445.
+(hyperref)                replaced by space on input line 448.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 445.
+(hyperref)                replaced by space on input line 448.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\heiti' on input line 445.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 449.
+(hyperref)                removing `\heiti' on input line 448.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 455.
+(hyperref)                replaced by space on input line 452.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 10.95pt
+(hyperref)                replaced by space on input line 458.
 
 File: ./images//graph3-2-2.png Graphic file (type bmp)
 <./images//graph3-2-2.png>
+File: ./images//graph3-2-1.png Graphic file (type bmp)
+<./images//graph3-2-1.png>
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 470.
+Underfull \hbox (badness 10000) in paragraph at lines 486--487
 
-File: ./images//graph3-3-1.png Graphic file (type bmp)
-<./images//graph3-3-1.png>
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 487.
+ []
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1458,6 +1453,60 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [12
 
 ]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 10.95pt
+(hyperref)                replaced by space on input line 501.
+
+File: ./images//graph3-3-1.png Graphic file (type bmp)
+<./images//graph3-3-1.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 514--515
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[13]
+File: ./images//graph3-3-2.png Graphic file (type bmp)
+<./images//graph3-3-2.png>
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 10.95pt
+(hyperref)                replaced by space on input line 541.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[14]
+Missing character: There is no μ (U+03BC) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no μ (U+03BC) in font [lmroman10-regular]:mapping=tex-text;!
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[15]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[16]
 File: ./images//table.jpg Graphic file (type bmp)
 <./images//table.jpg>
 
@@ -1468,20 +1517,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[13] (./Lab2_7Report.aux)
+[17] (./Lab2_7Report.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `Lab2_7Report.out' has not changed.
-(rerunfilecheck)             Checksum: B83457CDBD93477654860424A381331E;3506.
+(rerunfilecheck)             Checksum: F8BB871E73A2702FA360900747F6D161;3500.
  ) 
 Here is how much of TeX's memory you used:
- 43248 strings out of 476683
- 980956 string characters out of 5807576
+ 43288 strings out of 476683
+ 982279 string characters out of 5807576
  1885012 words of memory out of 5000000
- 62872 multiletter control sequences out of 15000+600000
+ 62910 multiletter control sequences out of 15000+600000
  521489 words of font info for 93 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  105i,12n,107p,448b,1107s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Lab2_7Report.pdf (13 pages).
+Output written on Lab2_7Report.pdf (17 pages).
