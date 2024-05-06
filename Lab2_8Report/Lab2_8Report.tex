@@ -1,0 +1,357 @@
+%!TEX program = xelatex
+\documentclass[dvipsnames, svgnames,a4paper,11pt]{article}
+% ----------------------------------------------------
+%   中山大学物理与天文学院本科实验报告模板
+%   作者：Huanyu Shi，2019级
+%   知乎：https://www.zhihu.com/people/za-ran-zhu-fu-liu-xing
+%   Github：https://github.com/huanyushi/SYSU-SPA-Labreport-Template
+%   Last update : 2023.4.10
+% ----------------------------------------------------
+
+\input{Settings} % 导入模板的相关设置
+\usepackage{lipsum}
+\usepackage{enumitem}
+\usepackage{tabularray}  %绘制表格时可以更加方便添加框线
+\setlist[enumerate]{label=\textup{(\arabic*)}}
+
+
+
+%---------------------------------------------------------------------
+%	正文
+%---------------------------------------------------------------------
+
+\begin{document}
+
+
+\begin{table}
+	\renewcommand\arraystretch{1.7}
+	\begin{tabularx}{\textwidth}{
+		|X|X|X|X
+		|X|X|X|X|}
+	\hline
+	\multicolumn{2}{|c|}{预习报告}&\multicolumn{2}{|c|}{实验记录}&\multicolumn{2}{|c|}{分析讨论}&\multicolumn{2}{|c|}{总成绩}\\
+	\hline
+	\LARGE25 & & \LARGE30 & & \LARGE25 & & \LARGE80 & \\
+	\hline
+	\end{tabularx}
+\end{table}
+
+
+\begin{table}
+	\renewcommand\arraystretch{1.7}
+	\begin{tabularx}{\textwidth}{|X|X|X|X|}
+	\hline
+	专业：& 物理学 &年级：& 2022级\\
+	\hline
+	姓名：& 戴鹏辉  & 学号： & 2344016 \\
+	\hline
+	日期：& 2024/5/1 & 教师签名：& \\
+	\hline
+	\end{tabularx}
+\end{table}
+
+\begin{center}
+	\LARGE CA2 \quad 夫兰克-赫兹实验：原子定态能级的观测
+\end{center}
+
+\textbf{【实验报告注意事项】}
+\begin{enumerate}
+	\item 实验报告由三部分组成：
+	\begin{enumerate}
+		\item 预习报告：（提前一周）认真研读\underline{\textbf{实验讲义}}，弄清实验原理；实验所需的仪器设备、用具及其使用（强烈建议到实验室预习），完成课前预习思考题；了解实验需要测量的物理量，并根据要求提前准备实验记录表格（第一循环实验已由教师提供模板，可以打印）。预习成绩低于10分（共20分）者不能做实验。
+	    \item 实验记录：认真、客观记录实验条件、实验过程中的现象以及数据。实验记录请用珠笔或者钢笔书写并签名（\textcolor{red}{\textbf{用铅笔记录的被认为无效}}）。\textcolor{red}{\textbf{保持原始记录，包括写错删除部分，如因误记需要修改记录，必须按规范修改。}}（不得输入电脑打印，但可扫描手记后打印扫描件）；离开前请实验教师检查记录并签名。
+	    \item 分析讨论：处理实验原始数据（学习仪器使用类型的实验除外），对数据的可靠性和合理性进行分析；按规范呈现数据和结果（图、表），包括数据、图表按顺序编号及其引用；分析物理现象（含回答实验思考题，写出问题思考过程，必要时按规范引用数据）；最后得出结论。
+	\end{enumerate}
+	\textbf{实验报告就是将预习报告、实验记录、和数据处理与分析合起来，加上本页封面。}
+	\item 每次完成实验后的一周内交\textbf{实验报告}（特殊情况不能超过两周）。
+	\item 实验报告注意事项
+		\begin{enumerate}[label=\roman*.]
+			\item 连线时务必注意，接错线路容易毁坏 F-H 管。
+			\item 连线时， $V_{G2K}$加速电压端接高压， 使用过程中请勿触碰接线端。
+		\end{enumerate}
+\end{enumerate}
+
+
+\clearpage
+\tableofcontents
+\clearpage
+
+\setcounter{section}{0}
+\section{CA2 \quad 夫兰克-赫兹实验：原子定态能级的观测 \quad\heiti 预习报告}
+	
+\subsection{实验目的}
+\begin{enumerate}
+	\item 从实验了解原子定态能级（量子化），更好掌握量子力学的基础知识。
+	\item 训练建立微观物理过程与宏观物理量之间关系的能力。
+	\item （选）学习分解多因素，研究独立因素影响实验现象的规律。
+	
+\end{enumerate}
+
+\subsection{仪器用具}
+\begin{table}[htbp]
+	\centering
+	\renewcommand\arraystretch{1.6}
+	% \setlength{\tabcolsep}{10mm}
+	\begin{tabular}{p{0.05\textwidth}|p{0.20\textwidth}|p{0.05\textwidth}|p{0.5\textwidth}}
+	\hline
+	编号& 仪器用具名称 & 数量 &  主要参数（型号，测量范围，测量精度等） \\
+	\hline
+	1	&	FH-Ar 实验管 	&1 	& 具体见实验管上说明\\
+
+	2	&	可编程直流稳压电源 	&1 	& GWINSTEK GPP-4323 \newline 4 通道独立输出： CH1、 CH2: 0~32V/0~3A； CH3: 0~5V/0~1A\newline CH4: 0~15V/ 0~1A 串联同步电压 0~64V\newline 并联同步电流 0~6A； \\
+	
+	3	&	多量程直流电源 & 1 &	GWINSTEK PFR-100M\newline 电压 0-250V，电流 0-2A，额定输出功率 100W； \\
+	
+	4	&	微电流放大器	&1 & BroLight BEM-5710\newline 电流测量范围： 10-8~10-13A，共分 6 档\\
+	
+	5	&	NI myDAQ 数据采集器	&	1 & 提供模拟输入 (AI)、模拟输出 (AO)、数字输入和输出(DIO)、音频、电源和数字万用表 (DMM) 功能\\
+	\hline
+\end{tabular}
+\end{table}
+
+\subsection{原理概述}
+
+
+	夫兰克-赫兹实验是一种重要的实验，用于验证原子能级的量子化。实验基本原理如下：
+
+	\begin{enumerate}
+		\item 实验装置：实验装置由一个真空管组成，管内充有氩气。管内有热阴极和一个阴极网格，以及一个收集电子的阳极。阴极和阳极之间有两个栅极，分别称为第一栅极$G_1$和第二栅极$G_2$。
+		
+			\begin{figure}[htbp]
+				\centering
+				\includegraphics[width=0.4\textwidth]{graph1-1-1.png}
+				\caption{夫兰克赫兹实验原理图}
+				\label{fig:graph1-1-1}
+			\end{figure}
+
+		\item 在充氩气的夫兰克一赫兹管中，电子由热阴极发射出来。施加第一栅极$G_1$电压$V_{G_1K}$的作用就是将电子从阴极周围拉出，使之持续发射电子；施加第二栅极$G_2$电压$V_{G_2K}$使进入两栅极区间的电子加速，直到穿过$G_2$后，受板极P和第二栅极$G_2$之间的反向拒斥电压$V_{G_2P}$作用而减速；如果电子穿过$G_2$时的动能$\geq eV_{G_2P}$，它就能冲过反向拒斥电场而到达板极形成板极电流$I_P$， 被微电流计检出。\textbf{如果电子加速后与氩原子发生非弹性碰撞后损失的能量使氩原子激发的话，电子本身所剩余的能量就会小于$eV_{G_2P}$，不足于克服拒斥电场而被折回到第二栅极，通过微电流计的读数将显著减小。}
+		\item 当第二栅极电压$V_{G_2K}$逐渐增大时，如果$V_{G_2K} - V_{G_1K_{min}}$小于或等于$V_{G_2P}$，电子不能抵达板极；如果大于$V_{G_2P}$，板极电流$I_P$将随$V_{G_2K}$的增加而增大。当电子与氩原子发生非弹性碰撞，损失能量$E_n - E_m$时，板极电流$I_P$将显著减小。随着$V_{G_2K}$进一步增加，电子继续加速，能量增加，使之可以克服反向拒斥电场而达到板极$P$，这时$I_P$又再次上升，直到$V_{G_2K}$达到氩原子第一激发电位的二倍以上时，电子因二次碰撞而又失去能量，导致$I_P$的第二次下降。当 $V_{G_2K}$的增量达到氩原子第一激发电位整数倍时，电流$I_P$会开始下降，形成规则起伏变化的$I_P \sim V_{G2K}$曲线。
+		\item 综上所述，通过改变第二栅极的电压，可以观察到电流的周期性变化。这种变化是由于氩原子的能级是量子化的，只有当电子的能量足够以激发氩原子的能级时，电子才能到达阳极。这种现象验证了原子能级的量子化理论。
+	\end{enumerate}
+	
+	这个实验提供了直接的实验证据，证明了玻尔提出的氢原子能级量子化理论的正确性，为量子力学的发展做出了重要贡献。
+
+
+
+
+\subsection{实验前思考题}
+
+% 思考题1
+\begin{question}
+	是否只要与原子发生碰撞的电子能量达到$E_n$-$E_m$，原子就会发生能级跃迁？
+\end{question}
+
+	当电子与原子发生碰撞时，如果电子的能量等于或大于原子能级之间的能量差$E_n$-$E_m$，原子就会发生能级跃迁。这是因为原子吸收了足够的能量来促使一个电子从较低的能级跃迁到较高的能级。如果电子的能量正好等于两个能级之间的差值，那么这部分能量将被用于跃迁，而电子的其余动能将以散射的形式保留。如果电子的能量大于所需的能级差，那么超出的部分将转化为电子的动能或可能导致原子电离。
+	
+
+% 思考题2
+\begin{question}
+	从阴极发射出来的，但又不能抵达板极的那些电子，最后跑到哪里去了？
+\end{question}
+
+	从阴极发射出来但不能抵达板极的电子，通常会返回到阴极或者被其他部件（如栅极）捕获。在电子管中，如果电子没有足够的能量穿过加速区域或者被反向电场所阻挡，它们就会被重新吸引回阴极。这种现象是由于电子和晶格离子之间的静电力作用形成的势垒，使得电子不能轻易离开电极表面。为了克服这个势垒，需要施加一定的逸出功。如果电子没有获得足够的逸出功，它们就会回到阴极表面。
+
+	此外，电子也可能在真空管内部的其他部件上产生影响，例如在玻璃壁上产生磷光，或者在阴极和阳极之间的金属板上形成阴影，这些都是电子与物质相互作用的结果。
+
+
+
+% 思考题3
+\begin{question}
+	（选） 依据电荷守恒定理，本实验是否可以不测板极电流而监测$ G_2 $极电流？ 为什么实验没有这样设计？（深入）
+\end{question}
+
+	根据电荷守恒定律，理论上可以通过监测$ G_2 $极电流来间接测量板极电流$I_P$，因为在一个封闭系统中，电荷的总量是守恒的。这意味着，如果没有电荷从系统中逃逸，那么流入$ G_2 $极的电流应该等于流出板极的电流。
+
+	然而，实验通常没有这样设计，原因可能包括：
+	
+	\begin{enumerate}
+		\item 测量准确性：直接测量板极电流$I_P$可能比监测$ G_2 $极电流更准确，因为板极电流直接反映了到达板极的电子数量。
+		\item 实验简便性：直接测量板极电流的实验设置可能更简单，更易于实施和解释。
+		\item 电子损失：在实际的电子管中，可能会有电子在到达板极之前被其他部件捕获或者与管壁发生相互作用，这些因素可能导致$ G_2 $极电流与板极电流不完全相等。
+		\item 实验目的：弗兰克-赫兹实验的目的是观察电子与原子气体碰撞后的能量量子化现象，直接测量板极电流更直接地展示了这一现象。
+		\item 电子动态：在某些情况下，电子可能在$ G_2 $极和板极之间发生非弹性碰撞，这会改变电子的能量分布，从而影响板极电流，但不一定影响$ G_2 $极电流。
+	\end{enumerate}
+	
+	综上所述，虽然从理论上讲，监测$ G_2 $极电流是可行的，但直接测量板极电流$I_P$在实验操作和数据解释上可能更为直接和准确。
+
+
+
+% 思考题4
+\begin{question}
+	实验测量为散点值，有什么方法可以精确得到$I_P$~$V_{G_2K}$ 曲线的峰值和谷值？
+\end{question}
+
+	\begin{enumerate}
+		\item 峰值检测算法：可以使用自动多尺度峰值检测算法（AMPD），它适用于周期性或准周期性信号的峰值查找，具有良好的抗噪能力和自适应性。这种算法通过多尺度滑动窗口比较寻找局部最大值。
+		\item Matlab的findpeaks函数：在Matlab中，可以利用 findpeaks 函数来查找波峰和波谷。这个函数可以设置最小峰高和峰间最小距离等参数来过滤噪声和非目标极值。
+		\item 数据平滑和插值：对散点数据进行平滑处理，如使用移动平均或高斯滤波，然后应用插值方法，如样条插值，以获得更平滑的曲线，从而更容易识别峰值和谷值。
+		\item 图形化方法：在某些情况下，可以通过绘制数据点并直观地检查曲线来确定峰值和谷值。这种方法虽然不是最精确的，但可以作为初步分析。
+		% \item 编程方法：编写自定义代码来实现峰值和谷值的检测，例如在Python中可以使用SciPy库中的 signal.find_peaks 函数。
+	\end{enumerate}
+
+
+
+% 思考题5
+\begin{question}
+	假设 F-H 管内没有充装任何原子气体，$I_P$随$V_{G_2K}$是怎么变化的？
+\end{question}
+
+	如果 F-H 管内没有充装任何原子气体，那么电子在从阴极到板极的过程中不会遇到原子而发生碰撞。这意味着电子不会因为非弹性碰撞而失去能量，因此电子能够保持其加速过程中获得的动能。在这种情况下，板极电流$I_P$会随着加速电压$V_{G_2K}$的增加而单调增加，不会出现因碰撞导致的电流峰值和谷值。
+
+
+
+% 思考题6
+\begin{question}
+	（选，复习分子运动理论） 求在电子与氩原子发生非弹性碰撞时，电子的速度分布和氩原子的速度分布？
+\end{question}
+
+
+
+
+
+% 思考题7
+\begin{question}
+	（选，复习分子运动理论） 推导证明， 在发生弹性碰撞后，电子损失的能量与碰撞前自身的动能相比可忽略不计。
+\end{question}
+
+
+
+
+
+
+% 思考题8
+\begin{question}
+	（选） 当年没有现在这么精密的微电流放大器，如果是你，你会怎么测量板极电流$I_P$?
+\end{question}
+
+	在没有精密微电流放大器的情况下，可以采用以下几种方法来测量板极电流$I_P$：
+
+	\begin{enumerate}
+		% \item 镜式电流计：使用高灵敏度的镜式电流计，它通过一个小镜子反射光束到刻度板上，可以测量非常微小的电流。
+		\item 伽利略电流计：这是一种高灵敏度的电流计，它利用电流通过线圈产生的磁场来转动一个指针，从而测量电流。
+		\item 电桥法：使用惠斯通电桥或其他类型的电桥来测量电流。通过调整电桥的平衡，可以间接测量通过电路的电流。
+		\item 电荷积累法：通过一个已知电容的电容器积累电荷，然后测量电容器两端的电压变化来计算电流。
+		% \item 电位差法：在电路中串联一个已知电阻，测量电阻两端的电位差，根据欧姆定律 ( V = IR ) 计算电流。
+		% \item 热效应法：利用电流通过导体时产生的热量来测量电流，例如使用热电偶或热敏电阻。
+		% \item 磁效应法：利用电流产生的磁场来测量电流，例如使用霍尔效应传感器。
+	\end{enumerate}
+
+
+
+\clearpage
+\begin{table}
+	\renewcommand\arraystretch{1.7}
+	\centering
+	\begin{tabularx}{\textwidth}{|X|X|X|X|}
+	\hline
+	专业：& 物理学 &年级：& 2022级 \\
+	\hline
+	姓名：& 戴鹏辉 & 学号：& 22344016 \\
+	\hline
+	室温：& xx℃ & 实验地点： & A508 \\
+	\hline
+	学生签名：& & 评分： &\\
+	\hline
+	实验时间：& 2024/xx/xx & 教师签名：&\\
+	\hline
+	\end{tabularx}
+\end{table}
+
+\section{CA2 \quad 夫兰克-赫兹实验：原子定态能级的观测 \quad\heiti 实验记录}
+\subsection{实验内容和步骤}
+
+	\subsubsection{实验一 \quad 选择合适电流量程，设置氩管工作电压}
+	
+	
+
+
+
+	\subsubsection{实验二 \quad 分析灯丝电压对$I_P$-$V_{G_2K}K$关系曲线的影响}
+
+
+
+
+
+
+	\subsubsection{实验三 \quad 氩原子第一激发电位测量}
+
+		
+
+
+
+%\subsection{实验数据记录}
+
+
+
+%\subsection{原始数据记录}
+
+
+
+\subsection{实验过程中遇到的问题记录}
+
+\begin{enumerate}
+	\item 	
+	
+\end{enumerate}
+	
+
+\clearpage
+\begin{table}
+	\renewcommand\arraystretch{1.7}
+	\begin{tabularx}{\textwidth}{|X|X|X|X|}
+	\hline
+	专业：& 物理学 &年级：& 2022级\\
+	\hline
+	姓名： & 戴鹏辉 & 学号：& 22344016\\
+	\hline
+    日期：& 2024/xx/xx & 评分： &\\
+	\hline
+	\end{tabularx}
+\end{table}
+
+\section{CA2 \quad 夫兰克-赫兹实验：原子定态能级的观测 \quad\heiti 分析与讨论}
+
+\subsection{实验数据分析}
+
+
+	\subsubsection{实验一 \quad 选择合适电流量程，设置氩管工作电压}
+		
+		
+
+
+
+	\subsubsection{实验二 \quad 分析灯丝电压对$I_P$-$V_{G_2K}K$关系曲线的影响}
+
+
+
+
+
+
+	\subsubsection{实验三 \quad 氩原子第一激发电位测量}
+			
+			
+			
+			
+\subsection{实验后思考题}
+
+
+
+\begin{question}
+	检索文献，列举三种测量光波波长的方法，给出参考文献列表。%\lipsum[20]
+\end{question}
+	
+	
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=9.41cm]{D:/大学各种资料/2023大二/2023大二上/基础物理实验I/5.光栅常数及光波波长的测量/SYSU-SPA-Labreport-Template-main/images/table.jpg}
+	\caption{原始实验数据}
+\end{figure}
+	
+
+
+
+
+
+\end{document}
