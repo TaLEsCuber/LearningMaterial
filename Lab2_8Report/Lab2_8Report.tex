@@ -262,24 +262,83 @@
 
 	\subsubsection{实验一 \quad 选择合适电流量程，设置氩管工作电压}
 	
-	
+		根据实验设备上的推荐参数设置，设置$V_{G_1K}=2V$，$V_{G_2P}=8V$，$V_{G_2K}=0\sim82V$。
+
+		按照实验讲义正确接线。
 
 
 
 	\subsubsection{实验二 \quad 分析灯丝电压对$I_P$-$V_{G_2K}K$关系曲线的影响}
 
+		\begin{enumerate}
+			\item 按照厂家推荐参数，设置灯丝电压$V_L=1.9V$，设置电压步长为$1V$，得到\cref{fig:graph2-2-1}：
+			
+				\begin{figure}[htbp]
+					\centering
+					\includegraphics[width=1\textwidth]{graph2-2-1.png}
+					\caption{$V_L=1.9V$时的$I_P$-$V_{G_2K}K$关系曲线}
+					\label{fig:graph2-2-1}
+				\end{figure}
+
+			\item 灯丝电压大于厂家推荐参数时，设置$V_L=2.3V$，设置电压步长为$1V$，得到\cref{fig:graph2-2-2}：
+			
+				\begin{figure}[htbp]
+					\centering
+					\includegraphics[width=1\textwidth]{graph2-2-2.png}
+					\caption{$V_L=2.3V$时的$I_P$-$V_{G_2K}K$关系曲线}
+					\label{fig:graph2-2-2}
+				\end{figure}
+
+			\item 灯丝电压小于厂家推荐参数时，设置$V_L=1.5V$，设置电压步长为$1V$，得到\cref{fig:graph2-2-3}：
+			
+			\begin{figure}[htbp]
+				\centering
+				\includegraphics[width=1\textwidth]{graph2-2-3.png}
+				\caption{$V_L=1.5V$时手动调节的$I_P$-$V_{G_2K}K$关系曲线}
+				\label{fig:graph2-2-3}
+			\end{figure}
+				
 
 
+		\end{enumerate}
 
 
 
 	\subsubsection{实验三 \quad 氩原子第一激发电位测量}
 
-		
+		按照出厂参数\textbf{手动}逐点测量$I_P$-$V_{G_2K}K$关系曲线，测量过程中从小到大单向调节，不要在测量过程中反复；记录完最后一组数据后，立即将$V_{G_2K}K$归零，保护氩管。
+
+		得到实验图像为\cref{fig:graph2-2-4}：
+
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width=1\textwidth]{graph2-2-4.png}
+			\caption{$V_L=1.9V$时的$I_P$-$V_{G_2K}K$关系曲线}
+			\label{fig:graph2-2-4}
+		\end{figure}
+
+
+		由于测得的实际是一个电流负值，所以作图时手动添加了负号。
 
 
 
-%\subsection{实验数据记录}
+\subsection{实验数据记录}
+
+	见\cref{fig:data}
+
+	\begin{figure}[htbp]
+		\centering
+		\subfloat[原始数据1]
+		{\includegraphics[width=0.35\textwidth]{OriginalData1.jpg}\label{fig:data1}}
+		\quad
+		\subfloat[原始数据2]
+		{\includegraphics[width=0.35\textwidth]{OriginalData2.jpg}\label{fig:data2}}
+		\quad
+
+
+		\caption{原始数据}
+		\label{fig:data}
+	\end{figure}
 
 
 
@@ -290,7 +349,9 @@
 \subsection{实验过程中遇到的问题记录}
 
 \begin{enumerate}
-	\item 	
+	\item 注意正确接线，错误接线极易损坏实验设备。
+	\item 注意记录微电流计的量程，软件自动记录的是微电流计的显示数值，实际电流值还需要乘上量程。
+	\item 手动测量时，电压的调节应保证单向，不可往复。
 	
 \end{enumerate}
 	
@@ -316,38 +377,114 @@
 
 	\subsubsection{实验一 \quad 选择合适电流量程，设置氩管工作电压}
 		
-		
+		在设置 F-H 管电极电压以观测氩原子的第一激发时，需要考虑以下几个关键参数：
 
+		\begin{enumerate}
+			\item 灯丝电压$V_L$: 控制热电子的发射量。需要调整以确保有足够的电子参与碰撞过程。
+			\item 第一栅极电压$V_{G_1K}$: 用于消除热电子在阴极附近的堆积，提高热发射效率。
+			\item 加速电压$V_{G_2K}$: 形成加速电场，使热电子获得动能。这个电压需要逐渐增加，以便电子能量达到氩原子第一激发所需的能量。
+			\item 拒斥电压$V_{G_2P}$: 形成斥电场，只有能量大于$  V_{G_2P}eV$的电子才能到达板极形成板极电流。
+		\end{enumerate}
+
+		
+		% 为了使$I_P$-$V_{G_2K}K$曲线更多地反映出发生氩原子第一激发的电子-氩原子非弹性碰撞，可按照以下步骤进行设置：
+
+		% \begin{enumerate}
+		% 	% \item 确保灯丝电压 $V_L$ 足够高，以产生足够数量的热电子。
+		% 	\item 调整第一栅极电压$V_{G_1K}$，以提高阴极的热发射效率。
+		% 	\item 逐渐增加加速电压$V_{G_2K}$，直到电子能量达到氩原子第一激发电位。
+		% 	\item 设置合适的拒斥电压$V_{G_2P}$，以确保只有在非弹性碰撞后仍具有足够能量的电子能够到达板极。
+		% \end{enumerate}
+		
 
 
 	\subsubsection{实验二 \quad 分析灯丝电压对$I_P$-$V_{G_2K}K$关系曲线的影响}
 
+		将三个不同的灯丝电压所测得的数据，绘制在一张图上，如\cref{fig:graph3-2-1}
 
+			\begin{figure}[htbp]
+				\centering
+				\includegraphics[width=1\textwidth]{graph3-2-1.png}
+				\caption{不同灯丝电压的$I_P\sim V_{G_2K}K$关系曲线}
+				\label{fig:graph3-2-1}
+			\end{figure}
 
+		可以看到在曲线最开始的部分，电流基本趋于零（实际上甚至是反电流），这是因为电子需要克服$V_{G_2P}$，只有能量大于这个电压的电子才能到达板极形成板极电流。
 
+		从图中可以看出，低于厂家推荐电压的$V_L=1.5V$所得到的曲线，电流要远小于其他两个电压值。高于厂家推荐电压的$V_L=2.3V$所得到的曲线，电流明显增加。因为灯丝电压设置过低时，无法产生足够的电子形成电流；电压设置过高，电子又会生成太多导致影响实验测量。
+
+		当电子与氩原子发生非弹性碰撞时，电子会将其能量传递给氩原子，使氩原子从基态跃迁到激发态。这个过程中，电子失去了部分或全部能量，因此无法克服之后的拒斥电场，导致板极电流  $I_P$  出现下降，形成波谷。但是，这个波谷点的电流\textbf{不会降为零}，原因如下：
+
+		\begin{enumerate}
+			\item 非弹性碰撞的概率：并非所有电子都会与氩原子发生非弹性碰撞。有一部分电子在加速电压 $V_{G_2K}$  的作用下，能够避免碰撞，直接到达板极。因此，即使在波谷点，也仍然有一定数量的电子贡献了电流。
+			\item 电子能量分布：即使电子与氩原子发生了非弹性碰撞，它们失去的能量也不是固定的。一些电子可能只是失去了部分能量，仍然有足够的能量克服拒斥电场到达板极。
+			\item $ V_{G_2K}$  的增大：随着加速电压$ V_{G_2K}$ 的增大，即使电子发生了非弹性碰撞，它们在碰撞后仍然可能具有足够的剩余能量来克服拒斥电场。因此，随着$ V_{G_2K}$的增大，波谷点的电流也会随之增大。
+		\end{enumerate}
+		
+		这些因素共同作用，导致在 $ I_P$ ~$ V_{G_2K}$ 曲线上，波谷点的电流不会下降为零，且随着$ V_{G_2K}$的增大而增大。
 
 
 	\subsubsection{实验三 \quad 氩原子第一激发电位测量}
+				
+		对实验所的图像进行寻峰寻谷，得到的图像如\cref{fig:graph3-3-1}
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width=1\textwidth]{graph3-3-1.png}
+			\caption{$V_L=1.9$时$I_P$-$V_{G_2K}K$关系曲线寻峰寻谷}
+			\label{fig:graph3-3-1}
+		\end{figure}
 			
-			
-			
-			
-\subsection{实验后思考题}
+		得到峰值电压和谷值电压为\cref{tbl:table3-3-1}
+
+		\begin{table}
+			\centering
+			\begin{tblr}{
+			  cells = {c},
+			  vline{1-2,8} = {-}{},
+			  hline{1,3} = {-}{},
+			}
+			峰值电压/V & 18 & 29 & 40 & 52 & 65 & 78 \\
+			谷值电压/V & 23 & 34 & 46 & 59 & 71 &    
+			\end{tblr}
+			\caption{峰值电压和谷值电压}
+			\label{tbl:table3-3-1}
+		\end{table}
+
+		使用逐差法计算平均间隔电压，将峰值电压间隔和谷值电压间隔同时考虑，计算过程如下：
+		\[
+		\Bar{\Delta V}=\frac{1}{2}(\frac{(52-18)+(65-29)+(78-40)}{3\times 3}+\frac{(59-34)+(71-46)}{2\times 2})=12.20V
+		\]
+		计算标准差：
+		\[
+		\sigma_V=\sqrt{\frac{1}{N}\sum^N(\Delta V_i-\bar{\Delta V})^2}=0.54V	
+		\]
+
+		查询资料得知，$Ar$原子的第一激发电位为11.6V，则计算相对误差为：$\eta=\frac{|12.2-11.6|}{11.6}=5.17\%$，可以发现实验测量值偏大。
+
+
+		处于激发态的原子不稳定，退回基态时会发射光子。已知$Ar$原子的第一激发电位为11.6V，则根据光电效应公式$h\nu=\Delta E=11.6eV$，可计算出这些光子的波长为$\lambda=\frac{hc}{\nu}=108.1nm$，这是紫外波段。
 
 
 
-\begin{question}
-	检索文献，列举三种测量光波波长的方法，给出参考文献列表。%\lipsum[20]
-\end{question}
+		原子对电子的弹性散射会改变电子的运动方向，但不会改变电子的动能，因为原子的质量远远大于电子质量。而电子在电场中的加速不受弹性散射的影响，因为弹性散射不涉及能量的转移。对于所测量的电流，弹性散射会导致电子运动方向的随机化，但由于电子的动能保持不变，电子仍然能够到达检测器。因此，弹性散射不会直接导致电流的减少。然而，如果散射导致电子偏离了原本到达检测器的路径，那么这些被偏转的电子可能不会被检测器捕获，从而间接影响到电流的测量结果。
+
+			
+% \subsection{实验后思考题}
+
+
+
+% \begin{question}
+% 	XXXXXXXXXXXXXXXXXXX
+% \end{question}
 	
 	
 
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=9.41cm]{D:/大学各种资料/2023大二/2023大二上/基础物理实验I/5.光栅常数及光波波长的测量/SYSU-SPA-Labreport-Template-main/images/table.jpg}
-	\caption{原始实验数据}
-\end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\includegraphics[width=9.41cm]{D:/大学各种资料/2023大二/2023大二上/基础物理实验I/5.光栅常数及光波波长的测量/SYSU-SPA-Labreport-Template-main/images/table.jpg}
+% 	\caption{原始实验数据}
+% \end{figure}
 	
 
 
