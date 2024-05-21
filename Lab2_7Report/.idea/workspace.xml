@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="08961568-dd0a-45f8-81af-f69f7570092a" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/Lab2_7Report.log" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2_7Report.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab2_7Report.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2_7Report.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2_8Report/Lab2_8Report.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2_8Report/Lab2_8Report.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2_8Report/Lab2_8Report.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2_8Report/Lab2_8Report.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2_8Report/Lab2_8Report.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2_8Report/Lab2_8Report.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2_8Report/Lab2_8Report.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2_8Report/Lab2_8Report.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2_8Report/Lab2_8Report.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab2_8Report/Lab2_8Report.tex" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2gLslWF6wmebuJP5Go807EB0sa5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "dev",
+    "last_opened_file_path": "E:/Workspace/GPLabR/Lab2_7Report"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="08961568-dd0a-45f8-81af-f69f7570092a" name="更改" comment="" />
+      <created>1715488343393</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715488343393</updated>
+    </task>
+    <servers />
+  </component>
+</project>
