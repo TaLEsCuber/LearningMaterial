@@ -262,306 +262,6 @@
 
 
 
-% \subsubsection{误差反馈控制：PID 简介}
-
-% 	PID（Proportional-Integral-Derivative）控制是一种经典的反馈控制策略，广泛应用于工业控制系统中。PID 控制器通过调整控制变量来最小化系统的误差，使输出达到期望值。
-
-% 	\paragraph*{比例控制 (P)}
-
-% 		比例控制的作用是通过控制器的输出与误差成正比来减小误差。当误差较大时，比例控制会产生较大的控制信号。比例控制的公式为：
-			
-% 			\begin{equation}
-% 				P = K_p \cdot e(t)
-% 			\end{equation}
-% 		其中，$K_p$ 是比例增益，$e(t)$ 是系统的瞬时误差。
-
-% 	\paragraph*{积分控制 (I)}
-
-% 	积分控制通过累积误差随时间的积分来消除长期的稳态误差，使系统达到精确的控制。积分控制的公式为：
-		
-% 		\begin{equation}
-% 			I = K_i \cdot \int_0^t e(\tau) \, d\tau
-% 		\end{equation}
-	
-% 		其中，$K_i$ 是积分增益。
-
-% 	\paragraph*{微分控制 (D)}
-
-% 	微分控制通过预测误差变化的趋势来提供预测性修正，以减少系统的超调和提高系统的响应速度。微分控制的公式为：
-% 		\begin{equation}
-% 			D = K_d \cdot \frac{d e(t)}{d t}
-% 		\end{equation}
-
-% 	其中，$K_d$ 是微分增益。
-
-% 	PID 控制器的总输出可以表示为这三部分之和：
-
-% 	\begin{equation}
-% 		u(t) = K_p \cdot e(t) + K_i \cdot \int_0^t e(\tau) \, d\tau + K_d \cdot \frac{d e(t)}{d t}
-% 	\end{equation}
-
-% 	\subsubsection{调节 PID 参数的一般方法}
-
-% 	调节 PID 参数是使控制系统达到最佳性能的关键步骤。以下是几种常见的调节方法：
-
-% 	\paragraph*{Ziegler-Nichols 方法}
-
-% 	通过设定 $K_i$ 和 $K_d$ 为零，逐渐增加 $K_p$ 直到系统达到临界振荡点，然后根据经验公式计算 $K_i$ 和 $K_d$ 的值。
-
-% 	\paragraph*{手动调节}
-
-% 	先调整 $K_p$，直到系统在无稳态误差下快速响应；再调整 $K_i$，以消除稳态误差；最后调整 $K_d$，以减少超调和振荡。
-
-% 	\paragraph*{软件调节}
-
-% 	使用软件工具自动调节 PID 参数，这种方法通常基于优化算法，如遗传算法、粒子群优化等。
-
-% 	\subsubsection{基于虚拟仪器的 PID 控制}
-
-% 	虚拟仪器是一种基于计算机的软件工具，通过模拟传统硬件仪器来实现数据采集、分析和控制。基于虚拟仪器的 PID 控制具有以下优点：
-
-% 	\begin{itemize}
-% 		\item \textbf{灵活性}：可以方便地调整和测试不同的控制算法和参数。
-% 		\item \textbf{可视化}：通过图形化界面实时监测和调节控制参数，方便用户操作。
-% 		\item \textbf{数据记录和分析}：可以记录系统响应数据并进行详细分析，以优化控制性能。
-% 	\end{itemize}
-
-% 	LabVIEW 是一个常用的虚拟仪器开发环境，通过其内置的 PID 控制工具包，用户可以轻松实现复杂的 PID 控制系统。
-
-% 	\subsubsection{PWM 信号简介}
-
-% 	PWM（Pulse Width Modulation，脉冲宽度调制）是一种通过调节脉冲宽度来控制输出功率的技术。PWM 信号主要应用在以下几个方面：
-
-% 	\begin{itemize}
-% 		\item \textbf{电机控制}：通过调节 PWM 信号的占空比来控制电机的转速和方向。
-% 		\item \textbf{LED 调光}：通过改变 PWM 信号的占空比来调节 LED 的亮度。
-% 		\item \textbf{电源控制}：在开关电源中使用 PWM 信号来控制输出电压。
-% 	\end{itemize}
-
-% 	PWM 信号的关键参数是空比（Duty Cycle），它定义了一个周期内脉冲高电平时间与总周期时间的比值。通过改变占空比，可以精确控制输出信号的平均电压和功率。
-
-% 	PID 控制和 PWM 信号常结合使用，通过 PID 控制器产生 PWM 信号，进而控制执行器（如电机、加热器等）的输出，实现精确的闭环控制。
-
-% 	\subsubsection{总结}
-
-% 	PID 控制是一种重要的反馈控制策略，通过比例、积分和微分控制实现精确的系统控制。调节 PID 参数的方法有多种，基于虚拟仪器的 PID 控制提供了灵活性和可视化的优势，而 PWM 信号则广泛应用于各种电机和电源控制中。理解和应用这些控制技术可以大大提高系统的稳定性和性能。
-
-% 	\subsubsection{半导体制冷器结构及工作原理简介}
-
-% 	半导体制冷器，也称为热电制冷器（Thermoelectric Cooler, TEC），是一种基于帕尔帖效应（Peltier Effect）的制冷设备。其结构和工作原理如下：
-
-% 	\paragraph*{结构}
-
-% 	一个典型的半导体制冷器由多个热电偶元件组成，这些热电偶元件通常排列成两个相对的矩阵，分别连接在两个陶瓷基板上。每个热电偶元件由两种不同类型的半导体材料（n型和p型）组成，这些材料通过导电连接器交替排列。具体结构如下：
-
-% 	\begin{itemize}
-% 		\item \textbf{热电偶元件}：由n型和p型半导体材料组成。n型材料具有多余的电子，而p型材料具有空穴。
-% 		\item \textbf{陶瓷基板}：用于支撑热电偶元件，并提供机械强度和电绝缘性。
-% 		\item \textbf{导电连接器}：连接n型和p型材料，使得电流能够通过整个热电偶阵列。
-% 	\end{itemize}
-
-% 	\paragraph{工作原理}
-
-% 	半导体制冷器的工作原理基于帕尔帖效应。当电流通过n型和p型半导体材料时，会发生热量传输，这一效应可以用于制冷和加热。具体工作原理如下：
-
-% 	\begin{itemize}
-% 		\item \textbf{帕尔帖效应}：当电流通过不同类型的半导体材料接口时，会吸收或释放热量。对于n型材料，当电流从金属流向半导体时，会吸收热量；对于p型材料，当电流从半导体流向金属时，也会吸收热量。
-% 		\item \textbf{热传输}：当电流通过连接的n型和p型半导体材料时，一侧会吸收热量（制冷侧），另一侧会释放热量（加热侧）。通过调节电流的方向，可以控制制冷和加热的方向。
-% 		\item \textbf{热泵效应}：半导体制冷器实际上是一个热泵，将热量从制冷侧转移到加热侧，从而达到制冷的目的。
-% 	\end{itemize}
-
-% 	\paragraph{应用}
-
-% 	半导体制冷器具有结构简单、无运动部件、可逆性和高精度控温等优点，广泛应用于以下领域：
-
-% 	\begin{itemize}
-% 		\item \textbf{电子设备散热}：用于精密电子设备（如激光器、光电探测器等）的温度控制。
-% 		\item \textbf{医疗设备}：用于便携式医疗设备（如血液分析仪、DNA扩增仪等）的制冷。
-% 		\item \textbf{消费电子}：用于便携式冰箱、冷却杯垫等消费电子产品。
-% 	\end{itemize}
-
-% 	\subsubsection{总结}
-
-% 	半导体制冷器是一种基于帕尔帖效应的制冷设备，通过电流控制热量传输，实现高效制冷。其简单的结构和高效的制冷能力使其在许多领域得到广泛应用。
-
-
-
-
-
-
-
-% \subsubsection*{误差反馈控制：PID 简介}
-
-% PID（Proportional-Integral-Derivative）控制是一种经典的反馈控制策略，广泛应用于工业控制系统中。PID 控制器通过调整控制变量来最小化系统的误差，使输出达到期望值。
-
-% \paragraph*{比例控制 (P)}
-
-% 比例控制的作用是通过控制器的输出与误差成正比来减小误差。当误差较大时，比例控制会产生较大的控制信号。比例控制的公式为：
-% \begin{equation}
-%     P = K_p \cdot e(t)
-% \end{equation}
-% 其中，$K_p$ 是比例增益，$e(t)$ 是系统的瞬时误差。
-
-% \paragraph*{积分控制 (I)}
-
-% 积分控制通过累积误差随时间的积分来消除长期的稳态误差，使系统达到精确的控制。积分控制的公式为：
-% \begin{equation}
-%     I = K_i \cdot \int_0^t e(\tau) \, d\tau
-% \end{equation}
-% 其中，$K_i$ 是积分增益。
-
-% \paragraph*{微分控制 (D)}
-
-% 微分控制通过预测误差变化的趋势来提供预测性修正，以减少系统的超调和提高系统的响应速度。微分控制的公式为：
-% \begin{equation}
-%     D = K_d \cdot \frac{d e(t)}{d t}
-% \end{equation}
-% 其中，$K_d$ 是微分增益。
-
-% PID 控制器的总输出可以表示为这三部分之和：
-% \begin{equation}
-%     u(t) = K_p \cdot e(t) + K_i \cdot \int_0^t e(\tau) \, d\tau + K_d \cdot \frac{d e(t)}{d t}
-% \end{equation}
-
-% \subsubsection*{调节 PID 参数的一般方法}
-
-% 调节 PID 参数是使控制系统达到最佳性能的关键步骤。以下是几种常见的调节方法：
-
-% \paragraph*{Ziegler-Nichols 方法}
-
-% 通过设定 $K_i$ 和 $K_d$ 为零，逐渐增加 $K_p$ 直到系统达到临界振荡点，然后根据经验公式计算 $K_i$ 和 $K_d$ 的值。
-
-% \paragraph*{手动调节}
-
-% 先调整 $K_p$，直到系统在无稳态误差下快速响应；再调整 $K_i$，以消除稳态误差；最后调整 $K_d$，以减少超调和振荡。
-
-% \paragraph*{软件调节}
-
-% 使用软件工具自动调节 PID 参数，这种方法通常基于优化算法，如遗传算法、粒子群优化等。
-
-% \subsubsection*{基于虚拟仪器的 PID 控制}
-
-% 虚拟仪器是一种基于计算机的软件工具，通过模拟传统硬件仪器来实现数据采集、分析和控制。基于虚拟仪器的 PID 控制具有以下优点：
-% \begin{itemize}
-%     \item \textbf{灵活性}：可以方便地调整和测试不同的控制算法和参数。
-%     \item \textbf{可视化}：通过图形化界面实时监测和调节控制参数，方便用户操作。
-%     \item \textbf{数据记录和分析}：可以记录系统响应数据并进行详细分析，以优化控制性能。
-% \end{itemize}
-% LabVIEW 是一个常用的虚拟仪器开发环境，通过其内置的 PID 控制工具包，用户可以轻松实现复杂的 PID 控制系统。
-
-% \subsubsection*{PWM 信号简介}
-
-% PWM（Pulse Width Modulation，脉冲宽度调制）是一种通过调节脉冲宽度来控制输出功率的技术。PWM 信号主要应用在以下几个方面：
-% \begin{itemize}
-%     \item \textbf{电机控制}：通过调节 PWM 信号的占空比来控制电机的转速和方向。
-%     \item \textbf{LED 调光}：通过改变 PWM 信号的占空比来调节 LED 的亮度。
-%     \item \textbf{电源控制}：在开关电源中使用 PWM 信号来控制输出电压。
-% \end{itemize}
-% PWM 信号的关键参数是占空比（Duty Cycle），它定义了一个周期内脉冲高电平时间与总周期时间的比值。通过改变占空比，可以精确控制输出信号的平均电压和功率。PID 控制和 PWM 信号常结合使用，通过 PID 控制器产生 PWM 信号，进而控制执行器（如电机、加热器等）的输出，实现精确的闭环控制。
-
-% \subsubsection*{总结}
-
-% PID 控制是一种重要的反馈控制策略，通过比例、积分和微分控制实现精确的系统控制。调节 PID 参数的方法有多种，基于虚拟仪器的 PID 控制提供了灵活性和可视化的优势，而 PWM 信号则广泛应用于各种电机和电源控制中。理解和应用这些控制技术可以大大提高系统的稳定性和性能。
-
-% \subsubsection*{半导体控温原理}
-
-% 半导体控温基于热电效应，主要包括帕尔帖效应（Peltier Effect）和塞贝克效应（Seebeck Effect）。
-
-% \paragraph*{帕尔帖效应}
-
-% 帕尔帖效应描述了当电流通过两个不同类型的半导体材料的接合处时，会吸收或释放热量。具体来说，当电流从p型半导体流向n型半导体时，接合处会吸收热量，形成制冷效果；反之，接合处会释放热量，形成加热效果。
-
-% \paragraph*{塞贝克效应}
-
-% 塞贝克效应描述了当两个不同类型的半导体材料的接合处存在温差时，会产生电动势。这种效应用于温度测量和热电发电。
-
-% \paragraph*{两者之间的关系}
-
-% 帕尔帖效应和塞贝克效应是热电效应的两个方面。帕尔帖效应用于温度控制，通过电流驱动实现制冷或加热；塞贝克效应用于温度测量或能量回收，通过温差产生电动势。这两种效应都依赖于材料的热电性能，是热电技术的基础。
-
-% \subsubsection*{傅里叶变换基本原理}
-
-% 傅里叶变换是一种将时间域信号转换为频率域信号的数学变换。它基于任何周期信号都可以表示为一组正弦波和余弦波的叠加。
-
-% \paragraph*{傅里叶变换公式}
-
-% 傅里叶变换的数学表达式为：
-% \begin{equation}
-%     X(f) = \int_{-\infty}^{\infty} x(t) e^{-j 2 \pi f t} dt
-% \end{equation}
-% 其中，$X(f)$为频率域表示，$x(t)$为时间域信号，$j$为虚数单位，$f$为频率。
-
-% \paragraph*{逆傅里叶变换}
-
-% 逆傅里叶变换用于将频率域信号转换回时间域信号，其表达式为：
-% \begin{equation}
-%     x(t) = \int_{-\infty}^{\infty} X(f) e^{j 2 \pi f t} df
-% \end{equation}
-
-% \subsubsection*{功率谱密度或幅度谱密度基本原理}
-
-% 功率谱密度（Power Spectral Density, PSD）和幅度谱密度（Amplitude Spectral Density, ASD）用于描述信号在频率域的能量分布。
-
-% \paragraph*{功率谱密度}
-
-% 功率谱密度表示每单位频率区间内的功率分布，其定义为：
-% \begin{equation}
-%     S_{xx}(f) = \lim_{T \to \infty} \frac{1}{T} \mathbb{E} \left[ \left| X_T(f) \right|^2 \right]
-% \end{equation}
-% 其中，$X_T(f)$为信号$x(t)$在区间$[-T/2, T/2]$上的傅里叶变换，$\mathbb{E}$为期望值。
-
-% \paragraph*{幅度谱密度}
-
-% 幅度谱密度表示每单位频率区间内的振幅分布，其定义为：
-% \begin{equation}
-%     A(f) = \sqrt{S_{xx}(f)}
-% \end{equation}
-
-% \paragraph*{应用}
-
-% 功率谱密度用于分析信号的频率成分和噪声特性，广泛应用于信号处理、通信系统和振动分析。幅度谱密度用于表征信号的振幅分布，常用于地震学和音频分析。
-
-% \subsubsection*{半导体制冷器结构及工作原理简介}
-
-% 半导体制冷器，也称为热电制冷器（Thermoelectric Cooler, TEC），是一种基于帕尔帖效应（Peltier Effect）的制冷设备。其结构和工作原理如下：
-
-% \paragraph*{结构}
-
-% 一个典型的半导体制冷器由多个热电偶元件组成，这些热电偶元件通常排列成两个相对的矩阵，分别连接在两个陶瓷基板上。每个热电偶元件由两种不同类型的半导体材料（n型和p型）组成，这些材料通过导电连接器交替排列。具体结构如下：
-
-% \begin{itemize}
-%     \item \textbf{热电偶元件}：由n型和p型半导体材料组成。n型材料具有多余的电子，而p型材料具有空穴。
-%     \item \textbf{陶瓷基板}：用于支撑热电偶元件，并提供机械强度和电绝缘性。
-%     \item \textbf{导电连接器}：连接n型和p型材料，使得电流能够通过整个热电偶阵列。
-% \end{itemize}
-
-% \paragraph{工作原理}
-
-% 半导体制冷器的工作原理基于帕尔帖效应。当电流通过n型和p型半导体材料时，会发生热量传输，这一效应可以用于制冷和加热。具体工作原理如下：
-
-% \begin{itemize}
-%     \item \textbf{帕尔帖效应}：当电流通过不同类型的半导体材料接口时，会吸收或释放热量。对于n型材料，当电流从金属流向半导体时，会吸收热量；对于p型材料，当电流从半导体流向金属时，也会吸收热量。
-%     \item \textbf{热传输}：当电流通过连接的n型和p型半导体材料时，一侧会吸收热量（制冷侧），另一侧会释放热量（加热侧）。通过调节电流的方向，可以控制制冷和加热的方向。
-%     \item \textbf{热泵效应}：半导体制冷器实际上是一个热泵，将热量从制冷侧转移到加热侧，从而达到制冷的目的。
-% \end{itemize}
-
-% \paragraph{应用}
-
-% 半导体制冷器具有结构简单、无运动部件、可逆性和高精度控温等优点，广泛应用于以下领域：
-
-% \begin{itemize}
-%     \item \textbf{电子设备散热}：用于精密电子设备（如激光器、光电探测器等）的温度控制。
-%     \item \textbf{医疗设备}：用于便携式医疗设备（如血液分析仪、DNA扩增仪等）的制冷。
-%     \item \textbf{消费电子}：用于便携式冰箱、冷却杯垫等消费电子产品。
-% \end{itemize}
-
-% \subsubsection*{总结}
-
-% 半导体制冷器是一种基于帕尔帖效应的制冷设备，通过电流控制热量传输，实现高效制冷。其简单的结构和高效的制冷能力使其在许多领域得到广泛应用。
-
-
-
-
 \clearpage
 
 \subsection{实验前思考题}
@@ -753,18 +453,75 @@
 \section{BD4 \quad TEC 半导体控温实验 \quad\heiti 实验记录}
 \subsection{实验内容和步骤}
 
-	\subsubsection{实验一 \quad 连接电路和测试}
-	
+	\subsubsection{连接电路和测试}
+
+        \begin{figure}[htbp]
+            \centering
+            \includegraphics[width=0.6\textwidth]{graph2-1.png}
+            \caption{控温实验接线示意图}
+            \label{fig:fig2-1}
+        \end{figure}
+
+        \begin{figure}[htbp]
+            \centering
+            \includegraphics[width=0.6\textwidth, angle=90]{graph2-1a.jpg} % 将图片逆时针旋转90度
+            \caption{控温实验接线实物图}
+            \label{fig:fig2-1a}
+        \end{figure}
+
+        \begin{enumerate}
+            \item \textbf{测量和确认热敏电阻工作状态}
+            \begin{enumerate}
+                \item 使用万用表测量实验装置的PT100热敏电阻的阻值，确认温度传感器正常工作。
+                \item 使用线缆（香蕉插头和鳄鱼夹）将PT100连接到myDAQ的电阻测量端口，利用myDAQ的数字万用表功能进行测量。
+            \end{enumerate}
+            
+            \item \textbf{完成IBT-2电机驱动器与控温实验装置、myDAQ及直流稳压电源的连接}
+            \begin{enumerate}
+                \item \textbf{TEC连接}
+                \begin{enumerate}
+                    \item 将TEC的红色线接到IBT-2电机驱动器的M+端，黑色线接到M-端。
+                \end{enumerate}
+                
+                \item \textbf{直流稳压电源连接}
+                \begin{enumerate}
+                    \item 使用粗导线连接直流稳压电源和IBT-2电机驱动器，注意正负极。选择直流电源通道1，设置电压为12V，电流为2A（运行控制程序后再开启电源输出）。
+                \end{enumerate}
+                
+                \item \textbf{数字端口连接}
+                \begin{enumerate}
+                    \item 使用杜邦线将IBT-2电机驱动器的数字端口与myDAQ按图示连接。可以用线缆颜色区分信号，例如红色表示加热，蓝色表示制冷等。
+                    \item 数字端3和4可以先接到面包板上，短接后再通过杜邦线连接到myDAQ。
+                \end{enumerate}
+            \end{enumerate}
+            
+            \item \textbf{检查电脑与myDAQ的通信}
+            \begin{enumerate}
+                \item 在电脑上双击“NI MAX”图标，检查“设备和接口”栏下分配给myDAQ的设备名称，确保该名称与控温程序中调用的名称一致。如果不一致，需要重命名。
+            \end{enumerate}
+        \end{enumerate}
 
 
+	\subsubsection{使用 Labview 程序进行控温实验}
 
-	\subsubsection{实验二 \quad 学习并利用提供的 Labview 程序进行控温实验}
+        使用老师所提供的Labview控温程序，后面板如\cref{fig:fig-code}：  
 
-
-
+        \begin{figure}[htbp]
+            \centering
+            \includegraphics[width=0.6\textwidth]{code.jpg} 
+            \caption{Labview程序后面板}
+            \label{fig:fig-code}
+        \end{figure}
+    
 
 
 	\subsubsection{实验三 \quad 自行设计控制程序，利用提供的温度变送器进行温度采集，通过 myDAQ的模拟电压输入端进行电压采集，开展控温实验，并附前面板和程序框图的截图。将控温的结果和实验内容二（利用 myDAQ 数字万用表进行温度采集）的结果进行对比。}
+
+    选。
+
+
+
+
 
 
 
@@ -773,23 +530,16 @@
 
 	见\cref{fig:data}
 
-	% \begin{figure}[htbp]
-	% 	\centering
-	% 	\subfloat[原始数据1]
-	% 	{\includegraphics[width=0.35\textwidth]{OriginalData1.jpg}\label{fig:data1}}
-	% 	\quad
-	% 	\subfloat[原始数据2]
-	% 	{\includegraphics[width=0.35\textwidth]{OriginalData2.jpg}\label{fig:data2}}
-	% 	\quad
+	\begin{figure}[htbp]
+		\centering
+		% \subfloat[原始数据1]
+		{\includegraphics[width=0.35\textwidth]{Data1.jpg}\label{fig:data1}}
+		\quad
 
+		\caption{原始数据}
+		\label{fig:data}
+	\end{figure}
 
-	% 	\caption{原始数据}
-	% 	\label{fig:data}
-	% \end{figure}
-
-
-
-%\subsection{原始数据记录}
 
 
 
@@ -819,26 +569,350 @@
 \subsection{实验数据分析}
 
 
-\subsubsection{实验一 \quad 连接电路和测试}
+\subsubsection{控温结果作图展示}
+    
+    \begin{enumerate}
+        \item 控温时域图：
+        
+            图像如\cref{fig:PID_1a}、\cref{fig:PID_2a}所示。
+        
+            \begin{figure}[htbp]
+                \centering
+                \subfloat[$K_u=600$]
+                {\includegraphics[width=1\textwidth]{TimeP_1.png}\label{fig:TimeP_1}}
+                \quad
+                \subfloat[$K_u=300 \quad T_i=0.198min$]
+                {\includegraphics[width=1\textwidth]{TimePI_1.png}\label{fig:TimePI_1}}
+                \quad
+                \subfloat[$K_u=300 \quad T_i=0.25min \quad T_d=0.025min$]
+                {\includegraphics[width=1\textwidth]{TimePID_1.png}\label{fig:TimePID_1}}
+                \quad
+        
+                \caption{第一组PID参数控温时域图像，设置控温温度20℃}
+                \label{fig:PID_1a}
+            \end{figure}
+
+            \begin{figure}[htbp]
+                \centering
+                \subfloat[$K_u=300$]
+                {\includegraphics[width=1\textwidth]{TimeP_2.png}\label{fig:TimeP_2}}
+                \quad
+                \subfloat[$K_u=300 \quad T_i=0.067min$]
+                {\includegraphics[width=1\textwidth]{TimePI_2.png}\label{fig:TimePI_2}}
+                \quad
+                \subfloat[$K_u=300 \quad T_i=0.067min \quad T_d=0.025min$]
+                {\includegraphics[width=1\textwidth]{TimePID_2.png}\label{fig:TimePID_2}}
+                \quad
+        
+                \caption{第二组PID参数控温时域图像，设置控温温度35℃}
+                \label{fig:PID_2a}
+            \end{figure}
+
+
+
+
+
+        \item 控温频域图：
+        
+            使用对数坐标，图像如\cref{fig:PID_1b}、\cref{fig:PID_2b}所示。
+
+            \begin{figure}[htbp]
+                \centering
+                \subfloat[$K_u=600$]
+                {\includegraphics[width=1\textwidth]{PSD_P_1.png}\label{fig:PSD_P_1}}
+                \quad
+                \subfloat[$K_u=300 \quad T_i=0.198min$]
+                {\includegraphics[width=1\textwidth]{PSD_PI_1.png}\label{fig:PSD_PI_1}}
+                \quad
+                \subfloat[$K_u=300 \quad T_i=0.25min \quad T_d=0.025min$]
+                {\includegraphics[width=1\textwidth]{PSD_PID_1.png}\label{fig:PSD_PID_1}}
+                \quad
+        
+                \caption{第一组PID参数控温频域图像，设置控温温度20℃}
+                \label{fig:PID_1b}
+            \end{figure}
+
+
+            \begin{figure}[htbp]
+                \centering
+                \subfloat[$K_u=300$]
+                {\includegraphics[width=1\textwidth]{PSD_P_2.png}\label{fig:PSD_P_2}}
+                \quad
+                \subfloat[$K_u=300 \quad T_i=0.067min$]
+                {\includegraphics[width=1\textwidth]{PSD_PI_2.png}\label{fig:PSD_PI_2}}
+                \quad
+                \subfloat[$K_u=300 \quad T_i=0.067min \quad T_d=0.025min$]
+                {\includegraphics[width=1\textwidth]{PSD_PID_2.png}\label{fig:PSD_PID_2}}
+                \quad
+        
+                \caption{第二组PID参数控温频域图像，设置控温温度35℃}
+                \label{fig:PID_2b}
+            \end{figure}
+
+            由于使用正常比例坐标可能控温效果更直观，故还使用了正常比例坐标，所作图像如\cref{fig:PID_Normal_1c}、\cref{fig:PID_Normal_2c}：
+
+            \begin{figure}[htbp]
+                \centering
+                \subfloat[$K_u=600$]
+                {\includegraphics[width=1\textwidth]{PSD_P_Normal_1.png}\label{fig:PSD_P_Normal_1}}
+                \quad
+                \subfloat[$K_u=300 \quad T_i=0.198min$]
+                {\includegraphics[width=1\textwidth]{PSD_PI_Normal_1.png}\label{fig:PSD_PI_Normal_1}}
+                \quad
+                \subfloat[$K_u=300 \quad T_i=0.25min \quad T_d=0.025min$]
+                {\includegraphics[width=1\textwidth]{PSD_PID_Normal_1.png}\label{fig:PSD_PID_Normal_1}}
+                \quad
+        
+                \caption{第一组PID参数控温频域图像，设置控温温度20℃}
+                \label{fig:PID_Normal_1c}
+            \end{figure}
+
+            \begin{figure}[htbp]
+                \centering
+                \subfloat[$K_u=300$]
+                {\includegraphics[width=1\textwidth]{PSD_P_Normal_2.png}\label{fig:PSD_P_Normal_1}}
+                \quad
+                \subfloat[$K_u=300 \quad T_i=0.067min$]
+                {\includegraphics[width=1\textwidth]{PSD_PI_Normal_2.png}\label{fig:PSD_PI_Normal_2}}
+                \quad
+                \subfloat[$K_u=300 \quad T_i=0.067min \quad T_d=0.025min$]
+                {\includegraphics[width=1\textwidth]{PSD_PID_Normal_2.png}\label{fig:PSD_PID_Normal_2}}
+                \quad
+        
+                \caption{第二组PID参数控温频域图像，设置控温温度35℃}
+                \label{fig:PID_Normal_2c}
+            \end{figure}
+
+            
+    \end{enumerate}
+
+
+
+\subsubsection{分析和讨论}
+
+    \begin{enumerate}
+        \item 时域分析：
+
+            对不同的PID控温参数下的控温结果进行标准差分析，结果如\cref{tbl:table1}：
+
+
+            
+            \begin{table}[htbp]
+                \centering
+                \begin{tblr}{
+                cells = {c},
+                cell{1}{2} = {c=3}{},
+                cell{1}{5} = {c=3}{},
+                vline{1-3,6,8} = {1}{},
+                vline{1-2,5,8} = {2-4}{},
+                hline{1,3,5} = {-}{},
+                hline{2} = {2-7}{},
+                }
+                    & 第一组   &       &       & 第二组   &       &       \\
+                    & P     & PI    & PID   & P     & PI    & PID   \\
+                平均值/℃ & 20.12 & 20.13 & 20.18 & 35.12 & 35.15 & 35.14 \\
+                标准差/℃ & 0.25  & 0.21  & 0.23  & 0.29  & 0.29  & 0.31  
+                \end{tblr}
+                \caption{控温结果和标准差分析}
+                \label{tbl:table1}
+            \end{table}
+
+            
+            \begin{enumerate}
+                \item \textbf{第一组}：
+                \begin{enumerate}
+                    \item \textbf{PI控制}：温度波动最小，控温效果最佳（标准差0.21°C）。
+                    \item \textbf{PID控制}：温度波动较小（标准差0.23°C），控温效果次佳。
+                    \item \textbf{P控制}：温度波动最大（标准差0.25°C），控温效果最差。
+                \end{enumerate}
+            
+                \item \textbf{第二组}：
+                \begin{enumerate}
+                    \item \textbf{P和PI控制}：控温效果相同（标准差均为0.29°C），温度波动较小。
+                    \item \textbf{PID控制}：温度波动略大（标准差0.31°C），控温效果稍差。
+                \end{enumerate}
+            
+                \item 总体来看，PI控制方式在第一组数据中表现最佳，在第二组数据中与P控制效果相同，均优于PID控制。因此，根据具体情况选择PI或PID控制方式可以实现较好的控温效果。
+            \end{enumerate}
+
+        \item 频域分析：
+        
+            通过对比\cref{fig:PID_1b}和\cref{fig:PID_2b}，可以对不同PID控温参数下的控温效果进行分析。功率谱密度（PSD）图显示了系统在不同频率下的能量分布情况，反映了控温系统的稳定性和响应特性。低频和高频段功率谱密度不同的纵坐标值有不同的物理意义：
+
+            \begin{enumerate}
+                \item \textbf{低频段（10$^{-2}$ Hz）}：
+                \begin{itemize}
+                    \item 低频段的高能量分布通常表示系统对低频扰动的响应较差，存在较大的温度波动。这些低频扰动通常与环境温度变化、系统的慢速响应特性等有关。
+                    \item 低频段能量分布较低则表示系统能够较好地抑制低频扰动，温度波动较小，控温效果较好。
+                \end{itemize}
+            
+                \item \textbf{高频段（10$^{-1}$ Hz）}：
+                \begin{itemize}
+                    \item 高频段的高能量分布通常表示系统对高频扰动的响应较差，存在较大的温度波动。这些高频扰动通常与传感器噪声、控制器高频响应等有关。
+                    \item 高频段能量分布较低则表示系统能够较好地抑制高频扰动，温度波动较小，控温效果较好。
+                \end{itemize}
+            \end{enumerate}
+        
+            以下是具体的分析结果：
+        
+        \begin{enumerate}
+            \item \textbf{第一组（设定控温温度20°C）}
+            \begin{enumerate}
+                \item \cref{fig:PSD_P_1} \( K_u = 600 \):
+                \begin{itemize}
+                    \item PSD在低频段（10$^{-2}$ Hz）和高频段（10$^{-1}$ Hz）均有较高的能量分布，显示出系统在这两个频段内的温度波动较大，控温效果较差。
+                \end{itemize}
+                
+                \item \cref{fig:PSD_PI_1} \( K_u = 300, T_i = 0.198 \text{ min} \):
+                \begin{itemize}
+                    \item PSD在低频段能量分布较低，显示出系统对低频扰动的良好抑制效果，温度波动较小。
+                    \item 高频段有一些能量波动，但整体波动较为平稳，控温效果较好。
+                \end{itemize}
+                
+                \item \cref{fig:PSD_PID_1} \( K_u = 300, T_i = 0.25 \text{ min}, T_d = 0.025 \text{ min} \):
+                \begin{itemize}
+                    \item PSD在低频段的能量分布较低，中频和高频段的能量分布较为均匀，整体波动较小，显示出系统的稳定性较好，控温效果最佳。
+                \end{itemize}
+            \end{enumerate}
+        
+            \item \textbf{第二组（设定控温温度35°C）}
+            \begin{enumerate}
+                \item \cref{fig:PSD_P_2} \( K_u = 300 \):
+                \begin{itemize}
+                    \item PSD在低频段（10$^{-2}$ Hz）有较高的能量分布，显示出系统在低频段内的温度波动较大，控温效果较差。
+                    \item 高频段能量波动较大，显示出系统对高频扰动的响应较差。
+                \end{itemize}
+                
+                \item \cref{fig:PSD_PI_2} \( K_u = 300, T_i = 0.067 \text{ min} \):
+                \begin{itemize}
+                    \item PSD在低频段和中频段的能量分布较低，显示出系统对低频和中频扰动的良好抑制效果，温度波动较小。
+                    \item 高频段能量分布较高，但整体波动较为平稳，控温效果较好。
+                \end{itemize}
+                
+                \item \cref{fig:PSD_PID_2} \( K_u = 300, T_i = 0.067 \text{ min}, T_d = 0.025 \text{ min} \):
+                \begin{itemize}
+                    \item PSD在低频段和中频段的能量分布均较低，高频段有少量能量波动，显示出系统的稳定性较好，控温效果最佳。
+                \end{itemize}
+            \end{enumerate}
+        
+            \item \textbf{总体分析}
+            \begin{enumerate}
+                \item 第一组：
+                \begin{itemize}
+                    \item \( K_u = 300, T_i = 0.25 \text{ min}, T_d = 0.025 \text{ min} \)（\cref{fig:PSD_PID_1}）的控温效果最好，整体能量分布较为均匀，温度波动较小。
+                    \item \( K_u = 600 \)（\cref{fig:PSD_P_1}）的控温效果较差，能量分布不均匀，温度波动较大。
+                \end{itemize}
+                
+                \item 第二组：
+                \begin{itemize}
+                    \item \( K_u = 300, T_i = 0.067 \text{ min}, T_d = 0.025 \text{ min} \)（\cref{fig:PSD_PID_2}）的控温效果最好，低频和中频段的能量分布较低，整体波动最小。
+                    \item \( K_u = 300 \)（\cref{fig:PSD_P_2}）的控温效果较差，高频段的能量波动较大。
+                \end{itemize}
+            \end{enumerate}
+        \end{enumerate}
+        
+        综上所述，添加积分和微分控制参数（PI和PID控制）能够有效降低温度波动，改善系统的稳定性。在实际应用中，选择合适的PID参数可以显著提升控温效果。
+        
+
+    \end{enumerate}
+
+
+
+
+
+		
+
+\subsection{实验后思考题}	
 	
+    \begin{question}
+        影响控温精度和稳定度的因素都有哪些， 如何进行改进？
+    \end{question}
+
+    影响控温精度和稳定度的因素主要包括以下几个方面：
+
+        \begin{enumerate}
+            \item TEC的性能和选型：TEC的性能直接影响着控温系统的稳定性和精度。选择合适功率、制冷能力、温度范围等特性的TEC对于控温系统的性能至关重要。
+            \item 环境温度和散热：环境温度的变化以及散热效率会影响到TEC的工作状态，从而影响控温精度和稳定度。良好的散热设计和环境温度控制可以提高控温系统的稳定性。
+            \item 电源质量和稳定性：TEC控温系统的电源质量和稳定性对系统的工作效果有很大影响。电源的电压稳定性、纹波、噪声等因素都会对控温系统产生影响。
+            \item 传感器的准确性：控温系统所采用的传感器的准确性和灵敏度对于控温精度至关重要。选择高精度、高灵敏度的传感器可以提高控温系统的精度和稳定性。
+            \item 控制算法：控制算法的设计对于控温系统的性能影响很大。采用合适的PID控制算法，并根据实际情况进行参数调整，可以提高控温系统的稳定性和精度。
+        \end{enumerate}
+    
+
+    可改进措施如下：
+    
+        \begin{enumerate}
+            \item 优化散热设计：改善散热系统，增加散热面积，提高散热效率，从而降低环境温度对于TEC控温系统的影响。
+            \item 选择优质电源：选择稳定性好、纹波小的电源，并根据TEC的工作电压要求选用合适的电源，确保电源的稳定性和质量。
+            \item 优化传感器：选择准确性高、响应速度快的传感器，并根据实际情况进行校准，确保传感器的准确性和稳定性。
+            \item 改进控制算法：针对不同的实验需求，优化控制算法的设计，采用合适的PID参数调整策略，提高控温系统的性能。
+            \item 定期维护和校准：定期对控温系统进行维护和校准，检查各个部件的工作状态，确保系统的稳定性和精度。
+        \end{enumerate}
+
+
+    综上所述，通过对TEC控温系统各个方面进行综合优化和改进，可以提高控温系统的精度和稳定性，从而更好地满足实验需求。
+    
+
+
+    \begin{question}
+        本实验中直流电源的电流输出建议设置为 2A， 为了减小温度的波动， 电流设置应该增大还是减小， 为什么？
+    \end{question}
+
+    在TEC控温实验中，直流电源的电流输出建议设置为2A。要减小温度的波动，电流设置应该适当增大。
+    
+    增大电流可以提高TEC的制冷能力，从而在外部环境温度变化或负载变化时更快地响应并稳定温度。当温度波动较大时，增大电流输出可以增加TEC的制冷量，使得系统更能够快速地回到设定温度。
+
+    需要注意的是，增大电流也会增加TEC的功耗和热量产生，因此需要注意系统的散热设计和电源能力是否能够支持增大电
+    流。同时，增大电流也可能会加速TEC的寿命损耗，因此需要在提高温度稳定性与设备寿命之间进行权衡。
+
+    总的来说，适当增大电流输出可以在一定程度上减小温度的波动，但需要考虑到系统的散热能力、电源能力和设备寿命等因素。
 
 
 
-\subsubsection{实验二 \quad 学习并利用提供的 Labview 程序进行控温实验}
+    \begin{question}
+        实验是否达到了控温的目的， 还有哪些可以改进的地方？
+    \end{question}
+
+    实验达到了控温的目的，但对于温度的控制还可以更加精准，可以改进的地方：
+
+        \begin{enumerate}
+            \item 优化控制算法：根据实验需求和系统特性，优化控制算法，提高系统的温度控制精度和稳定性。
+            \item 改进散热设计：优化散热系统，提高散热效率，以应对系统工作时产生的热量，确保系统在长时间运行时的稳定性。
+            \item 选择更好的传感器：选择更加准确、响应速度更快的温度传感器，提高系统对温度变化的检测和响应能力。
+            \item 定期维护和校准：定期对控温系统进行维护和校准，确保各个部件的工作状态良好，保证系统的性能稳定。
+            \item 结合实验需求进行优化：根据具体的实验需求，结合以上改进措施进行综合优化，以达到更好的控温效果。
+        \end{enumerate}
 
 
 
 
 
-\subsubsection{实验三 \quad 自行设计控制程序，利用提供的温度变送器进行温度采集，通过 myDAQ的模拟电压输入端进行电压采集，开展控温实验，并附前面板和程序框图的截图。将控温的结果和实验内容二（利用 myDAQ 数字万用表进行温度采集）的结果进行对比。}
 
-				
+    \begin{question}
+        温度控制程序是否工作正常， 是否还有优化的地方？
+    \end{question}
+
+    温度控制程序工作正常。设定目标温度后，经过一段时间,实际温度可以较好地与目标温度吻合，控温程序能够相对准确地控制温度。达到设定温度后,实际温度大致在1℃的范围内波动,波动在正常范围内。
+
+    可以优化的地方:
+
+        \begin{enumerate}
+            \item 控制算法优化：根据实际情况优化控制算法，例如调整PID参数、改进控制逻辑等，以提高温度控制的精度和稳定性。
+            \item 温度传感器校准：定期对温度传感器进行校准，确保获取的温度数据准确可靠。
+            \item 系统响应速度改进：优化系统设计或者增加控制策略，以提高系统的响应速度，使得系统能够更快地达到设定温度。
+            \item 故障诊断与预防：加入故障诊断机制，及时发现并解决系统故障，以保证系统的稳定性和可靠性。
+            \item 能耗优化：在保证控温效果的前提下，优化系统设计和控制策略，减少能耗，提高系统的能源利用效率。
+        \end{enumerate}
 
 
-	
-	
 
 
+        \begin{figure}[htbp]
+            \centering
+            \includegraphics[width=0.6\textwidth]{table.jpg}
+            \caption{整理后实验桌照片}
+            \label{fig:table}
+        \end{figure}
 
 
 
