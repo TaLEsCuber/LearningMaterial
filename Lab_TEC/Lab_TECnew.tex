@@ -530,18 +530,53 @@
 
         这里只展示一组参数的控温图像截屏，具体分析见后文。
 
-        \begin{figure}[htbp]
+        \begin{table}
             \centering
-            \includegraphics[width=0.6\textwidth]{PI_22.png} 
-            \caption{$K_c = 300 \quad T_i=0.067min$}
-            \label{fig:fig-PI_22}
-        \end{figure}
+            \begin{tblr}{
+              cells = {c},
+              cell{2}{1} = {r=3}{},
+              cell{5}{1} = {r=3}{},
+              vline{1-3,6} = {1-2,5}{},
+              vline{1,2,3,6} = {3-4,6-7}{},
+              hline{1-2,5,8} = {-}{},
+            }
+                &     & $K_p$  & $T_i/(min)$    & $T_d/(min)$    \\
+            第一组 & P   & 600 &       &       \\
+                & PI  & 300 & 0.198 &       \\
+                & PID & 300 & 0.25  & 0.025 \\
+            第二组 & P   & 300 &       &       \\
+                & PI  & 300 & 0.067 &       \\
+                & PID & 300 & 0.067 & 0.025 
+            \end{tblr}
+            \caption{实验时设置的PID参数}
+        \end{table}
+
+        % \begin{figure}[htbp]
+        %     \centering
+        %     \includegraphics[width=0.6\textwidth]{PI_22.png} 
+        %     \caption{$K_c = 300 \quad T_i=0.067min$}
+        %     \label{fig:fig-PI_22}
+        % \end{figure}
+
+        % \begin{figure}[htbp]
+        %     \centering
+        %     \includegraphics[width=0.6\textwidth]{PID_3.png} 
+        %     \caption{$K_c = 300 \quad T_i=0.067min \quad T_d=0.025min$}
+        %     \label{fig:fig-PID_3}
+        % \end{figure}
+
 
         \begin{figure}[htbp]
             \centering
-            \includegraphics[width=0.6\textwidth]{PID_3.png} 
-            \caption{$K_c = 300 \quad T_i=0.067min \quad T_d=0.025min$}
-            \label{fig:fig-PID_3}
+            \subfloat[$K_c = 300 \quad T_i=0.067min$]
+            {\includegraphics[width=0.45\textwidth]{PI_22.png}\label{fig:fig-PI_22}}
+            \quad
+            \subfloat[$K_c = 300 \quad T_i=0.067min \quad T_d=0.025min$]
+            {\includegraphics[width=0.45\textwidth]{PID_3.png}\label{fig:fig-PID_3}}
+            \quad
+    
+            % \caption{原始数据}
+            \label{fig:data}
         \end{figure}
 
 
@@ -568,6 +603,7 @@
 
 
 \begin{enumerate}
+    \item 接线时要注意接线正确；保证MyDAQ与电脑的正常连接。
 	\item 如果实验仪器长时间运行，底座由于无法及时将热量散出，会导致底座过热，控温性能变差。
 	\item 使用齐格勒-尼柯尔斯方法设置PID参数时，需要注意计算得到的参数的单位和Labview程序上的单位保持一致。
 \end{enumerate}
@@ -720,7 +756,7 @@
     \begin{enumerate}
         \item 时域分析：
 
-            对不同的PID控温参数下的控温结果进行标准差分析，结果如\cref{tbl:table1}：
+            对不同的PID控温参数下的控温结果进行标准差分析，并计算与目标控温温度（20℃和35℃）的相对误差，结果如\cref{tbl:table1}：
 
 
             
@@ -731,16 +767,17 @@
                 cell{1}{2} = {c=3}{},
                 cell{1}{5} = {c=3}{},
                 vline{1-3,5,6,8} = {1}{},
-                vline{1-2,5,8} = {2-4}{},
-                hline{1,3,5} = {-}{},
+                vline{1-2,5,8} = {2-5}{},
+                hline{1,3,6} = {-}{},
                 hline{2} = {2-7}{},
                 }
                     & 第一组   &       &       & 第二组   &       &       \\
                     & P     & PI    & PID   & P     & PI    & PID   \\
                 平均值/℃ & 20.12 & 20.13 & 20.18 & 35.12 & 35.15 & 35.14 \\
-                标准差/℃ & 0.25  & 0.21  & 0.23  & 0.29  & 0.29  & 0.31  
+                标准差/℃ & 0.25  & 0.21  & 0.23  & 0.29  & 0.29  & 0.31  \\
+                相对误差 & 0.6\%  & 0.65\%  & 0.9\%  & 0.343\% & 0.429\% & 0.4\% 
                 \end{tblr}
-                \caption{控温结果和标准差分析}
+                \caption{控温结果和标准差、相对误差分析}
                 \label{tbl:table1}
             \end{table}
 
