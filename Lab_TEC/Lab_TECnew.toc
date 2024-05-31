@@ -15,10 +15,12 @@
 \contentsline {subsubsection}{\numberline {2.1.1}连接电路和测试}{10}{subsubsection.2.1.1}%
 \contentsline {subsubsection}{\numberline {2.1.2}使用 Labview 程序进行控温实验}{11}{subsubsection.2.1.2}%
 \contentsline {subsection}{\numberline {2.2}实验原始数据记录}{14}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}实验过程中遇到的问题记录}{14}{subsection.2.3}%
 \contentsline {section}{\numberline {3}BD4 \hskip 1em\relax TEC 半导体控温实验 \hskip 1em\relax \heiti 分析与讨论}{15}{section.3}%
 \contentsline {subsection}{\numberline {3.1}实验数据分析}{15}{subsection.3.1}%
 \contentsline {subsubsection}{\numberline {3.1.1}控温结果作图展示}{15}{subsubsection.3.1.1}%
 \contentsline {subsubsection}{\numberline {3.1.2}分析和讨论}{15}{subsubsection.3.1.2}%
 \contentsline {subsection}{\numberline {3.2}实验后思考题}{23}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}实验总结}{26}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}实验问题总结}{26}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}实验分工}{26}{subsubsection.3.3.2}%
 \contentsfinish 

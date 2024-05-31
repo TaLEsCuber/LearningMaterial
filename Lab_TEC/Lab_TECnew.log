@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.8)  31 MAY 2024 12:58
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.9.8)  31 MAY 2024 13:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1364,16 +1364,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 630.
+(hyperref)                replaced by space on input line 623.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
-(hyperref)                replaced by space on input line 630.
+(hyperref)                replaced by space on input line 623.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\heiti' on input line 630.
+(hyperref)                removing `\heiti' on input line 623.
 
 File: ./images//TimeP_1.png Graphic file (type bmp)
 <./images//TimeP_1.png>
@@ -1501,6 +1501,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [24]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[25]
 File: ./images//table.jpg Graphic file (type bmp)
 <./images//table.jpg>
 
@@ -1511,7 +1519,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[25] (./Lab_TECnew.aux)
+[26
+
+] (./Lab_TECnew.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1519,15 +1529,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `Lab_TECnew.out' has not changed.
-(rerunfilecheck)             Checksum: 091974DACC42B8791E2A743629F3AB9D;2541.
+(rerunfilecheck)             Checksum: 3F8BED2D0C4E5BAC009BCA220EB5654B;2693.
  ) 
 Here is how much of TeX's memory you used:
- 40126 strings out of 476683
- 881126 string characters out of 5807576
+ 40129 strings out of 476683
+ 881185 string characters out of 5807576
  1889012 words of memory out of 5000000
- 59733 multiletter control sequences out of 15000+600000
+ 59736 multiletter control sequences out of 15000+600000
  524321 words of font info for 104 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  105i,14n,107p,446b,993s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Lab_TECnew.pdf (25 pages).
+Output written on Lab_TECnew.pdf (26 pages).
