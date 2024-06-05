@@ -494,7 +494,11 @@
 \end{question}
 
 
+	F-P标准具的干涉条纹由于光束的多次反射和干涉而形成。对于不同位置的条纹，由于光程差不同，条纹的直径也不同，具体地说，内圈条纹和外圈条纹的厚度存在差异。
 
+	假设我们有两个同一级条纹，其中内圈直径为$D_1$，外圈直径为$D_2$。
+
+	对于同一级条纹，若我们分别用内圈直径$D_1$和外圈直径为$D_2$计算电子的荷质比$\frac{e}{m}$，结果会有所不同。这是因为圆环并不是等厚的。随着条纹级数$N$，的增加，圆环的厚度变化$(\delta D)$会影响直径的测量。具体来说，随着级数的增加，圆环的厚度变化导致直径的变化，从而使得计算的结果有所偏差。
 
 
 
@@ -504,15 +508,23 @@
 	请利用（20）至（23）式，计算汞原子 $^3S_1$（6s7s）和 $^3P_2$（6s7p）能级所对应的量子数（见表 1），并给出详细的计算过程。
 \end{question}
 
-	% \begin{enumerate}
-	% 	\item 先计算 $^3S_1$的情况：
+	\begin{enumerate}
+		\item 先计算 $^3S_1$的情况：
 		
-	% 		\begin{itemize}
-	% 			\item 由$2S + 1 = 3$，得$S = 1$；
-	% 			\item 处在S轨道，则$L = 0$
-	% 			\item $J = 1$
-	% 		\end{itemize}
-	% \end{enumerate}
+			\begin{itemize}
+				\item 由$2S + 1 = 3$，得$S = 1$；
+				\item 处在S轨道，则$L = 0$
+				\item $J = 1$
+			\end{itemize}
+
+		\item 再计算$^3P_2$的情况：
+			
+			\begin{itemize}
+				\item 由$2S + 1 = 3$，得$S = 1$；
+				\item 处在P轨道，则$L = 1$
+				\item $J = 2$
+			\end{itemize}
+	\end{enumerate}
 
 
 % 思考题4
@@ -522,7 +534,142 @@
 
 	
 
-\clearpage
+	% 首先，总角动量 \( \mathbf{J} \) 是轨道角动量 \( \mathbf{L} \) 和自旋角动量 \( \mathbf{S} \) 的矢量和：
+
+	% 	\[
+	% 	\mathbf{J} = \mathbf{L} + \mathbf{S}
+	% 	\]
+
+
+	% 电子的轨道磁矩 \( \boldsymbol{\mu}_L \) 与轨道角动量 \( \mathbf{L} \) 相关：
+
+	% 	\[
+	% 	\boldsymbol{\mu}_L = -\frac{e}{2m_e} \mathbf{L}
+	% 	\]
+
+	% 电子的自旋磁矩 \( \boldsymbol{\mu}_S \) 与自旋角动量 \( \mathbf{S} \) 相关：
+
+	% 	\[
+	% 	\boldsymbol{\mu}_S = -g_s \frac{e}{2m_e} \mathbf{S}
+	% 	\]
+
+	% 其中，\( g_s \) 是电子的自旋g因子，数值约为2。
+
+
+
+	% 总磁矩 \( \boldsymbol{\mu}_J \) 是轨道磁矩和自旋磁矩的矢量和：
+
+	% 	\[
+	% 	\boldsymbol{\mu}_J = \boldsymbol{\mu}_L + \boldsymbol{\mu}_S
+	% 	\]
+	
+	% 我们通常考虑磁矩在外磁场方向上的分量（通常是z轴方向）。因此，磁矩z分量为：
+
+	% 	\[
+	% 	\mu_{Jz} = \mu_{Lz} + \mu_{Sz}
+	% 	\]
+
+	% 轨道角动量和自旋角动量在z方向的分量分别为：
+
+	% 	\[
+	% 	L_z = m_L \hbar
+	% 	\]
+	% 	\[
+	% 	S_z = m_S \hbar
+	% 	\]
+
+	% 轨道磁矩和自旋磁矩在z方向的分量分别为：
+
+	% 	\[
+	% 	\mu_{Lz} = -\frac{e}{2m_e} L_z = -\frac{e}{2m_e} m_L \hbar
+	% 	\]
+	% 	\[
+	% 	\mu_{Sz} = -g_s \frac{e}{2m_e} S_z = -g_s \frac{e}{2m_e} m_S \hbar
+	% 	\]
+
+	% 总磁矩的z分量为：
+
+	% 	\[
+	% 	\mu_{Jz} = -\frac{e}{2m_e} m_L \hbar - g_s \frac{e}{2m_e} m_S \hbar
+	% 	\]
+
+
+
+	朗德因子定义为总磁矩和总角动量的比值，即：
+
+		\[
+		\mu_{Jz} = -g_J \frac{e}{2m_e} J_z
+		\]
+
+	其中，总角动量z分量 \( J_z \) 为：
+
+		\[
+		J_z = m_J \hbar
+		\]
+
+	因此，总磁矩z分量可以表示为：
+
+		\[
+		\mu_{Jz} = -g_J \frac{e}{2m_e} m_J \hbar
+		\]
+
+	将上面两个关于 \(\mu_{Jz}\) 的表达式相等，并解出 \( g_J \)：
+
+		\[
+		-g_J \frac{e}{2m_e} m_J \hbar = -\frac{e}{2m_e} m_L \hbar - g_s \frac{e}{2m_e} m_S \hbar
+		\]
+
+	两边同时除以 \( -\frac{e}{2m_e} \hbar \)：
+
+		\[
+		g_J m_J = m_L + g_s m_S
+		\]
+
+	根据角动量合成规则，有：
+
+		\[
+		m_J = m_L + m_S
+		\]
+
+	所以：
+
+		\[
+		g_J m_J = m_L + g_s (m_J - m_L)
+		\]
+
+	化简后得到：
+
+		\[
+		g_J m_J = g_s m_J + (1 - g_s) m_L
+		\]
+
+	两边同时除以 \( m_J \)：
+
+		\[
+		g_J = g_s + \left(1 - g_s\right) \frac{m_L}{m_J}
+		\]
+
+
+	根据量子力学中的角动量耦合理论，期望值为：
+
+		\[
+		\frac{\langle m_L \rangle}{m_J} = \frac{J(J+1) + L(L+1) - S(S+1)}{2J(J+1)}
+		\]
+
+	因此，朗德因子的最终表达式为：
+
+		\[
+		g_J = g_s \frac{J(J+1) + S(S+1) - L(L+1)}{2J(J+1)} + \frac{J(J+1) + L(L+1) - S(S+1)}{2J(J+1)}
+		\]
+
+	将 \( g_s = 2 \) 代入，得到：
+
+		\[
+		g_J = 1 + \frac{J(J+1) + S(S+1) - L(L+1)}{2J(J+1)}
+		\]
+
+	这就是朗德因子的一般表达式。
+
 
 % 思考题5
 \begin{question}
@@ -544,7 +691,7 @@
 \end{question}
 
 
-
+	当外磁场 $B_{ext} \ll B_{int}$时，可认为是弱磁场，此处可取$B_{ext} \approx 0.1T$
 
 
 
@@ -558,7 +705,7 @@
 
 
 
-
+\clearpage
 
 % 思考题8
 \begin{question}
