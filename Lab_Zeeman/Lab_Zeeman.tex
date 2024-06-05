@@ -121,39 +121,75 @@
 		\begin{enumerate}
 			\item 电子的轨道磁矩
 
-				\begin{figure}[htbp]
-					\centering
-					\includegraphics[width=0.8\textwidth]{graph1-1.png}
-					\label{fig:graph1-1}
-				\end{figure}
+				\[
+					\mu_l = \sqrt{l(l+1)}\frac{e \hbar}{2 m_e} \equiv \sqrt{l(l+1)}\mu_B \quad l=0,1,2,\cdots , n-1	
+				\]
+
+				\[
+					\mu_{l,z} = m_l \hbar \cdot \frac{e}{2 m_e} = m_l \mu_B \quad m_l = 0,\pm 1,\cdots ,\pm l	
+				\]
+
+				其中$\mu_B \equiv \frac{e \hbar}{2 m_e} =0.9274 \times 10^{23} A\cdot m^2$
+
+
+				% \begin{figure}[htbp]
+				% 	\centering
+				% 	\includegraphics[width=0.8\textwidth]{graph1-1.png}
+				% 	\label{fig:graph1-1}
+				% \end{figure}
 
 			\item 电子的自旋 及自旋磁矩
 			
 				电子除了轨道角动量外，还有自旋运动，电子的自旋是一种固有的内在属性，电子自旋角动量及其 z 方向分量大小的可能取值为：
 
-					\begin{figure}[htbp]
-						\centering
-						\includegraphics[width=0.8\textwidth]{graph1-2.png}
-						\label{fig:graph1-2}
-					\end{figure}
+				\[
+					S = \sqrt{s(s+1)}\hbar \quad s = \frac{1}{2}	
+				\]
+
+				\[
+					S_z = m_s \hbar \quad m_s = \pm \frac{1}{2}	
+				\]
+
+
+					% \begin{figure}[htbp]
+					% 	\centering
+					% 	\includegraphics[width=0.8\textwidth]{graph1-2.png}
+					% 	\label{fig:graph1-2}
+					% \end{figure}
 
 				由电子自旋运动产生的自旋磁矩，其方向及大小为：
 
-					\begin{figure}[htbp]
-						\centering
-						\includegraphics[width=0.8\textwidth]{graph1-3.png}
-						\label{fig:graph1-3}
-					\end{figure}
+				\[
+					\vec{\mu_s} = -2 \gamma \vec{S}
+				\]
+
+				\[
+					\mu_s = 2\sqrt{s(s+1)}\mu_B \quad s = \frac{1}{2}
+				\]
+
+				\[
+					\mu_{s,z} = 2 m_s \mu_B \quad m_s = \pm \frac{1}{2}
+				\]
+
+
+					% \begin{figure}[htbp]
+					% 	\centering
+					% 	\includegraphics[width=0.8\textwidth]{graph1-3.png}
+					% 	\label{fig:graph1-3}
+					% \end{figure}
 
 			\item 磁矩在外磁场 中的势能
 					
 				在电磁学中，磁矩为的系统，在外磁场中的势能为：
-
-					\begin{figure}[H]
-						\centering
-						\includegraphics[width=0.8\textwidth]{graph1-4.png}
-						\label{fig:graph1-4}
-					\end{figure}
+				\[
+					U = - \vec{\mu} \cdot \vec{B}
+				\]	
+				
+					% \begin{figure}[H]
+					% 	\centering
+					% 	\includegraphics[width=0.8\textwidth]{graph1-4.png}
+					% 	\label{fig:graph1-4}
+					% \end{figure}
 
 					
 		\end{enumerate}
@@ -220,10 +256,10 @@
 
 				由经典力学的知识可知，力矩会引起系统总角动量的变化：
 				\[
-					\frac{d \vec{J}}{t} = \vec{\tau} = \vec{\mu_J} \cross \vec{B}
+					\frac{d \vec{J}}{d t} = \vec{\tau} = \vec{\mu_J} \cross \vec{B}
 				\]
 				\[
-					\frac{d \vec{\mu_J}}{d t} = \vec{\omega} \cross \vec{\mu} \quad \vec{omega} \equiv \gamma \vec{B}
+					\frac{d \vec{\mu_J}}{d t} = \vec{\omega} \cross \vec{\mu} \quad \vec{\omega} \equiv \gamma \vec{B}
 				\]
 				
 				式中的$\vec{\omega}$称为“拉莫尔频率”，$\vec{\mu_J}$大小不变，绕着外磁场B（z 轴方向）做进动，又称“拉莫尔进动”。
@@ -234,6 +270,15 @@
 					\item 弱外磁场:当外磁场$B_{ext}$的场强远远小于原子内部磁场$B_{int}$的场强，即为弱外磁场时，这时自旋—轨道耦合占主导，电子的总角动量J是守恒量，但总轨道角动量L和总自旋角动量S均不守恒, 系统的守恒量（好量子数）为$J^2,J_z,L^2,S^2\left(n,\ L,\ J,\ mj\right)。$
 					\item 强外磁场: 自旋—轨道耦合变得次要，电子磁矩（分为轨道磁矩和自旋磁矩）与外磁场$B_{ext}$的相互作用则占主导。系统的总轨道角动量L和总自旋角动量S不再耦合成总角动量J（仍然可通过$\vec{J}=\vec{L}+\vec{S}$计算总角动量，但此时的总角动量是非守恒量, （24）至（28）式在强外磁场的情况下不适用），此时系统的守恒量（好量子数）为$L^2,L_Z,\ \ S^2,\ {\ S}_z\left(n,\ L,\ ml,\ ms\right)$。
 				\end{itemize}
+			
+			\item 电子总磁矩 在外磁场 中的势能
+			
+				可得汞原子的总磁矩$\vec{\mu_j}$在沿着 z 轴方向的外磁场B中的势能为:
+				\[
+					U=-\mu_J \cdot B=m_jg_j\mu_B B	
+				\]
+
+
 		\end{enumerate}
 
 
@@ -242,6 +287,49 @@
 
 	\subsubsection{汞原子谱线在外磁场 中的能级分裂}
 
+		\begin{enumerate}
+			\item 原子谱线在外磁场中的分裂
+
+				当原子处于磁感应强度为B的外磁场中时，原子磁矩与磁场相互作用，使原子系统附加了势能$\Delta E=U$,（由（33）式给出），此时原子的能级将分裂为2J+1层，各层能量为:
+				\[
+					E = E_0 +m_J g_J \mu_B B
+				\]
+
+				又设频率为$\nu$的光子是由原子从能级E2跃迁到能级E1所产生，即有:
+				\[
+					h\nu = E_2 - E_1 = E_{20} - E_{10} + (m_2 g_2 -m_1 g_1)\mu_B B	
+				\]
+
+				分裂后的谱线和原来谱线之间的频率差为：
+				\[
+					\Delta \nu = (m_2 g_2 -m_1 g_1)\mu_B B / h
+				\]
+
+				波数差(波数定义$\widetilde{\upsilon}=1/\lambda$):
+				\[
+					\Delta \tilde{\nu} = \frac{(m_2 g_2 - m_1 g_1)eB}{4 \pi m c} 	
+				\]
+
+			\item 汞原子 546.1nm 谱线的量子数及朗德因子 的计算
+			
+				谱线是汞原子的外层（两个）电子从能级（组态）6s7s到6s7p的跃迁而产生的。 
+
+					\begin{figure}[H]
+						\centering
+						\includegraphics[width=0.8\textwidth]{graph1-6.png}
+						\label{fig:graph1-6}
+					\end{figure}
+
+					\begin{figure}[H]
+						\centering
+						\includegraphics[width=0.8\textwidth]{graph1-7.png}
+						\label{fig:graph1-7}
+					\end{figure}
+				
+			\item 塞曼效应观测中的偏振效应——$\sigma^\pm$偏振（垂直于磁场）和$\pi$偏振（平行于磁场）
+			
+				若有$\Delta m = 1$，将观察到$\sigma^+$左旋偏振光，若$\Delta m = -1$,将观察到$\sigma^-$右旋偏振光，若$\Delta m = 0$，则为$\pi$偏振。
+		\end{enumerate}	
 
 
 
@@ -249,7 +337,104 @@
 
 	\subsubsection{基本测量仪器介绍}
 
+		\begin{enumerate}
+			\item 法布里—珀罗标准具
 
+				F-P 标准具由平行放置的两块平面板组成的, 在两板相对的平面上镀薄银膜和其他有较高反射系数的薄膜, 若两平行的镀银平面的间隔不可以改变，则称该仪器为“法布里—珀罗干涉仪”。由于两镀膜面平行，若使用扩展光源，则产生等倾干涉条纹。具有相同入射角的光线在垂直于观察方向的平面上的轨迹是一组同心圆。若在光路上放置透镜，则在透镜焦平面上得到一组同心圆环图样。 在透射光束中，相邻光束的光程差为:
+				\[
+					\Delta = 2 n d cos \phi	
+				\]
+
+				产生亮条纹的条件为：
+				\[
+					2 n d cos \phi = K \lambda
+				\]
+
+				其中K为干涉条纹级数，$\lambda$为入射光波长。
+
+				标准具的两个特征参量是自由光谱范围和分辨本领。
+					
+					\begin{itemize}
+						\item 自由光谱范围：同一光源发出的具有微小波长差的单色光$\lambda_1$和$\lambda_2$，入射后将形成各自的圆环系列。对同一级的干涉条纹，波长大的干涉圆环直径小。对于某单色光来说，越靠中心处的干涉条纹的级数 K 越大。
+						
+						如果$\lambda_1$和$\lambda_2$的波数差逐渐增大，使得$\lambda_1$的第$m$级亮纹与$\lambda_2$的第$m - 1$级亮纹重合，则有
+						\[
+							2 n d \cos \theta = m \lambda _1 = (m - 1)\lambda_2	
+						\]
+
+						得出$\Delta \lambda = \lambda _2 - \lambda_1 = \frac{\lambda_2}{m}$
+
+						由于大多数情况下，$\cos \theta \approx 1$，可得到$m = \approx \frac{2 n d}{\lambda_1}$，得
+						\[
+							\Delta \lambda = \frac{\lambda_1 \lambda_2}{2 n d} \approx \frac{\lambda^2}{2 n d}	
+						\]
+						
+							% \begin{figure}[H]
+							% 	\centering
+							% 	\includegraphics[width=0.8\textwidth]{graph1-8.png}
+							% 	\label{fig:graph1-8}
+							% \end{figure}
+
+						它表明在 F-P 干涉仪中，当给定两平面间隔d后，入射光波长在$\lambda \pm \Delta \lambda$内不会发生干涉圆环重叠。
+
+						\item 分辨本领：对于F-P标准具，它的分辨本领为$\frac{\Delta \lambda}{\lambda} = K N$，K为干涉级次,N为精细度, 它的物理意义是在相邻两个干涉级之间能分辨的最大条纹数。N依赖于平板内表面反射膜的反射率R:
+						\[
+							N = \frac{\pi \sqrt{R}}{1 -1R}	
+						\]
+
+						反射率R越高，精细度N就越高，仪器能分辨开的条纹数就越多。
+
+					\end{itemize}
+
+			\item 波数差与圆环直径之间的关系
+			
+				通过测量干涉环的直径就可以测量各分裂谱线的波长或波长差。
+
+				如\cref{fig:graph1-9}所示，出射角为$\theta$的的圆环直径D与透镜焦距f间的关系为$\tan{\theta}=\frac{D}{2f}$，对于近中心的圆环$\theta$很小，可以认为$\theta\approx\sin{\theta}\approx\tan{\theta}$，于是有：
+				\[
+					cos\theta = 1 - 2 \sin^2\frac{\theta}{2} \approx 1 - \frac{\theta^2}{2} = 1 - \frac{D^2}{8f^2}	
+				\]
+
+				\begin{figure}[H]
+					\centering
+					\includegraphics[width=0.8\textwidth]{graph1-9.png}
+					\caption{法布里一珀罗(F-P)标准具光路图(图中的透镜指的是望远镜里的透镜)}
+					\label{fig:graph1-9}
+				\end{figure}
+
+				\[
+					2 n d \cos \theta = 2 n d (1 - \frac{D^2}{8f^2}) = K \lambda	
+				\]
+
+				由上式可推出同一波长$\lambda$相邻两级$K$和$K - 1$级圆环直径的平方差为
+				\[
+					\Delta D^2 = D^2_{K-1} - D^2_{K} = \frac{4 f^2 \lambda}{n d}	
+				\]
+
+				设不同波长$\lambda$和$\lambda_{\alpha}$的第K级干涉圆环直径分别为$D_K$和$D_{\alpha}$
+				\[
+					\lambda - \lambda_\alpha = \frac{nd}{4 f^2 K}(D^2_\alpha - D^2_K) = (\frac{D^2_\alpha - D^2_K}{D^2_{K-1} - D^2_{K}})\frac{\lambda}{K}	
+				\]
+
+				得出波长差为：
+				\[
+					\Delta \lambda = \frac{\lambda^2}{2 n d}(\frac{D^2_\alpha - D^2_K}{D^2_{K-1} - D^2_{K}})
+				\]
+				
+				波数差为：
+				\[
+					\Delta \tilde{\nu} = \frac{1}{2 n d}(\frac{D^2_\alpha - D^2_K}{D^2_{K-1} - D^2_{K}})
+				\]
+
+			\item 通过塞曼效应计算电子荷质比e/m
+			
+				本实验只研究反常塞曼效应的线偏振$\pi$的谱线。
+				\[
+					\frac{e}{m} = \frac{4\pi c}{n d B}(\frac{D^2_\alpha - D^2_K}{D^2_{K-1} - D^2_{K}})
+				\]
+				
+				若已知$d$和$B$，从塞曼分裂中测量出各环的直径，就可以计算出荷质比。
+		\end{enumerate}
 
    
 
@@ -337,6 +522,8 @@
 
 	
 
+\clearpage
+
 % 思考题5
 \begin{question}
 	请利用单电子情况下的（36）式，并结合钠双黄线的平均波长及其波长差（$\lambda_1$ = 589.0 nm，$\lambda_2$  = 589.6 nm），估算一下钠原子内部的磁感应强度 $B_{int}$ 的值（提示：单电子情况下，两谱线的能级差为势能的两倍，即有 $\Delta E = \Delta U =2 \mu_B B$ ；另需要利用到光子波长和频率之间的关系式。答案：钠原子内部的磁感应强度 $B_{int}$ 的值为 18.5T）。
@@ -366,7 +553,7 @@
 	请结合力与势能的关系式 $\vec{F} = -\nabla U $ 并利用（11）式，试推导磁矩在非均匀外磁场中的受力大小为 $F_z = \mu_z \frac{\partial B_z}{\partial z} \ (B_x = B_y = 0)$（设外磁场方向在 z 轴方向，$F_z$ 为力在 z 方向上分量的大小）（提示：请利用郭硕鸿《电动力学》（第二版）一书附录中的矢量运算公式）。
 \end{question}
 
-	由$\vec{F} = -\nabla U \quad U = \vec{\mu} \cdot \vec{B}$，得$\vec{F} = -\nabla(\vec{\mu} \cdot \vec{B}) = -\nabla(\mu_z B_z) \Rightarrow F_z = \mu_z \frac{\partial B_z}{\partial z} $
+	由$\vec{F} = -\nabla U \quad U = -\vec{\mu} \cdot \vec{B}$，得$\vec{F} = \nabla(\vec{\mu} \cdot \vec{B}) = \nabla(\mu_z B_z) \Rightarrow F_z = \mu_z \frac{\partial B_z}{\partial z} $
 
 
 
@@ -562,14 +749,14 @@
 \end{question}
 
 
-	由$\Delta \lambda = \frac{\lambda_1 \lambda_2}{2 n d} \approx \frac{lambda^2}{2 n d}$，得自由光谱范围为：
+	由$\Delta \lambda = \frac{\lambda_1 \lambda_2}{2 n d} \approx \frac{\lambda^2}{2 n d}$，得自由光谱范围为：
 
 	\[
 		\Delta \lambda = \frac{(546.1 nm)^2}{2 \times 1 \times 2mm} \approx 0.074nm
 	\]
 
 
-	即，入射光波长在$546.1 \pm 0.074 nm$ 间变化，所产生的干涉圆环不发生重叠。
+	即，入射光波长在$(546.1 \pm 0.074) nm$ 间变化，所产生的干涉圆环不发生重叠。
 
 
 
@@ -628,13 +815,13 @@
 	\hline
 	专业：& 物理学 &年级：& 2022级 \\
 	\hline
-	姓名：& 戴鹏辉\&喻欣宸 & 学号：& 22344016\&22344014 \\
+	姓名：& 戴鹏辉\&崔瑜 & 学号：& 22344016\&22344017 \\
 	\hline
-	室温：& 26℃ & 实验地点： & A515 \\
+	室温：& 26℃ & 实验地点： & A508	\\
 	\hline
 	学生签名：& & 评分： &\\
 	\hline
-	实验时间：& 2024/5/24 & 教师签名：&\\
+	实验时间：& 2024/6/6 & 教师签名：&\\
 	\hline
 	\end{tabularx}
 \end{table}
@@ -679,9 +866,9 @@
 	\hline
 	专业：& 物理学 &年级：& 2022级\\
 	\hline
-	姓名： & 戴鹏辉\&喻欣宸 & 学号：& 22344016\&22344014\\
+	姓名： & 戴鹏辉\&崔瑜 & 学号：& 22344016\&22344017\\
 	\hline
-    日期：& 2024/5/26 & 评分： &\\
+    日期：& 2024// & 评分： &\\
 	\hline
 	\end{tabularx}
 \end{table}
@@ -707,24 +894,12 @@
 \subsection{实验后思考题}	
 	
     \begin{question}
-        影响控温精度和稳定度的因素都有哪些， 如何进行改进？
+        XXXXXXXXXXXXXXXXXX
     \end{question}
 
 
 
-    \begin{question}
-        本实验中直流电源的电流输出建议设置为 2A， 为了减小温度的波动， 电流设置应该增大还是减小， 为什么？
-    \end{question}
 
-
-    \begin{question}
-        实验是否达到了控温的目的， 还有哪些可以改进的地方？
-    \end{question}
-
-
-    \begin{question}
-        温度控制程序是否工作正常， 是否还有优化的地方？
-    \end{question}
 
 
 
