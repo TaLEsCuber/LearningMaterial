@@ -1,0 +1,758 @@
+%!TEX program = xelatex
+\documentclass[dvipsnames, svgnames,a4paper,11pt]{article}
+% ----------------------------------------------------
+%   中山大学物理与天文学院本科实验报告模板
+%   作者：Huanyu Shi，2019级
+%   知乎：https://www.zhihu.com/people/za-ran-zhu-fu-liu-xing
+%   Github：https://github.com/huanyushi/SYSU-SPA-Labreport-Template
+%   Last update : 2023.4.10
+% ----------------------------------------------------
+
+\input{Settings} % 导入模板的相关设置
+\usepackage{lipsum}
+\usepackage{enumitem}
+\usepackage{tabularray}  %绘制表格时可以更加方便添加框线
+\setlist[enumerate]{label=\textup{(\arabic*)}}
+
+
+
+%---------------------------------------------------------------------
+%	正文
+%---------------------------------------------------------------------
+
+\begin{document}
+
+
+\begin{table}
+	\renewcommand\arraystretch{1.7}
+	\begin{tabularx}{\textwidth}{
+		|X|X|X|X
+		|X|X|X|X|}
+	\hline
+	\multicolumn{2}{|c|}{预习报告}&\multicolumn{2}{|c|}{实验记录}&\multicolumn{2}{|c|}{分析讨论}&\multicolumn{2}{|c|}{总成绩}\\
+	\hline
+	\LARGE25 & & \LARGE30 & & \LARGE25 & & \LARGE80 & \\
+	\hline
+	\end{tabularx}
+\end{table}
+
+
+\begin{table}
+	\renewcommand\arraystretch{1.7}
+	\begin{tabularx}{\textwidth}{|X|X|X|X|}
+	\hline
+	专业：& 物理学 &年级：& 2022级\\
+	\hline
+	姓名：& 戴鹏辉\&崔瑜  & 学号： & 2344016\&22344017 \\
+	\hline
+	日期：& 2024/6/3 & 教师签名：& \\
+	\hline
+	\end{tabularx}
+\end{table}
+
+\begin{center}
+	\LARGE D4  \quad 塞曼效应
+\end{center}
+
+\textbf{【实验报告注意事项】}
+\begin{enumerate}
+	\item 实验报告由三部分组成：
+	\begin{enumerate}
+		\item 预习报告：（提前一周）认真研读\underline{\textbf{实验讲义}}，弄清实验原理；实验所需的仪器设备、用具及其使用（强烈建议到实验室预习），完成课前预习思考题；了解实验需要测量的物理量，并根据要求提前准备实验记录表格（第一循环实验已由教师提供模板，可以打印）。预习成绩低于10分（共20分）者不能做实验。
+	    \item 实验记录：认真、客观记录实验条件、实验过程中的现象以及数据。实验记录请用珠笔或者钢笔书写并签名（\textcolor{red}{\textbf{用铅笔记录的被认为无效}}）。\textcolor{red}{\textbf{保持原始记录，包括写错删除部分，如因误记需要修改记录，必须按规范修改。}}（不得输入电脑打印，但可扫描手记后打印扫描件）；离开前请实验教师检查记录并签名。
+	    \item 分析讨论：处理实验原始数据（学习仪器使用类型的实验除外），对数据的可靠性和合理性进行分析；按规范呈现数据和结果（图、表），包括数据、图表按顺序编号及其引用；分析物理现象（含回答实验思考题，写出问题思考过程，必要时按规范引用数据）；最后得出结论。
+	\end{enumerate}
+	\textbf{实验报告就是将预习报告、实验记录、和数据处理与分析合起来，加上本页封面。}
+	\item 每次完成实验后的一周内交\textbf{实验报告}（特殊情况不能超过两周）。
+	\item 实验报告注意事项
+		\begin{enumerate}[label=\roman*.]
+			\small % 设置字体大小为 large
+			\item 不要用手直接触摸光学部件的光学表面，如果有污染，请用专用的清洁液和清洁布或者擦镜纸清洁。
+			\item F-P 标准具已在出厂前进行校准，请勿自行随意调节三颗螺钉，如需调整，请在实验老师指导下进行。
+			\item 为避免缩短笔形汞灯使用寿命，请勿频繁开关电源开关。笔形汞灯插入槽内后严禁左右晃动，以免破碎。
+			\item 避免长时间对电磁线圈进行大电流供电，温度较高，请勿触摸。
+			\item 每次实验结束后将电流调至零后再关掉电源。
+		\end{enumerate}
+\end{enumerate}
+
+
+\clearpage
+\tableofcontents
+\clearpage
+
+\setcounter{section}{0}
+\section{D4 \quad 塞曼效应 \quad\heiti 预习报告}
+	
+\subsection{实验目的}
+
+	\begin{enumerate}
+		\item 通过观察原子谱线在外磁场中的分裂现象，加深对电子“自旋”、“两个角动量的耦合”、“两个电子之间的 LS 耦合”、“角动量守恒”、“多电子原子和电子组态”、“能级跃迁”、“选择定则”等概念的理解，验证原子具有磁矩及其空间取向的量子化，进一步认识原子的内部结构；
+		\item 用 F-P 干涉仪观察汞（Hg）原子 546.1nm 谱线在外磁场中的分裂现象（即“反常塞曼效应”），测量电子的荷质比 e/m；
+		\item 验证光子具有角动量及角动量守恒定律，了解光的偏振理论及其产生机制，学习偏振片的原理及使用方法。
+	\end{enumerate}
+
+\subsection{仪器用具}
+\begin{table}[htbp]
+    \centering
+    \renewcommand\arraystretch{1.6}
+    \begin{tabular}{p{0.05\textwidth}|p{0.20\textwidth}|p{0.05\textwidth}|p{0.5\textwidth}}
+        \hline
+        编号 & 仪器用具名称 & 数量 & 主要参数（型号，测量范围，测量精度等） \\
+        \hline
+        1 & 塞曼效应 & 1 & BEX-8501 \\
+        2 & 电磁体（带电源） & 1 & 可通过调节激励电流大小改变磁场的大小 \\
+        3 & 磁感应强度测量仪 & 1 & 含金属探针 \\
+        4 & 汞放电管 & 1 & \\
+        5 & 滤光片 & 1 & 能通过 546.1nm 及其自由光谱范围内的“单色光” \\
+        6 & 法布里-珀罗标准具 & 1 &  \\
+        7 & 偏振片 & 1 & 可以通过 0° 刻度线方向上的线偏振光\\
+        8 & 数字图像采集器 & 1 & 包含望远镜和 CCD \\
+        9 & 台式电脑 & 1 & 安装有“塞曼效应实验分析 VCH5.0”软件，用以分析实验数据 \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\subsection{原理概述}
+
+
+        
+    \subsubsection{电子的磁矩——轨道磁矩和自旋磁矩}
+
+		\begin{enumerate}
+			\item 电子的轨道磁矩
+
+				\begin{figure}[htbp]
+					\centering
+					\includegraphics[width=0.8\textwidth]{graph1-1.png}
+					\label{fig:graph1-1}
+				\end{figure}
+
+			\item 电子的自旋 及自旋磁矩
+			
+				电子除了轨道角动量外，还有自旋运动，电子的自旋是一种固有的内在属性，电子自旋角动量及其 z 方向分量大小的可能取值为：
+
+					\begin{figure}[htbp]
+						\centering
+						\includegraphics[width=0.8\textwidth]{graph1-2.png}
+						\label{fig:graph1-2}
+					\end{figure}
+
+				由电子自旋运动产生的自旋磁矩，其方向及大小为：
+
+					\begin{figure}[htbp]
+						\centering
+						\includegraphics[width=0.8\textwidth]{graph1-3.png}
+						\label{fig:graph1-3}
+					\end{figure}
+
+			\item 磁矩在外磁场 中的势能
+					
+				在电磁学中，磁矩为的系统，在外磁场中的势能为：
+
+					\begin{figure}[H]
+						\centering
+						\includegraphics[width=0.8\textwidth]{graph1-4.png}
+						\label{fig:graph1-4}
+					\end{figure}
+
+					
+		\end{enumerate}
+
+
+	\subsubsection{两个角动量的耦合（叠加）}
+
+		\begin{enumerate}
+			\item 同一个电子的情况
+
+				同一个电子，其轨道角动量L和自旋角动量S的叠加或耦合。此即所谓的“自旋—轨道耦合”。自旋—轨道耦合本质上是电子自旋（内禀）磁矩与电子轨道运动产生的磁场之间的相互作用，“自旋—轨道耦合”是导致氢原子和碱金属光谱双线结构的主要原因：
+
+					\[
+						\vec{J}=\vec{L}+\vec{S}	
+					\]
+
+			\item 不同电子之间的耦合
+
+				\begin{itemize}
+					\item LS 耦合：即电子1的$L_1$和电子2的$L_2$耦合成$\vec{L}=\vec{L_1}+\vec{L_2}$，电子1的$S_1$和电子2的$S_2$耦合成$\vec{S}=\vec{S_1}+\vec{S_2}$，然后系统的总轨道角动量$\vec{L}$和总自旋角动量$\vec{S}$再耦合生成系统的总角动量$\vec{J}$
+					
+					\item jj耦合：即电子1的$L_1$和$S_1$耦合成$\vec{J_1}=\vec{L_1}+\vec{S_1}$，即电子2的$L_2$和$S_2$耦合成$\vec{J_2}=\vec{L_2}+\vec{S_2}$，然后电子1的总角动量$\vec{J_1}$和电子2的总角动量$\vec{J_2}$再耦合成系统的总动量$\vec{J}$。
+				\end{itemize}
+
+			\item 多电子原子及电子组态
+			
+				\begin{figure}[H]
+					\centering
+					\includegraphics[width=0.8\textwidth]{graph1-5.png}
+					\label{fig:graph1-5}
+				\end{figure}
+				
+				
+		\end{enumerate}
+
+
+
+	\subsubsection{电子的总磁矩 及其在外磁场中的势能}
+
+		\begin{enumerate}
+			\item 电子的总磁矩
+			
+				总磁矩$\vec{\mu_j}$及其大小的一般表达式可写成：
+					\[
+						\mu_j = -\sqrt{j(j+1)}g_j \mu_B
+					\]
+
+				总磁矩$\vec{\mu_j}$在z方向上分量的大小为：
+					\[
+						\mu_{j,z} = - m_j g_j \mu_B	
+					\]
+
+				朗德因子的一般表达式为：
+					\[
+						g_j=\frac{3}{2}+\frac{s\left(s+1\right)-l\left(l+1\right)}{2j\left(j+1\right)}	
+					\]
+
+			\item 磁矩在均匀外磁场 中的运动——拉莫尔进动
+			
+				磁矩在均匀外磁场中不受力，但是会受到一个力矩的作用：
+				\[
+					\vec{\tau} = \vec{\mu_J} \cross \vec{B}	
+				\]
+
+				由经典力学的知识可知，力矩会引起系统总角动量的变化：
+				\[
+					\frac{d \vec{J}}{t} = \vec{\tau} = \vec{\mu_J} \cross \vec{B}
+				\]
+				\[
+					\frac{d \vec{\mu_J}}{d t} = \vec{\omega} \cross \vec{\mu} \quad \vec{omega} \equiv \gamma \vec{B}
+				\]
+				
+				式中的$\vec{\omega}$称为“拉莫尔频率”，$\vec{\mu_J}$大小不变，绕着外磁场B（z 轴方向）做进动，又称“拉莫尔进动”。
+
+			\item 弱外磁场和强外磁场的区别
+			
+				\begin{itemize}
+					\item 弱外磁场:当外磁场$B_{ext}$的场强远远小于原子内部磁场$B_{int}$的场强，即为弱外磁场时，这时自旋—轨道耦合占主导，电子的总角动量J是守恒量，但总轨道角动量L和总自旋角动量S均不守恒, 系统的守恒量（好量子数）为$J^2,J_z,L^2,S^2\left(n,\ L,\ J,\ mj\right)。$
+					\item 强外磁场: 自旋—轨道耦合变得次要，电子磁矩（分为轨道磁矩和自旋磁矩）与外磁场$B_{ext}$的相互作用则占主导。系统的总轨道角动量L和总自旋角动量S不再耦合成总角动量J（仍然可通过$\vec{J}=\vec{L}+\vec{S}$计算总角动量，但此时的总角动量是非守恒量, （24）至（28）式在强外磁场的情况下不适用），此时系统的守恒量（好量子数）为$L^2,L_Z,\ \ S^2,\ {\ S}_z\left(n,\ L,\ ml,\ ms\right)$。
+				\end{itemize}
+		\end{enumerate}
+
+
+
+
+
+	\subsubsection{汞原子谱线在外磁场 中的能级分裂}
+
+
+
+
+
+
+	\subsubsection{基本测量仪器介绍}
+
+
+
+   
+
+        
+
+
+
+\clearpage
+
+\subsection{实验前思考题}
+
+
+
+% 思考题1
+\begin{question}
+	光子是否具有角动量？试描述光子角动量方向与光的偏振方向之间的关系。
+\end{question}
+
+	光子具有角动量，这是由光的波粒二象性决定的。光子的角动量可以分为两部分：轨道角动量和自旋角动量。
+
+		\begin{itemize}
+			\item 光子的自旋角动量
+			
+				光子的自旋角动量与光的偏振状态密切相关。光子的自旋角动量量子数为±1，对应光子的左旋圆偏振和右旋圆偏振。具体来说：
+
+				\begin{itemize}
+					\item 左旋圆偏振光：光子的自旋角动量沿传播方向（z轴）为 +ħ。
+					\item 右旋圆偏振光：光子的自旋角动量沿传播方向（z轴）为 -ħ。
+					\item 对于线偏振光，光子的自旋角动量可以被看作是左旋和右旋圆偏振光子的叠加，因此没有净自旋角动量。
+				\end{itemize}
+			
+			\item 光子的轨道角动量
+			
+				光子的轨道角动量与光束的空间结构相关，例如涡旋光束（光学涡旋）具有轨道角动量。这些光束的电场和磁场分布呈螺旋状，光子的轨道角动量与光束的涡旋态有关。
+		\end{itemize}
+
+
+	光子的自旋角动量方向与光的偏振方向有密切关系。对于线偏振光，偏振方向就是电场振动的方向，而对于圆偏振光，电场矢量在垂直于传播方向的平面内旋转。
+		
+		\begin{itemize}
+			\item 线偏振光：自旋角动量为零，因为它是左右旋圆偏振光的叠加。
+			\item 圆偏振光：自旋角动量沿传播方向，为±ħ，对应于电场矢量在传播方向上方的旋转方向。
+		\end{itemize}
+	
+	对于具有轨道角动量的光（如涡旋光束），轨道角动量方向与光束的螺旋相位前沿的旋转方向相关。
+
+
+	光子具有角动量，包括自旋角动量和轨道角动量。自旋角动量直接与光的偏振状态相关，而轨道角动量与光束的空间相位结构相关。光子的自旋角动量方向与圆偏振光的旋转方向一致，而线偏振光没有净自旋角动量。理解光子的角动量对于光与物质相互作用、光通信以及量子信息等领域具有重要意义。
+
+
+
+
+
+% 思考题2
+\begin{question}
+	用同一级条纹的内外圈分别计算电子的荷质比，结果一样吗？试简述原因。
+\end{question}
+
+
+
+
+
+
+
+% 思考题3
+\begin{question}
+	请利用（20）至（23）式，计算汞原子 $^3S_1$（6s7s）和 $^3P_2$（6s7p）能级所对应的量子数（见表 1），并给出详细的计算过程。
+\end{question}
+
+	% \begin{enumerate}
+	% 	\item 先计算 $^3S_1$的情况：
+		
+	% 		\begin{itemize}
+	% 			\item 由$2S + 1 = 3$，得$S = 1$；
+	% 			\item 处在S轨道，则$L = 0$
+	% 			\item $J = 1$
+	% 		\end{itemize}
+	% \end{enumerate}
+
+
+% 思考题4
+\begin{question}
+	请利用（2）、（8）和（20）式，并结合$\vec{J} = \vec{L} + \vec{S}$ 和 $\vec{\mu}_J = \vec{\mu}_L + \vec{\mu}_S $（注意此时的是图 5 中的$\vec{\mu}_J$ ，详细见脚注 22），导出朗德因子的一般表达式（28）式，并给出详细的推导过程。
+\end{question}
+
+	
+
+% 思考题5
+\begin{question}
+	请利用单电子情况下的（36）式，并结合钠双黄线的平均波长及其波长差（$\lambda_1$ = 589.0 nm，$\lambda_2$  = 589.6 nm），估算一下钠原子内部的磁感应强度 $B_{int}$ 的值（提示：单电子情况下，两谱线的能级差为势能的两倍，即有 $\Delta E = \Delta U =2 \mu_B B$ ；另需要利用到光子波长和频率之间的关系式。答案：钠原子内部的磁感应强度 $B_{int}$ 的值为 18.5T）。
+\end{question}
+
+	由$\nu = \frac{c}{\lambda}$，得$\Delta \nu = \frac{c}{\lambda^2}\Delta \lambda$；再由$\Delta E = \Delta U =2 \mu_B B$，得
+
+	\[
+		B = \frac{h \Delta \nu}{2 \mu_B} = \frac{h c \Delta \lambda}{2 \mu_B \lambda^2} = \frac{1240eV \cdot nm \times 0.6nm}{2\times 0.5788\times 10^{-4}ev\cdot T^{-1} \times (589.3nm)^2} \approx 18.5T
+	\]
+
+
+
+
+% 思考题6
+\begin{question}
+	请结合第 5 题的计算结果，说明弱外磁场 $B_{ext} \ll B_{int}$ 成立时弱外磁场 $B_{ext}$ 的取值范围，并确认本实验中电磁体的磁感应强度符合弱外磁场 $B_{ext} \ll B_{int}$ 条件。
+\end{question}
+
+
+
+
+
+
+% 思考题7
+\begin{question}
+	请结合力与势能的关系式 $\vec{F} = -\nabla U $ 并利用（11）式，试推导磁矩在非均匀外磁场中的受力大小为 $F_z = \mu_z \frac{\partial B_z}{\partial z} \ (B_x = B_y = 0)$（设外磁场方向在 z 轴方向，$F_z$ 为力在 z 方向上分量的大小）（提示：请利用郭硕鸿《电动力学》（第二版）一书附录中的矢量运算公式）。
+\end{question}
+
+	由$\vec{F} = -\nabla U \quad U = \vec{\mu} \cdot \vec{B}$，得$\vec{F} = -\nabla(\vec{\mu} \cdot \vec{B}) = -\nabla(\mu_z B_z) \Rightarrow F_z = \mu_z \frac{\partial B_z}{\partial z} $
+
+
+
+
+
+
+% 思考题8
+\begin{question}
+	请结合朗德因子的一般表达式（28）式，以及两个角动量耦合的一般规则（20）至（23）式，计算表 3 中汞原子 546.1nm 谱线对应的上下两个能级的各量子数及不同谱线（能级跃迁）的朗德因子（见图 9）。用“格罗春图”33（Grotrain 图）来表示汞原子 546.1nm谱线不同能级之间可能的跃迁。
+\end{question}
+
+
+
+
+
+
+
+
+
+% 思考题9
+\begin{question}
+	请回答什么是“反常塞曼效应”和“正常塞曼效应”，两者之间的区别是什么。请思考什么是“帕邢－巴克效应”及其形成的原因。
+\end{question}
+
+
+	塞曼效应是指在磁场作用下，光谱线发生分裂的现象。根据分裂的特征和具体情况，塞曼效应可以分为正常塞曼效应和反常塞曼效应。
+
+		\begin{itemize}
+			\item 正常塞曼效应
+			
+				正常塞曼效应是最简单的情况，出现在某些特定条件下：
+
+				\begin{itemize}
+					\item 光谱线在弱磁场中分裂为三个分量，即一个不变的中心线和两个对称移动的旁线。
+					\item 这种分裂的光谱线对应于自旋为零的原子，只有轨道角动量的贡献。
+					\item 旁线的频率偏移量与磁场强度成正比，且偏移量相等，表现为均匀分裂。
+					\item 在正常塞曼效应中，电子的轨道角动量与磁场相互作用导致能级分裂，而电子自旋不参与。结果，在原来未分裂的能级上观察到三个分立的能级，其分裂间隔与外加磁场成正比。
+				\end{itemize}
+			
+			
+			\item 反常塞曼效应
+			
+				反常塞曼效应比正常塞曼效应更复杂，出现的条件如下：
+
+				\begin{itemize}
+					\item 光谱线在磁场中分裂为多个分量，且这些分量的数目和位置不能简单地用正常塞曼效应解释。
+					\item 这种效应出现在电子具有非零自旋的原子中，电子的轨道角动量和自旋角动量共同作用导致能级分裂。
+					\item 分裂的具体特征依赖于电子的自旋和轨道角动量的组合，导致复杂的分裂模式。
+					\item 在反常塞曼效应中，自旋角动量与轨道角动量耦合，导致更多能级分裂，并且这些分裂间隔不再是均匀的。这种效应需要采用量子力学中的自旋-轨道耦合理论进行解释。
+				\end{itemize}
+			
+			
+		\end{itemize}
+
+
+	正常塞曼效应与反常塞曼效应的区别:
+		
+		\begin{enumerate}
+			\item 自旋贡献：正常塞曼效应中没有电子自旋贡献（电子自旋为零），而反常塞曼效应中有自旋贡献（电子自旋非零）。
+			\item 分裂数量：正常塞曼效应的光谱线分裂为三个分量，而反常塞曼效应的分裂数量更为复杂且不固定。
+			\item 分裂间隔：正常塞曼效应的分裂间隔是均匀的，反常塞曼效应的分裂间隔不均匀。
+		\end{enumerate}
+
+	帕邢－巴克效应
+
+	帕邢－巴克效应是另一种光谱分裂现象，出现在强磁场条件下：
+
+		\begin{itemize}
+			\item 在非常强的磁场中，电子的轨道运动和自旋运动的耦合被强磁场打破，轨道角动量和自旋角动量相互独立地与外加磁场作用。
+			\item 这种效应发生时，能级分裂的方式发生改变，从塞曼效应的分裂模式转变为帕邢－巴克效应的分裂模式。
+			\item 帕邢－巴克效应的分裂特征更复杂，因为需要考虑轨道角动量和自旋角动量分别与外加磁场的相互作用。
+			\item 形成原因：帕邢－巴克效应的形成是因为在强磁场中，自旋-轨道耦合效应变得不再显著，电子的轨道角动量和自旋角动量分别与磁场相互作用，导致能级分裂方式的改变。这种效应出现在非常强的磁场中，通常是比塞曼效应中使用的磁场强度高得多的条件下。
+		\end{itemize}
+
+
+	总结
+	\begin{itemize}
+		\item 正常塞曼效应：简单的三重分裂，适用于自旋为零的情况。
+		\item 反常塞曼效应：复杂的多重分裂，适用于有自旋贡献的情况。
+		\item 帕邢－巴克效应：在强磁场中发生的复杂分裂，轨道角动量和自旋角动量分别与磁场相互作用。
+	\end{itemize}
+
+
+
+
+
+
+
+
+% 思考题10
+\begin{question}
+	请回答电子的“自旋—轨道耦合”的本质是什么？它与电子之间的“LS 耦合”的区别是什么？
+\end{question}
+
+
+	电子的“自旋-轨道耦合”的本质是指电子的自旋角动量（自旋）与其轨道角动量（轨道运动）之间的相互作用。这种相互作用的本质可以从相对论效应来解释，当电子在绕核运动时，它的轨道运动会产生一个有效磁场，这个磁场与电子的自旋磁矩相互作用，导致自旋和轨道角动量之间的耦合。
+
+	具体来说，电子在核周围运动时，感受到的核电场在电子参考系中会表现为一个磁场。这个磁场与电子的自旋磁矩相互作用，导致能级的分裂，并影响电子的能量状态和光谱特性。
+
+	LS耦合（Russell-Saunders耦合）是描述多电子原子中电子之间相互作用的一种方法。LS耦合中，多个电子的轨道角动量首先相加成总轨道角动量L，多个电子的自旋角动量相加成总自旋角动量S，然后再考虑总轨道角动量L与总自旋角动量S之间的相互作用，形成总角动量J。
+
+	具体区别如下：
+
+		\begin{itemize}
+			\item 耦合对象：
+
+				\begin{itemize}
+					\item 自旋-轨道耦合：单个电子的自旋角动量与其轨道角动量之间的相互作用。
+					\item LS耦合：多个电子的总轨道角动量与总自旋角动量之间的相互作用。
+				\end{itemize}
+			
+			\item 适用范围：
+
+				\begin{itemize}
+					\item 自旋-轨道耦合：描述单个电子在原子核电场中的相互作用。
+					\item LS耦合：描述多电子原子中电子之间的相互作用，特别是轻原子中的多电子系统。
+				\end{itemize}
+			
+			\item 相对强度：
+
+				\begin{itemize}
+					\item 在轻原子中，电子之间的库仑相互作用比自旋-轨道耦合强，因此LS耦合适用。
+					\item 在重原子中，自旋-轨道耦合变得更强，可能需要使用jj耦合来描述。
+				\end{itemize}
+			
+		\end{itemize}
+	
+	总结：
+
+		\begin{itemize}
+			\item 自旋-轨道耦合描述的是单个电子的自旋和轨道角动量之间的相互作用。
+			\item LS耦合描述的是多电子原子中电子的总轨道角动量与总自旋角动量之间的相互作用。
+			\item 自旋-轨道耦合适用于描述单电子系统，而LS耦合适用于描述轻原子中的多电子系统。
+		\end{itemize}
+
+
+
+
+
+
+% 思考题11
+\begin{question}
+	请结合多电子原子及电子组态的相关知识，思考为什么像汞原子一样有两个价电子的元素（氦 He 和镁 Mg 等第二族（碱土族）元素），会有两套不同的谱线（一套是单线结构，一套是双线结构）。
+\end{question}
+
+	在多电子原子中，尤其是像汞原子一样有两个价电子的元素（例如氦（He）和镁（Mg）等第二族（碱土族）元素），会出现两套不同的谱线结构（单线结构和双线结构）。这种现象与电子的自旋-轨道耦合和电子组态有关。
+
+	\textbf{自旋-轨道耦合与谱线结构}
+	
+	电子的自旋-轨道耦合导致能级的分裂，从而影响光谱线的结构。对于有两个价电子的元素，电子的自旋-轨道耦合使得这些电子的能级分裂为多个子能级，因此我们会观察到不同的谱线结构。
+
+	\textbf{单线结构}
+	
+	单线结构通常是由电子跃迁中不涉及自旋-轨道耦合的跃迁引起的。这种情况常见于：
+
+		\begin{itemize}
+			\item 电子的自旋和轨道角动量之间的耦合较弱或者可以忽略不计。
+			\item 电子跃迁发生在没有自旋-轨道耦合分裂的能级之间。
+			\item 对于氦（He）和镁（Mg）等第二族元素，在某些电子跃迁过程中，自旋-轨道耦合的效应很小，导致我们观察到单线结构的谱线。
+		\end{itemize}
+
+
+	\textbf{双线结构}
+	
+	双线结构通常是由自旋-轨道耦合导致的能级分裂引起的。这种情况常见于：
+
+		\begin{itemize}
+			\item 电子的自旋和轨道角动量之间的耦合较强。
+			\item 电子跃迁发生在经历自旋-轨道耦合分裂的能级之间。
+			\item 对于有两个价电子的元素，自旋-轨道耦合使得原本简并的能级分裂为两个或多个子能级。例如，在汞（Hg）原子中，两个价电子的自旋和轨道角动量耦合导致$^1P_1$态和$^3P_{0,1,2}$态的能级分裂，从而在跃迁时产生多条谱线，即双线结构或多线结构。
+		\end{itemize}
+
+
+	% 具体示例
+	
+	% 以氦原子为例：
+
+	% 在氦原子的$2^1P_1 \rightarrow 1^1S_0$跃迁中，没有自旋-轨道耦合的能级分裂，因此我们会看到单线结构。
+	% 在氦原子的$2^3P_{0,1,2} \rightarrow 1^1S_0$跃迁中，由于自旋-轨道耦合，$2^3P$态分裂为$2^3P_0$、$2^3P_1$和$2^3P_2$，导致我们观察到双线结构或多线结构。
+	
+	总结来说，第二族元素（如氦和镁）会有两套不同的谱线结构，主要是因为自旋-轨道耦合在不同电子跃迁中起不同的作用。自旋-轨道耦合导致能级的分裂，从而在光谱中产生双线结构或多线结构，而在没有自旋-轨道耦合分裂的情况下，则表现为单线结构。
+
+
+
+
+
+
+
+
+% 思考题12
+\begin{question}
+	设 F-P 标准具两反射面之间的距离为 d=2 mm，请根据（47）式估计汞原子 546.1nm 谱线的自由光谱范围。
+\end{question}
+
+
+	由$\Delta \lambda = \frac{\lambda_1 \lambda_2}{2 n d} \approx \frac{lambda^2}{2 n d}$，得自由光谱范围为：
+
+	\[
+		\Delta \lambda = \frac{(546.1 nm)^2}{2 \times 1 \times 2mm} \approx 0.074nm
+	\]
+
+
+	即，入射光波长在$546.1 \pm 0.074 nm$ 间变化，所产生的干涉圆环不发生重叠。
+
+
+
+% 思考题13
+\begin{question}
+	请根据（38）式，估计在外磁场为 B=1T 时观察汞原子 546.1nm 谱线分离所要求的仪器分辨率的 $\dfrac{\lambda}{\Delta \lambda}$ ，并讨论用 F-P 标准具观测的必要性（一般棱镜摄谱仪的理论分辨率为$10^3$~$10^4$，F-P 标准具的理论分辨率为 $10^5$~$10^7$，实际分辨率比理论值要略低一些）。
+\end{question}
+
+
+
+
+
+% 思考题14
+\begin{question}
+	仔细观察垂直磁场方向观察，旋转偏振片至 45° 角的纪录，会发现同一级条纹在磁场中分离成不只三条，请解释出现这一现象的原因。
+\end{question}
+
+
+
+
+
+
+
+% 思考题15
+\begin{question}
+	本实验要求精度为实验测量误差小于等于 5\%，请分析本实验误差的主要来源，并提出相应的修正方法。
+\end{question}
+
+
+
+
+
+
+
+
+% 思考题16
+\begin{question}
+	请尝试计算钠双黄线（又称“钠 D 线”，是由钠原子从 $^2P_{\frac{1}{2}, \frac{3}{2}}$ 到 $^2S_{\frac{1}{2}}$ 态的跃迁所产生）谱线的塞曼分裂（如图 21），可能的话，设计具体实验步骤并进行观察验证。
+\end{question}
+
+
+
+
+
+
+
+
+
+
+
+\clearpage
+\begin{table}
+	\renewcommand\arraystretch{1.7}
+	\centering
+	\begin{tabularx}{\textwidth}{|X|X|X|X|}
+	\hline
+	专业：& 物理学 &年级：& 2022级 \\
+	\hline
+	姓名：& 戴鹏辉\&喻欣宸 & 学号：& 22344016\&22344014 \\
+	\hline
+	室温：& 26℃ & 实验地点： & A515 \\
+	\hline
+	学生签名：& & 评分： &\\
+	\hline
+	实验时间：& 2024/5/24 & 教师签名：&\\
+	\hline
+	\end{tabularx}
+\end{table}
+
+\section{D4 \quad 塞曼效应 \quad\heiti 实验记录}
+\subsection{实验内容和步骤}
+
+
+
+
+
+\clearpage
+
+\subsection{实验原始数据记录}
+
+	% 见\cref{fig:data}
+
+	% \begin{figure}[htbp]
+	% 	\centering
+	% 	% \subfloat[原始数据1]
+	% 	{\includegraphics[width=0.6\textwidth]{Data1.jpg}\label{fig:data1}}
+	% 	\quad
+
+	% 	\caption{原始数据}
+	% 	\label{fig:data}
+	% \end{figure}
+
+
+
+
+
+	
+
+
+
+
+
+\clearpage
+\begin{table}
+	\renewcommand\arraystretch{1.7}
+	\begin{tabularx}{\textwidth}{|X|X|X|X|}
+	\hline
+	专业：& 物理学 &年级：& 2022级\\
+	\hline
+	姓名： & 戴鹏辉\&喻欣宸 & 学号：& 22344016\&22344014\\
+	\hline
+    日期：& 2024/5/26 & 评分： &\\
+	\hline
+	\end{tabularx}
+\end{table}
+
+\section{D4 \quad 塞曼效应 \quad\heiti 分析与讨论}
+
+\subsection{实验数据分析}
+
+
+
+
+
+\subsubsection{分析和讨论}
+
+
+
+
+
+
+
+		
+
+\subsection{实验后思考题}	
+	
+    \begin{question}
+        影响控温精度和稳定度的因素都有哪些， 如何进行改进？
+    \end{question}
+
+
+
+    \begin{question}
+        本实验中直流电源的电流输出建议设置为 2A， 为了减小温度的波动， 电流设置应该增大还是减小， 为什么？
+    \end{question}
+
+
+    \begin{question}
+        实验是否达到了控温的目的， 还有哪些可以改进的地方？
+    \end{question}
+
+
+    \begin{question}
+        温度控制程序是否工作正常， 是否还有优化的地方？
+    \end{question}
+
+
+
+
+\clearpage
+
+\subsection{实验总结}
+    
+    \subsubsection{实验问题总结}
+
+        \begin{enumerate}
+            \item 
+        \end{enumerate}
+
+    \subsubsection{实验分工}
+
+        \begin{enumerate}
+            \item
+        \end{enumerate}
+
+    % \begin{figure}[htbp]
+    %     \centering
+    %     \includegraphics[width=0.6\textwidth]{table.jpg}
+    %     \caption{整理后实验桌照片}
+    %     \label{fig:table}
+    % \end{figure}
+
+
+
+
+\end{document}
