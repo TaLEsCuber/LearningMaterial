@@ -12,6 +12,8 @@
 \usepackage{lipsum}
 \usepackage{enumitem}
 \usepackage{tabularray}  %绘制表格时可以更加方便添加框线
+\usepackage{listings}
+\usepackage{color}
 \setlist[enumerate]{label=\textup{(\arabic*)}}
 
 
@@ -101,7 +103,7 @@
         \hline
         1 & 塞曼效应 & 1 & BEX-8501 \\
         2 & 电磁体（带电源） & 1 & 可通过调节激励电流大小改变磁场的大小 \\
-        3 & 磁感应强度测量仪 & 1 & 含金属探针 \\
+        3 & \textcolor{red}{磁感应强度测量仪} & 1 & \textcolor{red}{实验中通过电流与磁感应强度的对应关系得到磁感应强度值} \\
         4 & 汞放电管 & 1 & \\
         5 & 滤光片 & 1 & 能通过 546.1nm 及其自由光谱范围内的“单色光” \\
         6 & 法布里-珀罗标准具 & 1 &  \\
@@ -977,6 +979,96 @@
 \subsection{实验内容和步骤}
 
 
+	\subsubsection{实验光路搭建}
+	
+		\begin{enumerate}
+			
+			\item 调整相机模块
+				\begin{itemize}
+					\item 将相机固定在光学导轨上的另一端约 520 mm 处，并锁紧托板。
+					\item 松开升降调节架的螺钉，调整杆的高度，并通过旋转来微调升降调节架，确保相机与汞灯处于同一高度，此时汞灯图像位于屏幕中心。
+					\item 调节镜头上的焦距和光圈，使图像清晰。
+				\end{itemize}
+			
+			
+			\item 调整聚光透镜和偏振片模块
+				
+				\begin{itemize}
+					\item 将聚光透镜和偏振片固定在相机右侧的导轨上，并以同样方法调节高度，此时光斑将充满整个视频窗口。
+					\item 松开偏振片旋钮，旋转偏振片，使竖直白色刻度对准 90°刻线。
+				\end{itemize}
+			
+			\item 调节 F-P 标准具和干涉滤光片模块
+				
+				\begin{itemize}
+					\item 将干涉滤光片和 F-P 标准具置于相机和偏振片之间，调节高度一致，并使标准具尽可能靠近相机镜头（避免杂散光），此时视频窗口会出现干涉圆环。
+					\item 适当调节聚光透镜的位置和相机镜头光圈，使图像亮度适中。
+					\item 调节精密调整架的 XY 旋钮，使干涉圆环处于视频窗口中心。
+					\item 调节相机镜头后焦，获得清晰干涉图像。
+				\end{itemize}
+			
+				% \begin{figure}[htbp]
+				% 	\centering
+				% 	\includegraphics[width=0.6\textwidth]{2.jpg}
+				% 	\caption{垂直磁场方向，偏振片90°}
+				% 	\label{fig:Zeeman1}
+				% \end{figure}
+		\end{enumerate}
+	
+	
+
+
+	\subsubsection{观察谱线分裂}
+
+		首先观察垂直磁场方向的分裂情况，如\cref{fig:ZeemanVertical}：
+		\begin{figure}[htbp]
+			\centering
+			\subfloat[0A电流，垂直磁场方向，偏振片90°]
+			{\includegraphics[width=0.45\textwidth]{2.jpg}\label{fig:Zeeman2}}
+			\quad
+			\subfloat[3.15A电流，垂直磁场方向，偏振片90°]
+			{\includegraphics[width=0.45\textwidth]{3.jpg}\label{fig:Zeeman3}}
+			\quad
+			\subfloat[4A电流，垂直磁场方向，偏振片90°]
+			{\includegraphics[width=0.45\textwidth]{6.jpg}\label{fig:Zeeman6}}
+			\quad
+			\subfloat[3.15A电流，垂直磁场方向，偏振片0°]
+			{\includegraphics[width=0.45\textwidth]{4.jpg}\label{fig:Zeeman4}}
+			\quad
+			\subfloat[4.5A电流，垂直磁场方向，偏振片45°]
+			{\includegraphics[width=0.45\textwidth]{14.jpg}\label{fig:Zeeman14}}
+			\quad
+
+			\caption{垂直磁场方向的塞曼效应分裂情况}
+			\label{fig:ZeemanVertical}
+		\end{figure}
+
+		在观察平行磁场方向的塞曼效应分裂情况，如\cref{fig:ZeemanParallel}：
+
+		\begin{figure}[htbp]
+			\centering
+			\subfloat[0A电流，平行磁场方向，偏振片90°]
+			{\includegraphics[width=0.45\textwidth]{7.jpg}\label{fig:Zeeman7}}
+			\quad
+			\subfloat[0A电流，平行磁场方向，偏振片45°]
+			{\includegraphics[width=0.45\textwidth]{8.jpg}\label{fig:Zeeman8}}
+			\quad
+			\subfloat[0A电流，平行磁场方向，偏振片0°]
+			{\includegraphics[width=0.45\textwidth]{9.jpg}\label{fig:Zeeman9}}
+			\quad
+			\subfloat[1A电流，平行磁场方向，偏振片0°]
+			{\includegraphics[width=0.45\textwidth]{10.jpg}\label{fig:Zeeman10}}
+			\quad
+			\subfloat[1A电流，平行磁场方向，偏振片45°]
+			{\includegraphics[width=0.45\textwidth]{11.jpg}\label{fig:Zeeman11}}
+			\quad
+			\subfloat[1A电流，平行磁场方向，偏振片90°]
+			{\includegraphics[width=0.45\textwidth]{12.jpg}\label{fig:Zeeman12}}
+			\quad
+
+			\caption{平行磁场方向的塞曼效应分裂情况}
+			\label{fig:ZeemanParallel}
+		\end{figure}
 
 
 
@@ -984,17 +1076,17 @@
 
 \subsection{实验原始数据记录}
 
-	% 见\cref{fig:data}
+	实验所的图像见\cref{fig:ZeemanVertical}、\cref{fig:ZeemanParallel}，数据记录见\cref{fig:data}
 
-	% \begin{figure}[htbp]
-	% 	\centering
-	% 	% \subfloat[原始数据1]
-	% 	{\includegraphics[width=0.6\textwidth]{Data1.jpg}\label{fig:data1}}
-	% 	\quad
+	\begin{figure}[htbp]
+		\centering
+		% \subfloat[原始数据1]
+		{\includegraphics[width=0.6\textwidth]{OriginalData.jpg}\label{fig:OriginalData}}
+		\quad
 
-	% 	\caption{原始数据}
-	% 	\label{fig:data}
-	% \end{figure}
+		\caption{原始数据记录}
+		\label{fig:data}
+	\end{figure}
 
 
 
@@ -1015,7 +1107,7 @@
 	\hline
 	姓名： & 戴鹏辉\&崔瑜 & 学号：& 22344016\&22344017\\
 	\hline
-    日期：& 2024// & 评分： &\\
+    日期：& 2024/6/8 & 评分： &\\
 	\hline
 	\end{tabularx}
 \end{table}
@@ -1024,57 +1116,295 @@
 
 \subsection{实验数据分析}
 
+	\subsubsection{分析塞曼分裂情况}
 
+		如\cref{fig:Zeeman2}所示，在不加外磁场的情况下，能较为清晰的看到圆环。
+		\begin{itemize}
+			\item 首先在磁场横向（垂直）方向上观察，将观察到三个偏振光，$\sigma^+$左旋偏振光和$\sigma^-$右旋偏振光的投影和$\pi$偏振光，$\sigma^+$左旋偏振光和$\sigma^-$右旋偏振光的投影与磁场方向$B$垂直，$\pi$偏振光与磁场$B$平行。
+			
+				\begin{enumerate}
+					\item 电流3.15A，偏振片90°时，如\cref{fig:Zeeman3}所示，谱线分裂为3条，只有一个线偏振光透过偏振片，综合偏振片置于0°时的图像分析，该线偏振光为$\pi$偏振光。
+					\item 电流3.15A，偏振片0°时，如\cref{fig:Zeeman4}所示，谱线明显的分为两份圆环，且每份圆环还分裂为较模糊的三条谱线，谱线总共分裂为6条，此时透过0°偏振片的是$\sigma^+$左旋偏振光和$\sigma^-$右旋偏振光的投影。
+					\item 电流4.5A，偏振片45°时，如\cref{fig:Zeeman14}所示，三个线偏振光都有通过，谱线应分裂为九条，但因为仪器有误差，导致有两条重叠，实际中只观察到7条。
+					
+				\end{enumerate}
 
-
-
-\subsubsection{分析和讨论}
-
-
-
-
-
-
-
+			\item 然后在磁场竖向（平行）方向上观察，将观察到两个圆偏振，$\sigma^+$左旋偏振光和$\sigma^-$右旋偏振光。
+				
+				\begin{enumerate}
+					\item 电流为0，如\cref{fig:Zeeman7}、\cref{fig:Zeeman8}、\cref{fig:Zeeman9}，无论偏振片角度如何变化，图像都没有发生改变，判断此时透过的光为圆偏振光。
+					\item 电流为1A，如\cref{fig:Zeeman10}、\cref{fig:Zeeman11}、\cref{fig:Zeeman12}，无论偏振片角度如何变化，图像都没有发生改变，判断此时透过的光为圆偏振光，谱线分裂为两条粗环，分别代表$\sigma^+$左旋偏振光和$\sigma^-$右旋偏振光，理论上应能看到六条分裂谱线，但因为仪器有限，只能看到两条粗环。
+				\end{enumerate}
+		\end{itemize}
 		
-
-\subsection{实验后思考题}	
-	
-    \begin{question}
-        XXXXXXXXXXXXXXXXXX
-    \end{question}
-
-
-
-
-
-
 
 
 \clearpage
+
+	\subsubsection{计算荷质比e/m}
+
+		对垂直磁场方向观察、4A电流（即0.965T的磁感应强度），偏振片90°放置的情况详细讨论，即\cref{fig:Zeeman6}。
+		测量其各环的半径（对于测量圆环半径，我完成了一个python程序用以辅助，具体代码附后，测量效果图如\cref{fig:measure1}）。测量结果如\cref{tbl:table-measure1}：
+
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width=0.6\textwidth]{measure1.png}
+			\caption{python程序实现的测量半径的效果图}
+			\label{fig:measure1}
+		\end{figure}
+
+
+
+		\begin{table}
+			\centering
+			\begin{tblr}{
+			  cells = {c},
+			  vline{1,5-7} = {-}{},
+			  hline{1-2,7-9} = {-}{},
+			}
+			测量次数 & $D_K$       & $D_{K-1}$     & $D_{\alpha}$       & $ \frac{e}{m} / (C \cdot kg)$ & 相对误差   \\
+			1    & 169.2909 & 229.0737 & 176.317  & 1.99159E+11 & 13.29\% \\
+			2    & 169.712  & 229.0494 & 176.5046 & 1.94136E+11 & 10.43\% \\
+			3    & 170.3164 & 229.3905 & 176.3256 & 1.72312E+11 & -1.98\% \\
+			4    & 169.6316 & 228.1239 & 176.7532 & 2.07102E+11 & 17.81\% \\
+			5    & 169.8434 & 228.8916 & 176.395  & 1.88189E+11 & 7.05\%  \\
+			平均   & 169.7589 & 228.9058 & 176.4591 & 1.92158E+11 & 9.31\%  \\
+			标准差  & 0.372638 & 0.473123 & 0.180774 &             &         
+			\end{tblr}
+			\caption{各圆环半径测量结果}
+			\label{tbl:table-measure1}
+		\end{table}
+
+
+
+		% \begin{table}
+		% 	\centering
+		% 	\begin{tblr}{
+		% 	  cells = {c},
+		% 	  vline{1-2,6,7} = {-}{},
+		% 	  hline{1-2,7,8} = {-}{},
+		% 	}
+		% 	测量次数 & $D_K$       & $D_{K-1}$     & $D_{\alpha}$       & $ \frac{e}{m} / (C \cdot kg)$ & 相对误差   \\
+		% 	1    & 169.2909 & 229.0737 & 176.317  & 1.99159E+11 & 13.29\% \\
+		% 	2    & 169.712  & 229.0494 & 176.5046 & 1.94136E+11 & 10.43\% \\
+		% 	3    & 170.3164 & 229.3905 & 176.3256 & 1.72312E+11 & -1.98\% \\
+		% 	4    & 169.6316 & 228.1239 & 176.7532 & 2.07102E+11 & 17.81\% \\
+		% 	5    & 169.8434 & 228.8916 & 176.395  & 1.88189E+11 & 7.05\% \\
+		% 	平均   & 169.7589 & 228.9058 & 176.4591 & 1.92158E+11 & 9.31\%
+		% 	\end{tblr}
+		% 	\caption{各圆环半径测量结果}
+		% 	\label{tbl:table-measure1}
+		% \end{table}
+
+		可以看到，测量值相较公认值$1.758 \times 10^{11} / (C \cdot kg)$有一定的差距，下面详细分析测量误差。
+
+
+		由误差传递公式：
+
+		\[
+			\sigma_{\frac{e}{m}} = \sqrt{\left(\frac{\partial\left(\frac{e}{m}\right)}{\partial D_\alpha} \cdot \sigma_{D_\alpha}\right)^2 + \left(\frac{\partial\left(\frac{e}{m}\right)}{\partial D_K} \cdot \sigma_{D_K}\right)^2 + \left(\frac{\partial\left(\frac{e}{m}\right)}{\partial D_{K-1}} \cdot \sigma_{D_{K-1}}\right)^2}
+		\]
+
+		其中各项的值为：
+
+		\[
+			\frac{\partial\left(\frac{e}{m}\right)}{\partial D_\alpha} = \frac{8\pi c D_\alpha}{n d B (D_{K-1}^2 - D^2_{K})} = 29235304771
+		\]
+
+		\[
+			\frac{\partial\left(\frac{e}{m}\right)}{\partial D_K} = \frac{8\pi c D_K (D_{\alpha}^2 - D_K^2) }{n d B (D_{K-1}^2 - D^2_{K})^2} = 2766906464
+		\]
+
+		\[
+			\frac{\partial\left(\frac{e}{m}\right)}{\partial D_{K-1}} = \frac{8\pi c D_{K-1} (D_K^2 - D_{\alpha}^2) }{n d B (D_{K-1}^2 - D^2_{K})^2 } = -3730944971
+		\]
+
+		可得间接测量量$e/m$的标准差为：
+
+		\[
+			\begin{aligned}
+			\sigma_{e/m} &= \sqrt{(29235304771 \times 0.180773994)^2 + (2766906464 \times 0.372637827)^2 + (-3730944971 \times 0.473122503)^2 } \\
+			&= 5666570886 = 5.67 \times 10^9
+			\end{aligned}
+		\]
+
+
+		展伸不确定度$U = k \sigma_{e/m}$，置信概率取95 \% 时，$k = 1.96$，则$U = k \sigma_{e/m} = 1.11 \times 10^{10}		$
+		
+		则最后测量结果为：$e/m = (1.92 \pm 0.11) \times 10^{11} C \cdot kg$
+
+	\subsubsection{分析误差来源}
+
+		\begin{enumerate}
+			\item 在测量半径时，即使是使用了自己所编写的程序以期望更精确的测量，但从测量结果来看，每次测量之间仍然有不小的测量误差。主要的原因是成像不够清晰，以及圆环本身的宽度较宽，导致选择点的时候偏差较大。
+			\item 在计算传递误差时，我们认为除了三个半径之外的量都为常数，但实际上，磁感应强度是通过“电流-磁感应强度”对照表得到的，这其中可能有一定的误差。
+		\end{enumerate}
+
+
+
+
+
+
+
+
+
+
 
 \subsection{实验总结}
     
     \subsubsection{实验问题总结}
 
         \begin{enumerate}
-            \item 
+            \item 由于不同光具的高度不同，以及光源的限制，基本无法得到一个即各光具都共轴、又能够在全屏幕范围成像的图像。最多只能得到图像一半清晰，一半黑的图像。
+            \item 在观察平行磁场方向的塞曼效应分裂情况时，由于孔径很小，得到的图像只有部分看得到像，但是这部分的像很清晰。
         \end{enumerate}
 
     \subsubsection{实验分工}
-
+		实验过程由两人合作完成，报告部分分工如下。
         \begin{enumerate}
-            \item
+            \item 戴鹏辉：实验思考题部分，分析讨论中的荷质比计算、误差分析部分。
+            \item 崔瑜：实验原理部分，分析讨论中的塞曼效应偏振情况分析。
         \end{enumerate}
 
-    % \begin{figure}[htbp]
-    %     \centering
-    %     \includegraphics[width=0.6\textwidth]{table.jpg}
-    %     \caption{整理后实验桌照片}
-    %     \label{fig:table}
-    % \end{figure}
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=0.6\textwidth]{table.jpg}
+        \caption{整理后实验桌照片}
+        \label{fig:table}
+    \end{figure}
+
+	
+
+
+\subsection{代码附件}
+
+	代码所使用的方法也是通过选取圆上的三个点，计算出圆的半径。
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{myorange}{rgb}{1.0,0.4,0}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ 
+  backgroundcolor=\color{white},   
+  basicstyle=\footnotesize\ttfamily,       
+  breakatwhitespace=false,         
+  breaklines=true,                 
+  captionpos=b,                    
+  commentstyle=\color{mygreen},    
+  deletekeywords={...},            
+  escapeinside={\%*}{*)},          
+  extendedchars=true,              
+  frame=single,                    
+  keepspaces=true,                 
+  keywordstyle=\color{blue},       
+  language=Python,                 
+  morekeywords={*,...},            
+  numbers=left,                    
+  numbersep=5pt,                   
+  numberstyle=\tiny\color{mygray}, 
+  rulecolor=\color{black},         
+  showspaces=false,                
+  showstringspaces=false,          
+  showtabs=false,                  
+  stepnumber=2,                    
+  stringstyle=\color{mymauve},     
+  tabsize=2,                       
+  title=\lstname                   
+}
 
 
 
 
+
+	\begin{lstlisting}[language=Python, caption=测量圆环半径所用的代码]
+		import cv2
+		import numpy as np
+		from scipy.optimize import least_squares
+		
+		# 用于存储选定点的列表
+		points = []
+		zoom_factor = 2  # 放大倍数
+		
+		def calculate_circle(points):
+			""" 通过选定的三个点计算圆心和半径 """
+			def calc_R(c):
+				""" 计算点到圆心 (c[0], c[1]) 的距离 """
+				return np.sqrt((points[:, 0] - c[0])**2 + (points[:, 1] - c[1])**2)
+		
+			def f_2(c):
+				""" 计算到圆心的距离差的平方和 """
+				Ri = calc_R(c)
+				return Ri - Ri.mean()
+		
+			# 初始估计
+			x_m = np.mean(points[:, 0])
+			y_m = np.mean(points[:, 1])
+			center_estimate = (x_m, y_m)
+			result = least_squares(f_2, center_estimate)
+			center_2 = result.x
+		
+			# 计算半径
+			Ri = calc_R(center_2)
+			R = Ri.mean()
+			return center_2, R
+		
+		def on_mouse(event, x, y, flags, param):
+			global points
+			global zoom_factor
+			global zoom_window_open
+		
+			if event == cv2.EVENT_MOUSEMOVE:
+				if zoom_window_open:
+					# 放大区域并显示
+					zoom_img = img[max(0, y-50):min(img.shape[0], y+50), max(0, x-50):min(img.shape[1], x+50)]
+					zoom_img = cv2.resize(zoom_img, (0, 0), fx=zoom_factor, fy=zoom_factor)
+					# 绘制光标
+					cv2.line(zoom_img, (zoom_img.shape[1]//2 - 10, zoom_img.shape[0]//2),
+							(zoom_img.shape[1]//2 + 10, zoom_img.shape[0]//2), (255, 0, 0), 1)
+					cv2.line(zoom_img, (zoom_img.shape[1]//2, zoom_img.shape[0]//2 - 10),
+							(zoom_img.shape[1]//2, zoom_img.shape[0]//2 + 10), (255, 0, 0), 1)
+					cv2.imshow("Zoom", zoom_img)
+		
+			elif event == cv2.EVENT_LBUTTONDOWN:
+				zoom_window_open = True
+				# 显示放大镜窗口
+				cv2.namedWindow("Zoom")
+				cv2.moveWindow("Zoom", x + 50, y + 50)
+		
+			elif event == cv2.EVENT_LBUTTONUP:
+				zoom_window_open = False
+				cv2.destroyWindow("Zoom")
+				# 添加点
+				points.append((x, y))
+				print(f"Point selected: {(x, y)}")
+				cv2.circle(img, (x, y), 5, (0, 255, 0), -1)
+				cv2.imshow("Image", img)
+		
+				# 如果已经选择了三个点，则计算圆
+				if len(points) == 3:
+					points_np = np.array(points)
+					center, radius = calculate_circle(points_np)
+					print(f"Circle center: {center}, radius: {radius}")
+					cv2.circle(img, (int(center[0]), int(center[1])), int(radius), (255, 0, 0), 2)
+					cv2.imshow("Image", img)
+					points.clear()  # 清空点列表以便继续选择新的点
+		
+		# 读取图像
+		img = cv2.imread("6.jpg")
+		
+		# 初始放大镜窗口状态
+		zoom_window_open = False
+		
+		# 显示图像并绑定鼠标事件
+		cv2.imshow("Image", img)
+		cv2.setMouseCallback("Image", on_mouse)
+		
+		cv2.waitKey(0)
+		cv2.destroyAllWindows()
+		
+
+	\end{lstlisting}
+		
+		
 \end{document}
